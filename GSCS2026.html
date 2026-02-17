@@ -10,6 +10,45 @@
 
 <title>2026 Georgia Scientific Computing Symposium - University of Georgia</title>
 <base target="_blank">
+
+<style>
+.schedule-table {
+  width: 100%;
+  max-width: 850px;   /* 桌面最大宽度 */
+  margin: 0 auto;     /* 居中 */
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #000;        /* 文字黑色 */
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #000;  /* 边框黑色 */
+  padding: 6px;
+}
+
+.schedule-table th {
+  font-weight: 600;
+}
+
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+  width: 18%;   /* Time */
+}
+
+.schedule-table th:nth-child(2),
+.schedule-table td:nth-child(2) {
+  width: 22%;   /* Speaker */
+}
+
+/* 手机优化 */
+@media (max-width: 600px) {
+  .schedule-table {
+    font-size: 13px;
+  }
+}
+</style> 
+  
 </head>
 <meta charset="utf-8">
 
@@ -50,8 +89,7 @@ The Georgia Scientific Computing Symposium is a forum for professors, postdocs, 
 <p><span style="font-family: Helvetica; font-size: 16pt;  color: #BA0C2F"><strong>Schedule</strong></span></p>
 
   
-  <table border="1" cellpadding="5" cellspacing="0"
-       style="border-collapse:collapse; width:100%; font-size:14px; color:#000000;">
+<table class="schedule-table">
 
   <tr>
     <th style="width:110px;">Time</th>
