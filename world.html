@@ -27,13 +27,14 @@
 </p>
 
 
-  <div style="
+ 
+<div style="
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 40px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
-  align-items: stretch;
+  gap: 60px;
+  align-items: flex-start;
 ">
 
   <!-- 左边图片 -->
@@ -43,42 +44,40 @@
         src="travelogue/media/map.jpg"
         style="
           width: 100%;
-          height: 100%;
-          object-fit: cover;
+          height: auto;
+          display: block;
           border-radius: 10px;
           box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         ">
     </a>
   </div>
 
-  <!-- 右边：文字 + 视频 -->
+  <!-- 右边文字 + 视频 -->
   <div style="
     flex: 1;
     min-width: 260px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 360px;
+    line-height: 1.4;
   ">
-    
-    <!-- 文字 -->
-    <div>
-      <h3 style="margin-top: 0;">About this map</h3>
-      <p>
-        A map of the world I have explored since my birth, created in MATLAB using Rich Pawlowicz's
-        <a href="https://www-old.eoas.ubc.ca/~rich/map.html">M_Map package</a>
-        and my own design. To explore its dynamics, watch the video below.
-      </p>
-    </div>
+    <h3 style="margin-top: 0;">About this map</h3>
 
-    <!-- 视频 -->
-    <video controls style="
+    <p>
+      A map of the world I have explored since birth, created in MATLAB using Rich Pawlowicz’s
+      <a href="https://www-old.eoas.ubc.ca/~rich/map.html">M_Map package</a>
+      and my own design.
+      To explore its dynamics, watch the video below.
+    </p>
+
+    <video controls preload="metadata" style="
       width: 100%;
+      height: auto;
+      display: block;
       border-radius: 10px;
-      margin-top: 10px;
+      margin-top: 16px;
     ">
-      <source src="travelogue/media/TrackedTravelMap.mp4" type="TrackedTravelMap/mp4">
+      <source src="travelogue/media/TrackedTravelMap.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
-
   </div>
 
 </div>
