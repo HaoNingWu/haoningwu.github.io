@@ -28,29 +28,40 @@
 
 
   
-<div style="max-width: 620px;">
-  <a href="travelogue/media/map.jpg">
-    <img 
-  src="travelogue/media/map.jpg" 
-  alt="map"
-  style="
-    width: 100%;
-    max-width: 520px;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  ">
-  </a>
+<div style="
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+">
 
-  <div">
-    <span style="font-size: 80%; color: #555;">
-      The world I've explored since birth.<br>
-      Generated in MATLAB using Rich Pawlowicz's 
-      <a href="https://www-old.eoas.ubc.ca/~rich/map.html">M_Map package</a> 
-      and my own design.
-    </span>
+  <!-- 左边图片 -->
+  <div style="flex: 2;">
+    <img 
+      src="travelogue/media/map.jpg" 
+      alt="map"
+      style="
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      ">
   </div>
+
+  <!-- 右边说明 -->
+  <div style="flex: 1;;">
+    <h3 style=" margin-top: 0;">About this map</h3>
+    
+    <p>
+      This map traces the journeys I've taken since childhood 
+from short regional trips to long-haul flights across continents. 
+Each line marks a memory, a transition, or a new beginning. (Mar 2026)<br><br>
+      It is generated in MATLAB using the
+      <a href="https://www-old.eoas.ubc.ca/~rich/map.html">M_Map</a> package and my own design.
+    </p>
+
+  </div>
+
 </div>
 
 <p><span style="font-family: Helvetica; font-size: 14pt;  color: #29957f"><strong>Travel Literature</strong></span></p>
