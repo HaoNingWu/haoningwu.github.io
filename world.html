@@ -27,45 +27,58 @@
 </p>
 
 
-  
-<div style="
+  <div style="
   max-width: 1200px;
-  margin: 40px 10px;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
-  align-items: center;
+  gap: 50px;
+  align-items: stretch;
 ">
 
-  <!-- 图片 -->
+  <!-- 左边图片 -->
   <div style="flex: 2; min-width: 300px;">
-
-    
-        <a href="travelogue/media/map.jpg">
-    <img 
-      src="travelogue/media/map.jpg"
-      style="
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      "></a>
+    <a href="travelogue/media/map.jpg">
+      <img 
+        src="travelogue/media/map.jpg"
+        style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        ">
+    </a>
   </div>
 
-  <!-- 文字 -->
+  <!-- 右边：文字 + 视频 -->
   <div style="
     flex: 1;
     min-width: 260px;
-    max-width: 360px;
-    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   ">
-    <h3 style="margin-top: 0;">About this map</h3>
+    
+    <!-- 文字 -->
+    <div>
+      <h3 style="margin-top: 0;">About this map</h3>
+      <p>
+        A map of the world I have explored since my birth, created in MATLAB using Rich Pawlowicz's
+        <a href="https://www-old.eoas.ubc.ca/~rich/map.html">M_Map package</a>
+        and my own design. To explore its dynamics, watch the video below.
+      </p>
+    </div>
 
-<p>
-  A map of the world I have explored since my birth, created in MATLAB using Rich Pawlowicz's
-  <a href="https://www-old.eoas.ubc.ca/~rich/map.html">M_Map package</a>
-  and my own design.
-</p>
+    <!-- 视频 -->
+    <video controls style="
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    ">
+      <source src="travelogue/media/TrackedTravelMap.mp4" type="TrackedTravelMap/mp4">
+    </video>
+
   </div>
 
 </div>
