@@ -30,35 +30,43 @@
   
 <div style="
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 40px 10px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
 ">
 
-  <!-- 左边图片 -->
-  <div style="flex: 2;">
+  <!-- 图片 -->
+  <div style="flex: 2; min-width: 300px;">
     <img 
-      src="travelogue/media/map.jpg" 
-      alt="map"
+      src="travelogue/media/map.jpg"
       style="
         width: 100%;
+        height: auto;
         border-radius: 10px;
         box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       ">
   </div>
 
-  <!-- 右边说明 -->
-  <div style="flex: 1;;">
-    <h3 style=" margin-top: 0;">About this map</h3>
-    
+  <!-- 文字 -->
+  <div style="
+    flex: 1;
+    min-width: 260px;
+    max-width: 480px;
+    line-height: 1.2;
+    color: #444;
+  ">
+    <h3 style="margin-top: 0;">About this map</h3>
+
     <p>
-      This map traces the journeys I've taken since childhood 
-from short regional trips to long-haul flights across continents. 
-Each line marks a memory, a transition, or a new beginning. (Mar 2026)<br><br>
-      It is generated in MATLAB using the
-      <a href="https://www-old.eoas.ubc.ca/~rich/map.html">M_Map</a> package and my own design.
+     The world I have explored since my birth.
     </p>
+
+    <p>
+Generated in MATLAB using Rich Pawlowicz's 
+      <a href="https://www-old.eoas.ubc.ca/~rich/map.html">M_Map package</a> 
+      and my own design.    </p>
 
   </div>
 
