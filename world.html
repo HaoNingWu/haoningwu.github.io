@@ -12,14 +12,56 @@
   
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Exploring the World: A Digital Junk Journal</title>
+  
+<style>
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.photo-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid #29957f;
+}
+
+.photo-caption {
+  margin-top: 6px;
+  font-size: 10.5pt;
+  color: #888;
+  text-align: center;
+}
+
+/* 自动换行 */
+@media (max-width: 900px) {
+  .photo-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 <meta charset="utf-8">
+  
+  
 
 <body TEXT="#000000" BGCOLOR="#F7F4E5" LINK="4E5851" VLINK = "#4E5851">
 <p align="center"> <font color="#475272" face="Arial, Helvetica,sans-serif">
 
 <p><a href = "index.html" style="font-family:Verdana; font-size: 12pt;">Back to my math homepage</a></p> 
-
 
 <p>  <span style="font-family: Helvetica; font-size: 16pt; color: #29957f;">
     <strong>Exploring the World: A Digital Junk Journal</strong> 
@@ -29,7 +71,7 @@
   <p style = "font-size: 13pt;">  
 Maps, moments, and stories gathered along the way.  </p>
  
-<h3>Travel Statistics</h3>
+<h3 style="color: #29957f;">Travel Statistics</h3>
 <p style="margin-top: -8px; margin-bottom: -12px; font-size: 13pt;">
 &#10063 Lived in China and the United States:
 </p>
@@ -131,6 +173,7 @@ If you don’t read Chinese but are interested, you may use your browser’s bui
   </div>
 </li> 
 
+
   <li style="margin-bottom: 16px;">
   <div>
     <a href="travelogue/250215Plains.html" style="color:#4E5851; text-decoration:none;">
@@ -144,6 +187,63 @@ Plains: The Place Where a President Grew Up
     2025 · Athens, GA
   </div>
 </li>  
-
 </ul>
+  
+ 
+
+<h3 style="color: #29957f; margin-top: 30px;">Travel Photography</h3>
+  
+ <div style="max-width: 1200px; margin-top: 20px;">
+
+  <div class="photo-gallery">
+
+    <div class="photo-item">
+      <a href="travelogue/media/photo1.jpg" target="_blank">
+        <img src="travelogue/media/photo1.jpg">
+      </a>
+      <div class="photo-caption" style="color:#888; text-align:center">Banff National Park · 2025</div>
+    </div>
+
+    <div class="photo-item">
+      <a href="travelogue/media/photo2.jpg" target="_blank">
+        <img src="travelogue/media/photo2.jpg">
+      </a>
+      <div class="photo-caption">Hong Kong · 2023</div>
+    </div>
+
+    <div class="photo-item">
+      <a href="travelogue/media/photo3.jpg" target="_blank">
+        <img src="travelogue/media/photo3.jpg">
+      </a>
+      <div class="photo-caption">Athens, GA · 2024</div>
+    </div>
+
+    <div class="photo-item">
+      <a href="travelogue/media/photo4.jpg" target="_blank">
+        <img src="travelogue/media/photo4.jpg">
+      </a>
+      <div class="photo-caption">New York City · 2024</div>
+    </div>
+
+        <div class="photo-item">
+      <a href="travelogue/media/photo4.jpg" target="_blank">
+        <img src="travelogue/media/photo4.jpg">
+      </a>
+      <div class="photo-caption">New York City · 2024</div>
+    </div>
+
+        <div class="photo-item">
+      <a href="travelogue/media/photo4.jpg" target="_blank">
+        <img src="travelogue/media/photo4.jpg">
+      </a>
+      <div class="photo-caption">New York City · 2024</div>
+    </div>
+
+  </div>
+</div>
+  
+  
+  </div>
+  
+  
   
