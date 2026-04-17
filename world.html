@@ -20,24 +20,17 @@
   gap: 18px;
 }
 
-.photo-item {
-  height: 180px;              /* ⭐ 统一高度（可调） */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
 
-.photo-item img {
-  height: 100%;
-  width: auto;                /* ⭐ 关键：竖图不会被拉伸 */
-  display: block;
+  .photo-item img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   border: 1px solid #29957f;
 }
 
 .photo-caption {
   margin-top: 6px;
-  font-size: 10.5pt;
+  font-size: 9pt;
   color: #888;
   text-align: center;
 }
