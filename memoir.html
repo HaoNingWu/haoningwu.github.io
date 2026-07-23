@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/wu.JPG">
+<link rel="icon" type="image/jpeg" href="/images/wu.JPG">
+<link rel="shortcut icon" href="/images/wu.JPG">
+
+<title>Commonplace Book: Mathematics, People, and Ideas</title>
+
+<style>
+
+:root {
+  --background: #f7f4e8;
+  --text: #252525;
+  --secondary-text: #6d6a62;
+  --accent: #287f70;
+  --light-accent: #d8e5df;
+  --rule: #d8d2c2;
+  --quote-background: rgba(255, 255, 255, 0.34);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family:
+    Charter,
+    "Iowan Old Style",
+    "Palatino Linotype",
+    Palatino,
+    Georgia,
+    "Times New Roman",
+    serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 26px 110px;
+}
+
+
+/* Header */
+
+.header {
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.title {
+  color: var(--accent);
+  font-family:
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  color: var(--secondary-text);
+  font-size: 19px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.meta {
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* Introduction */
+
+.introduction {
+  font-size: 18px;
+  margin-bottom: 76px;
+}
+
+.introduction .para:first-child::first-letter {
+  color: var(--accent);
+  float: left;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 0.86;
+  margin: 9px 9px 0 0;
+}
+
+
+/* Contents */
+
+.contents {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin: 64px 0 82px;
+  padding: 28px 0 30px;
+}
+
+.contents-title {
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.contents-item {
+  margin: 8px 0;
+}
+
+.contents-item a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contents-item a:hover {
+  color: var(--accent);
+}
+
+
+/* Sections */
+
+.section {
+  margin-top: 86px;
+  scroll-margin-top: 30px;
+}
+
+.section-number {
+  color: var(--accent);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--text);
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 1.35;
+  margin-bottom: 30px;
+}
+
+.para {
+  margin: 0 0 24px;
+}
+
+.para em {
+  font-style: italic;
+}
+
+.para strong {
+  font-weight: 600;
+}
+
+
+/* Subsections */
+
+.subsection {
+  margin-top: 46px;
+}
+
+.subsection-title {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
+/* Quotes */
+
+.quote {
+  background: var(--quote-background);
+  border-left: 3px solid var(--accent);
+  color: #4d4b45;
+  font-size: 18px;
+  font-style: italic;
+  margin: 38px 0;
+  padding: 18px 24px;
+}
+
+.quote-source {
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  margin-top: 12px;
+}
+
+
+/* Notes */
+
+.note {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  color: #55524b;
+  font-size: 15px;
+  margin: 40px 0;
+  padding: 20px 4px;
+}
+
+.note-label {
+  color: var(--accent);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+
+/* Images */
+
+.image {
+  margin: 44px 0;
+  text-align: center;
+}
+
+.image img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.caption {
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 11px auto 0;
+  max-width: 620px;
+}
+
+
+/* Timeline */
+
+.timeline {
+  border-left: 1px solid var(--rule);
+  margin: 42px 0 48px 8px;
+  padding-left: 26px;
+}
+
+.timeline-item {
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.timeline-item::before {
+  background: var(--background);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  content: "";
+  height: 9px;
+  left: -31px;
+  position: absolute;
+  top: 10px;
+  width: 9px;
+}
+
+.timeline-year {
+  color: var(--accent);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+.timeline-text {
+  font-size: 16px;
+}
+
+
+/* Links */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+
+.footer {
+  border-top: 1px solid var(--rule);
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 100px;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.back-link {
+  margin-top: 18px;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .container {
+    padding: 48px 20px 80px;
+  }
+
+  .header {
+    margin-bottom: 56px;
+  }
+
+  .title {
+    font-size: 29px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+  }
+
+  .introduction {
+    font-size: 17px;
+    margin-bottom: 58px;
+  }
+
+  .section {
+    margin-top: 68px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .quote {
+    font-size: 17px;
+    margin: 32px 0;
+    padding: 16px 19px;
+  }
+
+  .contents {
+    margin: 50px 0 64px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+  <main class="container">
+
+    <header class="header">
+
+      <div class="title">
+        Commonplace Book
+      </div>
+
+      <div class="subtitle">
+        Mathematics, People, and Ideas
+      </div>
+
+      <div class="meta">
+        Hao-Ning Wu<br>
+        A continuing record of my mathematical life<br>
+        Last updated: July 2026
+      </div>
+
+    </header>
+
+
+    <section class="introduction">
+
+      <div class="para">
+        This is a continuing account of how I came to mathematics, how particular
+        questions entered my work, and how conversations, accidents, failed arguments,
+        and unexpected connections gradually shaped my research.
+      </div>
+
+      <div class="para">
+        It is neither a formal autobiography nor a complete history of my publications.
+        I intend it instead as a commonplace book: a place for recording the origins of
+        ideas, the people connected with them, and the changes in viewpoint that are
+        often invisible in a finished paper.
+      </div>
+
+    </section>
+
+
+    <nav class="contents">
+
+      <div class="contents-title">
+        Contents
+      </div>
+
+      <div class="contents-item">
+        <a href="#beginning">1. An Accidental Beginning</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#approximation">2. Learning Approximation</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#hong-kong">3. Hong Kong</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#exactness">4. Beyond Exactness</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#spectral">5. Thinking Spectrally</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#current-work">6. The Problems I Now Want to Pursue</a>
+      </div>
+
+    </nav>
+
+
+    <section class="section" id="beginning">
+
+      <div class="section-number">
+        Chapter One
+      </div>
+
+      <div class="section-title">
+        An Accidental Beginning
+      </div>
+
+      <div class="para">
+        I did not choose Jinan University because I had already decided to become a
+        mathematician. One rather practical attraction, at least as I understood it at
+        the time, was that the university did not require military training.
+      </div>
+
+      <div class="para">
+        It was an almost accidental decision. Looking back, however, it was one of the
+        most consequential decisions I had made. It eventually led me to my first
+        research project in approximation theory and to the mathematical questions that
+        have remained with me ever since.
+      </div>
+
+      <div class="note">
+
+        <div class="note-label">
+          Retrospective note
+        </div>
+
+        <div>
+          Research careers are often narrated as if every stage had been planned.
+          Mine was not. Many of the important transitions began with decisions whose
+          consequences I could not have anticipated.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section" id="approximation">
+
+      <div class="section-number">
+        Chapter Two
+      </div>
+
+      <div class="section-title">
+        Learning Approximation
+      </div>
+
+      <div class="para">
+        During my undergraduate years, Congpei An introduced me to hyperinterpolation,
+        spherical approximation, and the numerical use of polynomial expansions. He
+        supervised my undergraduate research project and gave me my first opportunity
+        to work on a problem that did not already have an answer in a textbook.
+      </div>
+
+      <div class="para">
+        At first, I understood these problems mainly through formulas and numerical
+        experiments. Over time, I began to see that the central issue was not merely
+        how to construct an approximation, but why a discrete collection of samples
+        could represent a continuous function space stably.
+      </div>
+
+
+    </section>
+
+
+    <section class="section" id="hong-kong">
+
+      <div class="section-number">
+        Chapter Three
+      </div>
+
+      <div class="section-title">
+        Hong Kong
+      </div>
+
+      <div class="para">
+        I began my doctoral study at the University of Hong Kong under the supervision
+        of Xiaoming Yuan. My work there gradually moved between approximation theory,
+        optimization, and numerical analysis for partial differential equations.
+      </div>
+
+      <div class="para">
+        I continued to collaborate with Congpei An on hyperinterpolation and related
+        problems, but the context had changed. I was no longer working only within an
+        undergraduate project. I was beginning to formulate questions independently,
+        develop proofs, write numerical codes, and understand how individual problems
+        might belong to a broader mathematical program.
+      </div>
+
+    </section>
+
+
+    <section class="section" id="exactness">
+
+      <div class="section-number">
+        Chapter Four
+      </div>
+
+      <div class="section-title">
+        Beyond Exactness
+      </div>
+
+      <div class="para">
+        A decisive change in my thinking began after I attended an online lecture by
+        Lloyd N. Trefethen and read his writing on the limitations of polynomial
+        exactness as a measure of quadrature quality.
+      </div>
+
+      <div class="para">
+        I began to wonder whether the exact cubature assumption used in
+        hyperinterpolation was genuinely essential, or whether it was only a convenient
+        sufficient condition.
+      </div>
+
+
+      <div class="quote">
+        Is algebraic exactness the mathematical mechanism behind stability, or merely
+        one way of obtaining it?
+      </div>
+
+
+      <div class="image">
+
+        <a href="media/trefethen-lecture.png">
+          <img
+            src="media/trefethen-lecture.png"
+            alt="Online lecture by Lloyd N. Trefethen">
+        </a>
+
+        <div class="caption">
+          An online lecture by Lloyd N. Trefethen that prompted me to question the role
+          of algebraic exactness.
+        </div>
+
+      </div>
+
+
+      <div class="para">
+        At the time, Congpei was the person with whom I most regularly discussed
+        questions in spherical approximation, so I naturally shared this question with
+        him. I worked on the problem for some time and developed much of the argument,
+        but one essential stability step remained unresolved.
+      </div>
+
+      <div class="para">
+        After several rounds of discussion, Congpei suggested that a
+        Marcinkiewicz–Zygmund inequality might provide the appropriate replacement for
+        exactness. This observation allowed the analysis to move forward. I then
+        developed the main framework, completed the principal proofs and numerical
+        experiments, and prepared the first full draft.
+      </div>
+
+      <div class="para">
+        Only later did I realize that an anonymous referee of one of our earlier papers
+        had already remarked that an MZ inequality might be used in place of algebraic
+        exactness. We had not pursued that suggestion at the time.
+      </div>
+
+      <div class="para">
+        In retrospect, the project emerged from several distinct sources. Trefethen's
+        critique prompted the initial question. Congpei recognized the relevance of MZ
+        inequalities at a critical stage. The earlier referee report showed that the
+        underlying possibility had already been noticed. My own role was to turn these
+        ingredients into a sustained analysis and a complete mathematical framework.
+      </div>
+
+    </section>
+
+
+    <section class="section" id="spectral">
+
+      <div class="section-number">
+        Chapter Five
+      </div>
+
+      <div class="section-title">
+        Thinking Spectrally
+      </div>
+
+      <div class="para">
+        Over time, I found myself approaching many problems more naturally through
+        spectral structure than through spatial localization. Spherical harmonics,
+        polynomial expansions, spectral multipliers, and operator eigenstructures
+        became a common language connecting problems that had initially appeared
+        unrelated.
+      </div>
+
+      <div class="para">
+        This viewpoint gradually carried me from hyperinterpolation toward Galerkin
+        methods, integral equations, partial differential equations, and sampling-based
+        numerical analysis.
+      </div>
+
+      <div class="quote">
+        Sampling determines what information is available. Spectral structure determines
+        how that information moves through a numerical method.
+      </div>
+
+    </section>
+
+
+    <section class="section" id="current-work">
+
+      <div class="section-number">
+        Chapter Six
+      </div>
+
+      <div class="section-title">
+        The Problems I Now Want to Pursue
+      </div>
+
+      <div class="para">
+        My current work is increasingly organized around a single question: how do weak,
+        imperfect, or nonstandard sampling assumptions propagate through numerical
+        methods for continuous problems?
+      </div>
+
+      <div class="para">
+        This includes stable approximation from scattered data, quadrature without exact
+        cubature, Galerkin and Nyström discretizations, integral equations on spheres and
+        surfaces, frame constructions, and spectral neural operators.
+      </div>
+
+      <div class="para">
+        I do not regard this as a finished research program. It is still changing, and
+        this page will change with it.
+      </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+      <div>
+        © Hao-Ning Wu
+      </div>
+
+      <div>
+        This page is a continuing work in progress.
+      </div>
+
+      <div class="back-link">
+        <a href="/index.html">← Back to the homepage</a>
+      </div>
+
+    </footer>
+
+  </main>
+
+</div>
+
+</body>
+</html>
