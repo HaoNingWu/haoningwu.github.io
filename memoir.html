@@ -11,7 +11,7 @@
 
 <title>A Mathematical Memoir: Math, People, and Ideas</title>
 
-<style>  
+<style>
 
 :root {
   --background: #f7f4e8;
@@ -155,6 +155,43 @@ body {
 }
 
 
+/* Citations and references */
+
+.citation {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 0.75em;
+  white-space: nowrap;
+}
+
+.references {
+  border-top: 1px solid var(--rule);
+  margin-top: 86px;
+  padding-top: 36px;
+  scroll-margin-top: 30px;
+}
+
+.references ol {
+  margin: 0;
+  padding-left: 28px;
+}
+
+.references li {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+.back-reference {
+  margin-left: 4px;
+}
+
+
 /* Sections */
 
 .section {
@@ -295,53 +332,6 @@ body {
 }
 
 
-/* Video with explanatory text */
-
-.video-feature {
-  align-items: center;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  display: grid;
-  gap: 34px;
-  grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.75fr);
-  margin: 42px 0;
-  padding: 28px 0;
-}
-
-.video-feature-media video {
-  background: #111;
-  display: block;
-  height: auto;
-  max-height: 520px;
-  width: 100%;
-}
-
-.video-feature-text {
-  color: var(--secondary-text);
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.video-feature-text p {
-  margin: 0;
-}
-
-.video-feature-label {
-  color: var(--accent);
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1.4px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-
 /* Timeline */
 
 .timeline {
@@ -469,15 +459,6 @@ a:hover {
     margin: 50px 0 64px;
   }
 
-  .video-feature {
-    gap: 18px;
-    grid-template-columns: 1fr;
-  }
-
-  .video-feature-text {
-    font-size: 14px;
-  }
-
 }
 
 </style>
@@ -554,6 +535,10 @@ a:hover {
         <a href="#current-work">6. The Problems I Now Want to Pursue</a>
       </div>
 
+      <div class="contents-item">
+        <a href="#references">References</a>
+      </div>
+
     </nav>
 
 
@@ -568,9 +553,9 @@ a:hover {
       </div>
 
       <div class="para">
-        I did not choose Jinan University because I had already decided to become a mathematician. 
+        I did not choose Jinan University in 2015 because I had already decided to become a mathematician. 
         One rather practical attraction was that, unlike most Chinese universities at the time, 
-        Jinan University did not require first-year students to undergo the compulsory military training that was then common across the country. 
+        Jinan did not require first-year students to undergo the compulsory military training that was then common across the country. 
         It was an almost accidental decision. Looking back, however, it was one of the most consequential decisions I have ever made. 
         It led me to my first research project in approximation theory and, ultimately, to the mathematical questions that have remained with me ever since.
       </div>
@@ -579,44 +564,18 @@ a:hover {
         I first met Congpei An in the autumn of 2016, when he was an associate professor at the math department. 
         One thing immediately caught my attention: unlike most mathematics courses at the time, his Numerical Linear Algebra course used an English-language textbook. 
         Curious, I enrolled. 
-        The textbook was Trefethen and Bau's Numerical Linear Algebra. Instead of weekly assignments, students were asked to choose ten chapters of the book and copy them by hand. Professor An called this the "Kunihiko Kodaira method of learning." It was certainly unconventional, but it forced me to read mathematical writing much more carefully than I otherwise would have. At the end of the semester, he gave me 99 out of 100.
-
+        The textbook was Trefethen and Bau's <cite>Numerical Linear Algebra</cite><sup><a class="citation" id="cite-trefethen-bau-1997" href="#ref-trefethen-bau-1997">[1]</a></sup>. 
+        Instead of weekly assignments, students were asked to choose ten chapters of the book and copy them by hand.  
+        An called this the "Kunihiko Kodaira method of learning."
       </div>
 
-      <figure class="video-feature">
-
-        <div class="video-feature-media">
-          <video controls playsinline preload="metadata">
-            <source
-              src="images/NLAbook.mp4"
-              type="video/mp4"
-            >
-            Your browser does not support HTML video.
-          </video>
-        </div>
-
-        <figcaption class="video-feature-text">
-          <div class="video-feature-label">
-            A record from 2016
-          </div>
-
-          <p>
-            My handwritten chapters from Trefethen and Bau’s
-            <cite>Numerical Linear Algebra</cite>.
-          </p>
-        </figcaption>
-
-      </figure>
-
-
-
-
-
-
-
-The following spring I took his Numerical Approximation course, based on Powell's Approximation Theory and Methods. The homework remained the same. Around the same time, together with a classmate, I applied for the National Undergraduate Innovation and Entrepreneurship Program under his supervision. Our project, Barycentric Interpolation: Algorithms and Applications, became my first experience with mathematical research.
-
-That summer, on my own, I copied another book: Trefethen's Approximation Theory and Approximation Practice. Looking back, I doubt that copying books is a universally effective way to learn mathematics, nor would I recommend it as a general method. Yet for me, it served as an unexpectedly effective introduction to approximation theory. Long before I had any clear research ambitions, I had already begun to think in the language of approximation, almost by accident.
+      <div class="para">
+        The following spring I took his Numerical Approximation course, based on Powell's Approximation Theory and Methods. 
+        The homework remained the same. 
+        Around the same time, together with two classmate, I applied for the National Undergraduate Innovation and Entrepreneurship Program under his supervision. 
+        Our project, Barycentric Interpolation: Algorithms and Applications, became my first experience with mathematical research.
+        That summer, on my own, I copied another book: Trefethen's Approximation Theory and Approximation Practice. 
+      </div>
 
 
 
@@ -837,6 +796,25 @@ That summer, on my own, I copied another book: Trefethen's Approximation Theory 
         I do not regard this as a finished research program. It is still changing, and
         this page will change with it.
       </div>
+
+    </section>
+
+    <section class="references" id="references">
+
+      <div class="section-title">
+        References
+      </div>
+
+      <ol>
+        <li id="ref-trefethen-bau-1997">
+          Lloyd N. Trefethen and David Bau III,
+          <cite>Numerical Linear Algebra</cite>,
+          Society for Industrial and Applied Mathematics, Philadelphia, 1997.
+          <a href="https://doi.org/10.1137/1.9780898719574">doi</a>
+          <a class="back-reference" href="#cite-trefethen-bau-1997"
+             aria-label="Back to citation">↩</a>
+        </li>
+      </ol>
 
     </section>
 
