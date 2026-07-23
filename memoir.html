@@ -374,6 +374,37 @@ a:hover {
 }
 
 
+  .citation {
+  color: var(--accent);
+  font-size: 0.82em;
+  text-decoration: none;
+  vertical-align: super;
+}
+
+.references {
+  border-top: 1px solid var(--rule);
+  margin-top: 86px;
+  padding-top: 36px;
+  scroll-margin-top: 30px;
+}
+
+.references ol {
+  padding-left: 28px;
+}
+
+.references li {
+  margin: 12px 0;
+}
+
+.references a {
+  color: var(--accent);
+}
+
+.back-reference {
+  text-decoration: none;
+}
+
+
 /* Mobile */
 
 @media screen and (max-width: 600px) {
@@ -523,7 +554,12 @@ a:hover {
         I first met Congpei An in the autumn of 2016, when he was an associate professor at the math department. 
         One thing immediately caught my attention: unlike most mathematics courses at the time, his Numerical Linear Algebra course used an English-language textbook. 
         Curious, I enrolled. 
-        The textbook was Trefethen and Bau's Numerical Linear Algebra. Instead of weekly assignments, students were asked to choose ten chapters of the book and copy them by hand. Professor An called this the "Kunihiko Kodaira method of learning." It was certainly unconventional, but it forced me to read mathematical writing much more carefully than I otherwise would have. At the end of the semester, he gave me 99 out of 100.
+        The textbook was Trefethen and Bau's <cite>Numerical Linear Algebra</cite><a
+  class="citation"
+  id="cite-trefethen-bau-1997"
+  href="#ref-trefethen-bau-1997"
+>[1]</a>. 
+        Instead of weekly assignments, students were asked to choose ten chapters of the book and copy them by hand. Professor An called this the "Kunihiko Kodaira method of learning." It was certainly unconventional, but it forced me to read mathematical writing much more carefully than I otherwise would have. At the end of the semester, he gave me 99 out of 100.
 
       </div>
 
@@ -758,6 +794,20 @@ That summer, on my own, I copied another book: Trefethen's Approximation Theory 
       </div>
 
     </section>
+
+    <section class="references" id="references">
+  <div class="section-title">References</div>
+
+  <ol>
+    <li id="ref-trefethen-bau-1997">
+      Lloyd N. Trefethen and David Bau III,
+      <cite>Numerical Linear Algebra</cite>,
+      Society for Industrial and Applied Mathematics, Philadelphia, 1997.
+      <a href="https://doi.org/10.1137/1.9780898719574">doi</a>
+      <a class="back-reference" href="#cite-trefethen-bau-1997">↩</a>
+    </li>
+  </ol>
+</section>
 
 
     <footer class="footer">
