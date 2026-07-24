@@ -716,10 +716,22 @@ a:hover {
 
       <div class="para">
         This was still before the era of generative AI.
-        I worked through the mathematical analysis in the L1-L2 compressed sensing paper by Yin, Lou, He, and Xin line by line, gradually adapting their arguments to the L1-L2<sup>2</sup> setting.
+        I worked through the mathematical analysis in the L1-L2 compressed sensing paper by Yin, Lou, He, and Xin<sup><a class="citation" id="cite-yin-lou-he-xin-2015" href="#ref-yin-lou-he-xin-2015">[17]</a></sup> line by line, gradually adapting their arguments to the L1-L2<sup>2</sup> setting.
         For the numerical experiments, I downloaded the code accompanying their paper from Lou's webpage and modified every parts involving the L2 term into their L2<sup>2</sup> counterpart, learning the implementation largely by trial and error. 
         The writing remained a struggle as well. Grammarly had become part of my routine by then, and I would go through its suggestions one by one in manual editing mode, trying to understand every correction rather than simply accepting it. 
+        Around this time, I also came up with the playful name "springback" for the model, borrowing a term from metal forming. The intuition was that while the L1​ term shrinks both noise and signal, subtracting L2<sup>2</sup>​ allows the signal to "spring back" slightly.
         After completing the first draft, I sent it to An and Yuan.
+      </div>
+
+      <div class="para">
+        Yuan quickly noticed a problem with my optimization algorithm. 
+        For a constrained optimization problem, he explained, one could not simply move the constraint into the objective as a penalty term and then solve the resulting unconstrained problem. 
+        The constraint had to be retained, with each iteration projected back onto the feasible set. 
+        He also invested considerable effort in improving my writing. 
+        Although Grammarly had greatly reduced my grammatical errors and typos, Yuan pointed out that the logical structure of my exposition still needed work. 
+        We revised the manuscript through many rounds. He eventually called me into his office and went through the introduction with me sentence by sentence, 
+        asking what a reader would expect after each statement, what information was missing, and which sentences had to be moved for the argument to unfold coherently.
+        The manuscript was eventually accepted by <cite>Applied and Computational Harmonic Analysis</cite><sup><a class="citation" id="cite-an-wu-yuan-2022" href="#ref-an-wu-yuan-2022">[18]</a></sup> after one round of revision.
       </div>
 
 
@@ -924,6 +936,22 @@ a:hover {
           <cite>SIAM Journal on Imaging Sciences</cite>, 6(4), 2010–2046, 2013.
           <a href="https://doi.org/10.1137/13090540X">doi</a>
           <a class="back-reference" href="#cite-esser-lou-xin-2013"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-yin-lou-he-xin-2015">
+          Penghang Yin, Yifei Lou, Qi He, and Jack Xin,
+          “Minimization of ℓ1−2 for Compressed Sensing,”
+          <cite>SIAM Journal on Scientific Computing</cite>, 37(1), A536–A563, 2015.
+          <a href="https://doi.org/10.1137/140952363">doi</a>
+          <a class="back-reference" href="#cite-yin-lou-he-xin-2015"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-yuan-2022">
+          Congpei An, Hao-Ning Wu, and Xiaoming Yuan,
+          “The Springback Penalty for Robust Signal Recovery,”
+          <cite>Applied and Computational Harmonic Analysis</cite>, 61, 319–346, 2022.
+          <a href="https://doi.org/10.1016/j.acha.2022.07.002">doi</a>
+          <a class="back-reference" href="#cite-an-wu-yuan-2022"
              aria-label="Back to citation">↩</a>
         </li>
       </ol>
