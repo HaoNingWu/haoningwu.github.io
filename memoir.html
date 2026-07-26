@@ -816,12 +816,47 @@ a:hover {
         I initially followed Sloan's original formulation of hyperinterpolation<sup><a class="citation" id="cite-sloan-1995" href="#ref-sloan-1995">[24]</a></sup>, trying to relax the required algebraic exactness from degree <i>2n</i> to degree <i>n + k</i>. 
         However, the analysis repeatedly failed to close at the same point, and An was also unable to suggest a constructive way forward. 
         I eventually isolated the obstruction as an additional term arising in the estimate of the norm of the relaxed hyperinterpolation operator and discussed it with him. 
-        An observed that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund inequality. 
+        An observed that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund (MZ) inequality. 
         Interestingly, I later noticed that an anonymous referee of our first paper in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov-referee" href="#ref-an-wu-2021-tikhonov">[12]</a></sup> had already suggested replacing quadrature exactness by an MZ inequality. 
         At the time, however, I did not even know what an MZ inequality was and therefore did not appreciate or even remember the suggestion. 
         I worked out the argument, which succeeded, and then completed the remaining analysis and numerical experiments. 
         I wrote the first draft and sent it to An; a few months later, the paper was accepted by <cite>BIT Numerical Mathematics</cite><sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[25]</a></sup>.
       </div>
+
+      <div class="para">
+  After the first paper, I continued along the same line and tried to remove
+  algebraic exactness altogether. The question was no longer how far the degree
+  of exactness could be reduced, but whether hyperinterpolation could still be
+  understood when the underlying quadrature rule had no prescribed polynomial
+  exactness at all. I found that the MZ inequality still supplied the necessary
+  stability, while the error could be decomposed into the usual polynomial
+  approximation error and an additional term measuring the quadrature defect.
+  The argument came together rather directly, and the resulting paper was later
+  published in the <cite>Journal of Complexity</cite><sup><a class="citation" id="cite-an-wu-2024-bypassing" href="#ref-an-wu-2024-bypassing">[26]</a></sup>.
+</div>
+
+<div class="para">
+  Around the same time, we considered a different limitation of classical
+  hyperinterpolation. For functions with singularities or rapid oscillations,
+  increasing the polynomial degree alone was often insufficient, because the
+  quadrature used to compute the coefficients could require far more points
+  than the approximation itself seemed to justify. I therefore separated the
+  singular or oscillatory factor from the smoother part of the integrand and
+  incorporated it directly into the discrete coefficients, in the spirit of
+  product integration. An contacted V&iacute;ctor Dom&iacute;nguez, who shared
+  with us his codes for highly oscillatory quadrature, and I adapted the idea
+  into a hyperinterpolation framework and tested it numerically. The paper was
+  published in the <cite>Journal of Approximation Theory</cite><sup><a class="citation" id="cite-an-wu-2024-efficient" href="#ref-an-wu-2024-efficient">[27]</a></sup>.
+</div>
+
+      <div class="para">
+  These were natural extensions of the original idea<sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[25]</a></sup>, and I was pleased that
+  the framework continued to work. Yet I no longer felt the same excitement.
+  The central conceptual step had already been taken; these later projects felt
+  more like exploring its range than opening a new direction.
+</div>
+
+
 
    
 
@@ -1066,6 +1101,22 @@ a:hover {
           <cite>BIT Numerical Mathematics</cite>, 62(4), 1899–1919, 2022.
           <a href="https://doi.org/10.1007/s10543-022-00935-x">doi</a>
           <a class="back-reference" href="#cite-an-wu-2022-quadrature"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-2024-bypassing">
+          Congpei An and Hao-Ning Wu,
+          “Bypassing the Quadrature Exactness Assumption of Hyperinterpolation on the Sphere,”
+          <cite>Journal of Complexity</cite>, 80, 101789, 2024.
+          <a href="https://doi.org/10.1016/j.jco.2023.101789">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2024-bypassing"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-2024-efficient">
+          Congpei An and Hao-Ning Wu,
+          “Is Hyperinterpolation Efficient in the Approximation of Singular and Oscillatory Functions?,”
+          <cite>Journal of Approximation Theory</cite>, 299, 106013, 2024.
+          <a href="https://doi.org/10.1016/j.jat.2023.106013">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2024-efficient"
              aria-label="Back to citation">↩</a>
         </li>
       </ol>
