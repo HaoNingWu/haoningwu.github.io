@@ -624,7 +624,7 @@ a:hover {
         the other used the resulting point sets for ℓ<sub>2</sub>-regularized discrete least-squares approximation and derived an explicit solution<sup><a class="citation" id="cite-an-chen-sloan-womersley-2012" href="#ref-an-chen-sloan-womersley-2012">[10]</a></sup>. 
         By then I had also learned about Gauss quadrature and its remarkable degree of exactness. I tried to adapt the same line of thought to polynomial approximation on [−1,1]. 
         I derived closed-form solutions and error estimates for an ℓ<sub>2</sub>-regularized approximation method and then formulated an ℓ<sub>1</sub>-regularized counterpart. 
-        After obtaining these results, I showed them to An, who suggested developing the work into a paper.      
+        After obtaining these results, I showed them to An, who encouraged me to develop the ideas into my first research paper.
       </div>
 
       <div class="para">      
@@ -642,7 +642,7 @@ a:hover {
       </div>
 
       <div class="para">    
-        After the second rejection, we separated the manuscript into two papers. 
+        After the second rejection, An encouraged me not to abandon the project, and we decided to separate the manuscript into two papers.
         I rebuilt the ℓ<sub>2</sub>-analysis and refocused the paper on Tikhonov-regularized least-squares approximation, which eventually appeared in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov" href="#ref-an-wu-2021-tikhonov">[12]</a></sup>. 
         I continued developing the ℓ<sub>1</sub> direction into what we called Lasso hyperinterpolation, extending the ℓ<sub>1</sub>-regularized approximation to general domains.
         The numerical experiments turned out to be much harder than the theory, and the resulting paper was later published in the <cite>SIAM Journal on Scientific Computing</cite><sup><a class="citation" id="cite-an-wu-2021-lasso" href="#ref-an-wu-2021-lasso">[13]</a></sup>.
@@ -696,12 +696,13 @@ a:hover {
 
 
       <div class="para">
-        Around this time, An approached me about writing another paper on regularized least-squares approximation. 
+        Around this time, An and I returned to the question of regularized least-squares approximation.
         The idea traced back to my undergraduate years, when An had sent me a paper by Esser, Lou, and Xin introducing the ℓ<sub>1</sub>−ℓ<sub>2</sub> and ℓ<sub>1</sub>/ℓ<sub>2</sub> regularizers<sup><a class="citation" id="cite-esser-lou-xin-2013" href="#ref-esser-lou-xin-2013">[16]</a></sup>. 
         By then, my first two papers had already shaped the way I approached approximation problems. 
         I found myself looking for formulations that admitted closed-form solutions rather than iterative optimization. 
         Since the ℓ<sub>1</sub>−ℓ<sub>2</sub> regularizer did not naturally lead to such a formulation, I suggested considering ℓ<sub>1</sub>−ℓ<sub>2</sub><sup>2</sup> instead. 
-        An found the idea interesting, and I eventually wrote a manuscript on least-squares approximation based on this regularizer, inviting Yuan to join the project.
+        An found the idea interesting, and I eventually wrote a manuscript on least-squares approximation based on this regularizer.
+        As the project developed, we invited Yuan to join us.
         However, I soon realized that the analysis differed little from our earlier work on Lasso hyperinterpolation<sup><a class="citation" id="cite-an-wu-2021-lasso-2" href="#ref-an-wu-2021-lasso">[13]</a></sup>. 
         I also began to feel that this style of problem no longer held the same attraction for me. I wanted to pursue questions whose novelty did not rest primarily on replacing one regularizer with another.
       </div>
@@ -745,10 +746,11 @@ a:hover {
         If the observed image is regarded as the result of a diffusion process, such a term could, at least heuristically, counteract part of that diffusion. 
         A similar intuition had already appeared in the work of Möllenhoff, Strekalovskiy, Moeller, and Cremers<sup><a class="citation" id="cite-mollenhoff-strekalovskiy-moeller-cremers-2015" href="#ref-mollenhoff-strekalovskiy-moeller-cremers-2015">[21]</a></sup>, although their study on this model was purely empirical.
         This time, I worked through the theoretical analysis by adapting the arguments of Needell and Ward, while extending my previous MATLAB implementation from one-dimensional signals to two-dimensional images.
+        
       </div>
 
       <div class="para">
-        An and I initially wanted to keep the name springback for the new model. 
+        I discussed the emerging model regularly with An as I worked through the analysis and computations. An and I initially wanted to keep the name springback for the new model. 
         Yuan disagreed. 
         He believed that the paper should simply describe what the method did, and suggested the name enhanced total variation (TV). 
         Looking back, he was right. The title made the paper immediately understandable to researchers in inverse problems and image processing, 
@@ -777,8 +779,8 @@ a:hover {
         My PhD years began amid the social unrest in Hong Kong and were soon followed by the COVID-19 pandemic. 
         For much of that period, I was the only one of Yuan's students who physically remained in Hong Kong. 
         Yuan would occasionally ask me to his office for informal discussions. 
-        At the same time, An called me almost every day. 
-        I would tell him what I had been reading and whatever new ideas had occurred to me.
+        At the same time, An and I spoke by phone almost every day, discussing what I had been reading and whatever new ideas had occurred to me. 
+        Many of our later collaborations grew out of these conversations.
         During the pandemic, I also took Philippe G. Ciarlet's online courses on functional analysis and partial differential equations at City University of Hong Kong, which he taught by writing on a small whiteboard with a camera pointed at it.
         His functional analysis course had long been part of the standard training of mathematics PhD students in Hong Kong, and ours was the final cohort before his retirement and return to France. 
         When overseas visits resumed, Yuan helped arrange for me to spend three weeks with Ding-Xuan Zhou at the University of Sydney in January 2023. 
@@ -813,9 +815,10 @@ a:hover {
 
       <div class="para">
         I initially followed Sloan's original formulation of hyperinterpolation<sup><a class="citation" id="cite-sloan-1995" href="#ref-sloan-1995">[24]</a></sup>, trying to relax the required algebraic exactness from degree <i>2n</i> to degree <i>n + k</i>. 
-        For some time, the analysis continued to stall at the same obstruction. I eventually isolated it as an additional term arising in the estimate of the relaxed hyperinterpolation operator. An observed that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund (MZ) inequality. 
+        For some time, the analysis continued to stall at the same obstruction. I eventually isolated it as an additional term arising in the estimate of the relaxed hyperinterpolation operator. 
+        An observed that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund (MZ) inequality. 
+        This proved to be the right idea, and I worked out the argument and developed the remaining analysis and experiments.
         Only later, when I reread the reports on our first paper in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov-referee" href="#ref-an-wu-2021-tikhonov">[12]</a></sup>, did I notice that an anonymous referee had suggested several years earlier that quadrature exactness might be replaced by an MZ inequality. At the time, I had not understood the significance of the suggestion, and it had not remained in my working memory.
-        I worked out the argument and developed it into a complete analysis, together with the accompanying numerical experiments. 
         After I prepared the first draft, An and I continued refining the manuscript before submitting it. 
         A few months later, the paper was accepted by <cite>BIT Numerical Mathematics</cite><sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[25]</a></sup>.
       </div>
