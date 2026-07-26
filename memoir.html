@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png">
 <link rel="icon" type="image/jpeg" href="/images/icon.png">
 <link rel="shortcut icon" href="/images/icon.png">
-
 <title>A Mathematical Memoir: Math, People, and Ideas</title>
-
 <style>
-
 :root {
   --background: #f7f4e8;
   --text: #252525;
@@ -22,15 +17,12 @@
   --rule: #d8d2c2;
   --quote-background: rgba(255, 255, 255, 0.34);
 }
-
 * {
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background-color: var(--background);
   color: var(--text);
@@ -47,25 +39,19 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .page {
   width: 100%;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 72px 26px 110px;
 }
-
-
 /* Header */
-
 .header {
   text-align: center;
   margin-bottom: 74px;
 }
-
 .title {
   color: var(--accent);
   font-family:
@@ -78,7 +64,6 @@ body {
   line-height: 1.25;
   margin-bottom: 14px;
 }
-
 .subtitle {
   color: var(--secondary-text);
   font-size: 19px;
@@ -86,7 +71,6 @@ body {
   line-height: 1.5;
   margin-bottom: 24px;
 }
-
 .meta {
   color: var(--secondary-text);
   font-family:
@@ -98,15 +82,11 @@ body {
   font-size: 13px;
   line-height: 1.7;
 }
-
-
 /* Introduction */
-
 .introduction {
   font-size: 18px;
   margin-bottom: 76px;
 }
-
 .introduction .para:first-child::first-letter {
   color: var(--accent);
   float: left;
@@ -115,17 +95,13 @@ body {
   line-height: 0.86;
   margin: 9px 9px 0 0;
 }
-
-
 /* Contents */
-
 .contents {
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
   margin: 64px 0 82px;
   padding: 28px 0 30px;
 }
-
 .contents-title {
   color: var(--secondary-text);
   font-family:
@@ -140,23 +116,17 @@ body {
   margin-bottom: 18px;
   text-transform: uppercase;
 }
-
 .contents-item {
   margin: 8px 0;
 }
-
 .contents-item a {
   color: var(--text);
   text-decoration: none;
 }
-
 .contents-item a:hover {
   color: var(--accent);
 }
-
-
 /* Citations and references */
-
 .citation {
   font-family:
     -apple-system,
@@ -167,38 +137,30 @@ body {
   font-size: 0.75em;
   white-space: nowrap;
 }
-
 .references {
   border-top: 1px solid var(--rule);
   margin-top: 86px;
   padding-top: 36px;
   scroll-margin-top: 30px;
 }
-
 .references ol {
   margin: 0;
   padding-left: 28px;
 }
-
 .references li {
   font-size: 15px;
   line-height: 1.7;
   margin-bottom: 12px;
   padding-left: 5px;
 }
-
 .back-reference {
   margin-left: 4px;
 }
-
-
 /* Sections */
-
 .section {
   margin-top: 86px;
   scroll-margin-top: 30px;
 }
-
 .section-number {
   color: var(--accent);
   font-family:
@@ -213,7 +175,6 @@ body {
   margin-bottom: 8px;
   text-transform: uppercase;
 }
-
 .section-title {
   color: var(--text);
   font-size: 28px;
@@ -222,36 +183,26 @@ body {
   line-height: 1.35;
   margin-bottom: 30px;
 }
-
 .para {
   margin: 0 0 24px;
 }
-
 .para em {
   font-style: italic;
 }
-
 .para strong {
   font-weight: 600;
 }
-
-
 /* Subsections */
-
 .subsection {
   margin-top: 46px;
 }
-
 .subsection-title {
   color: var(--text);
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-
-
 /* Quotes */
-
 .quote {
   background: var(--quote-background);
   border-left: 3px solid var(--accent);
@@ -261,7 +212,6 @@ body {
   margin: 38px 0;
   padding: 18px 24px;
 }
-
 .quote-source {
   color: var(--secondary-text);
   font-family:
@@ -274,10 +224,7 @@ body {
   font-style: normal;
   margin-top: 12px;
 }
-
-
 /* Notes */
-
 .note {
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
@@ -286,7 +233,6 @@ body {
   margin: 40px 0;
   padding: 20px 4px;
 }
-
 .note-label {
   color: var(--accent);
   font-family:
@@ -301,22 +247,17 @@ body {
   margin-bottom: 8px;
   text-transform: uppercase;
 }
-
-
 /* Images */
-
 .image {
   margin: 44px 0;
   text-align: center;
 }
-
 .image img {
   display: block;
   height: auto;
   margin: 0 auto;
   max-width: 100%;
 }
-
 .caption {
   color: var(--secondary-text);
   font-family:
@@ -330,21 +271,16 @@ body {
   margin: 11px auto 0;
   max-width: 620px;
 }
-
-
 /* Timeline */
-
 .timeline {
   border-left: 1px solid var(--rule);
   margin: 42px 0 48px 8px;
   padding-left: 26px;
 }
-
 .timeline-item {
   margin-bottom: 28px;
   position: relative;
 }
-
 .timeline-item::before {
   background: var(--background);
   border: 2px solid var(--accent);
@@ -356,7 +292,6 @@ body {
   top: 10px;
   width: 9px;
 }
-
 .timeline-year {
   color: var(--accent);
   font-family:
@@ -370,26 +305,18 @@ body {
   letter-spacing: 1px;
   margin-bottom: 3px;
 }
-
 .timeline-text {
   font-size: 16px;
 }
-
-
 /* Links */
-
 a {
   color: var(--accent);
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
-
 /* Footer */
-
 .footer {
   border-top: 1px solid var(--rule);
   color: var(--secondary-text);
@@ -405,156 +332,107 @@ a:hover {
   padding-top: 24px;
   text-align: center;
 }
-
 .back-link {
   margin-top: 18px;
 }
-
-
 /* Mobile */
-
 @media screen and (max-width: 600px) {
-
   body {
     font-size: 16px;
     line-height: 1.85;
   }
-
   .container {
     padding: 48px 20px 80px;
   }
-
   .header {
     margin-bottom: 56px;
   }
-
   .title {
     font-size: 29px;
   }
-
   .subtitle {
     font-size: 17px;
   }
-
   .introduction {
     font-size: 17px;
     margin-bottom: 58px;
   }
-
   .section {
     margin-top: 68px;
   }
-
   .section-title {
     font-size: 24px;
   }
-
   .quote {
     font-size: 17px;
     margin: 32px 0;
     padding: 16px 19px;
   }
-
   .contents {
     margin: 50px 0 64px;
   }
-
 }
-
 </style>
-
 </head>
-
 <body>
-
 <div class="page">
-
   <main class="container">
-
     <header class="header">
-
       <div class="title">
         An (Ongoing) Mathematical Memoir
       </div>
-
       <div class="subtitle">
         Math, People, and Ideas
       </div>
-
       <div class="meta">
         <a href="/index.html">Hao-Ning Wu</a><br>
         A continuing record of my mathematical life<br>
         Last updated: July 2026
       </div>
-
     </header>
-
-
     <section class="introduction">
-
       <div class="para">
         This is a continuing account of how I came to mathematics, how particular
         questions entered my work, and how conversations, accidents, failures,
         and unexpected connections gradually shaped my research.
       </div>
-
       <div class="para">
       Every theorem has a history that usually disappears from the published paper. Behind each finished argument are conversations, unsuccessful attempts, misconceptions, and moments of unexpected clarity. This memoir records some personal histories.
       </div>
-
     </section>
-
-
     <nav class="contents">
-
       <div class="contents-title">
         Contents
       </div>
-
       <div class="contents-item">
         <a href="#beginning">I. An Accidental Beginning</a>
       </div>
-
       <div class="contents-item">
         <a href="#regularization">II. Regularization</a>
       </div>
-
       <div class="contents-item">
         <a href="#spb">III. Springback and Enhanced TV</a>
       </div>
-
       <div class="contents-item">
         <a href="#hyperinterpolation">IV. Hyperinterpolation</a>
       </div>
-
       <div class="contents-item">
         <a href="#pdes">V. PDEs: Numerics, Analysis, and Control</a>
       </div>
-
-
       <div class="contents-item">
         <a href="#exactness">VI. Beyond Exactness II</a>
       </div>
-
-
-
       <div class="contents-item">
         <a href="#references">References</a>
       </div>
-
     </nav>
-
-
     <section class="section" id="beginning">
-
       <div class="section-number">
         I
       </div>
-
       <div class="section-title">
         An Accidental Beginning
       </div>
-
       <div class="para">
         I did not choose Jinan University in 2015 because I had already decided to become a mathematician. 
         One rather practical attraction was that, historically oriented toward overseas Chinese students,
@@ -562,7 +440,6 @@ a:hover {
         It was an almost accidental decision. Looking back, however, it was one of the most consequential decisions I have ever made. 
         It led me to my first research project in approximation theory and, ultimately, to the mathematical questions that have remained with me ever since.
       </div>
-
       <div class="para">
         I first met Congpei An in the autumn of 2016.
         His Numerical Linear Algebra course caught my attention because it used an English-language textbook, 
@@ -571,7 +448,6 @@ a:hover {
         Instead of weekly assignments, students were asked to choose ten chapters of the book and copy them by hand.  
         An called this the "Kunihiko Kodaira method of learning."
       </div>
-
       <div class="para">
         The following spring of 2017, I took his Numerical Approximation course, based on Powell's <cite>Approximation Theory and Methods</cite><sup><a class="citation" id="cite-powell-1981" href="#ref-powell-1981">[2]</a></sup>. 
         The homework remained the same.
@@ -580,53 +456,41 @@ a:hover {
         We did not.
         The resulting project, <i>Research on barycentric interpolation: algorithms and applications</i>, was my first encounter with mathematical research.
       </div>
-
       <div class="para">
         That summer, on my own, I copied another book, Trefethen's <cite>Approximation Theory and Approximation Practice</cite><sup><a class="citation" id="cite-trefethen-2013" href="#ref-trefethen-2013">[3]</a></sup>, 
         by hand. I would not now recommend copying books as a general method of learning mathematics. 
         But at that age, with plenty of time and no clear direction, it gave my days a certain structure and gradually drew me deeper into the subject.
       </div>
-
-
-
-
-
     </section>
-
-
     <section class="section" id="regularization">
-
       <div class="section-number">
         II
       </div>
-
       <div class="section-title">
         Regularization
       </div>
-
       <div class="para">
         An assigned us three papers to read: 
         the survey on barycentric interpolation by Berrut and Trefethen<sup><a class="citation" id="cite-berrut-trefethen-2004" href="#ref-berrut-trefethen-2004">[4]</a></sup>, 
         the paper by Wang and Xiang connecting Legendre barycentric weights with Gauss–Legendre quadrature weights<sup><a class="citation" id="cite-wang-xiang-2012" href="#ref-wang-xiang-2012">[5]</a></sup>,
         and the paper by Glaser, Liu, and Rokhlin on the fast computation of Gauss–Legendre quadrature nodes and weights<sup><a class="citation" id="cite-glaser-liu-rokhlin-2007" href="#ref-glaser-liu-rokhlin-2007">[6]</a></sup>.
       </div>
-
       <div class="para">
         He then gave us two tasks. One was to reproduce Matlab codes of the Glaser–Liu–Rokhlin algorithm. 
         The other was to explore whether the Wang–Xiang formula could be generalized from Legendre points to more general Jacobi points. 
         We failed to reproduce the algorithm, and a few months later I discovered that the second problem had already been solved by Wang, Huybrechs, and Vandewalle several years earlier<sup><a class="citation" id="cite-wang-huybrechs-vandewalle-2014" href="#ref-wang-huybrechs-vandewalle-2014">[7]</a></sup>.
       </div>
-
       <div class="para">
         By the time the project had passed its midpoint, I felt, as the team leader, obliged to do something for the completion report.
         I turned to An’s doctoral dissertation<sup><a class="citation" id="cite-an-2011" href="#ref-an-2011">[8]</a></sup>, which was based on two papers he had written with Chen, Sloan, and Womersley. 
         One concerned the computation of spherical t-designs, whose associated quadrature rules possess polynomial exactness<sup><a class="citation" id="cite-an-chen-sloan-womersley-2010" href="#ref-an-chen-sloan-womersley-2010">[9]</a></sup>; 
         the other used the resulting point sets for L<sup>2</sup>-regularized discrete least-squares approximation and derived an explicit solution<sup><a class="citation" id="cite-an-chen-sloan-womersley-2012" href="#ref-an-chen-sloan-womersley-2012">[10]</a></sup>. 
+        the other used the resulting point sets for ℓ<sub>2</sub>-regularized discrete least-squares approximation and derived an explicit solution<sup><a class="citation" id="cite-an-chen-sloan-womersley-2012" href="#ref-an-chen-sloan-womersley-2012">[10]</a></sup>. 
         By then I had also learned about Gauss quadrature and its remarkable degree of exactness. I tried to adapt the same line of thought to polynomial approximation on [−1,1]. 
         I derived closed-form solutions and error estimates for an L<sup>2</sup>-regularized approximation method and then formulated an L<sup>1</sup>-regularized counterpart. 
+        I derived closed-form solutions and error estimates for an ℓ<sub>2</sub>-regularized approximation method and then formulated an ℓ<sub>1</sub>-regularized counterpart. 
         After obtaining these results, I showed them to An, who suggested developing the work into a paper.      
       </div>
-
       <div class="para">      
         Writing the first paper was difficult. I prepared an initial manuscript and posted it on arXiv in May 2018 so that my undergraduate project could be formally completed. 
         We did not submit it to a journal until April 2019, when we sent it to the <cite>Journal of Scientific Computing</cite>. 
@@ -639,12 +503,15 @@ a:hover {
         A few months later, another pair of conflicting reports arrived. One referee pointed out that 
         our analysis of the L<sup>2</sup>-regularized method relied on an incorrect use of the Christoffel--Darboux formula, invalidating the subsequent result, 
         while the L<sup>1</sup>-regularized part remained intact. The paper was rejected again.
+        our analysis of the ℓ<sub>2</sub>-regularized method relied on an incorrect use of the Christoffel--Darboux formula, invalidating the subsequent result, 
+        while the ℓ<sub>1</sub>-regularized part remained intact. The paper was rejected again.
       </div>
-
       <div class="para">    
         After the second rejection, we separated the manuscript into two papers. 
         I rebuilt the L<sup>2</sup>-analysis and refocused the paper on Tikhonov-regularized least-squares approximation, which eventually appeared in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-202<sup>1</sup>-tikhonov" href="#ref-an-wu-202<sup>1</sup>-tikhonov">[12]</a></sup>. 
         I continued developing the L<sup>1</sup> direction into what we called Lasso hyperinterpolation, extending the L<sup>1</sup>-regularized approximation to general domains.
+        I rebuilt the ℓ<sub>2</sub>-analysis and refocused the paper on Tikhonov-regularized least-squares approximation, which eventually appeared in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov" href="#ref-an-wu-2021-tikhonov">[12]</a></sup>. 
+        I continued developing the ℓ<sub>1</sub> direction into what we called Lasso hyperinterpolation, extending the ℓ<sub>1</sub>-regularized approximation to general domains.
         The numerical experiments turned out to be much harder than the theory, and the resulting paper was later published in the <cite>SIAM Journal on Scientific Computing</cite><sup><a class="citation" id="cite-an-wu-2021-lasso" href="#ref-an-wu-2021-lasso">[13]</a></sup>.
         The mathematics in both papers now seems modest to me, but I still remember my heartbeat when the acceptance email from <cite>Inverse Problems</cite> arrived. 
         It was December 2020, and I was waiting for my order in a McDonald's on Hill Road in Hong Kong.
@@ -652,20 +519,14 @@ a:hover {
     
     
     </section>
-
-
     
-
     <section class="section" id="spb">
-
       <div class="section-number">
         III
       </div>
-
       <div class="section-title">
         Springback and Enhanced TV
       </div>
-
       <div class="para">    
         Hong Kong had already become my home by then. I had moved there in September 2019 to begin my PhD at the University of Hong Kong under the supervision of Xiaoming Yuan. 
         I believe An spoke highly of me to Yuan.
@@ -674,7 +535,6 @@ a:hover {
         and part of my funding came from his research grant.
         I did not fully appreciate these details at the time, but looking back, I understand that he took a chance on me at an important stage of my life.
       </div>
-
       <div class="para">
         Yuan gave his students considerable freedom in choosing their research directions. 
         By the time I joined him, his senior PhD student Yongcun Song and postdoc fellow Hangrui Yue were already exploring the optimal control of PDEs with him, a direction that Yuan himself had not previously worked on. 
@@ -686,15 +546,12 @@ a:hover {
         He explained that if we published optimization papers together, people might naturally attribute the main credit to him rather than to me, making it harder for me to establish an independent research identity.
         I did not fully appreciate the significance of this advice at the time, but I have often thought back on it with gratitude in the years since.
       </div>
-
       <div class="para">
         Despite this freedom, he expected all his students to understand the foundations of optimization and the ideas underlying his own work. 
         Shu Gong, a student who had joined him a year ago, and I alternated every two weeks in presenting chapters from Boyd and Vandenberghe’s <cite>Convex Optimization</cite><sup><a class="citation" id="cite-boyd-vandenberghe-2004" href="#ref-boyd-vandenberghe-2004">[14]</a></sup>, followed by Nocedal and Wright’s <cite>Numerical Optimization</cite><sup><a class="citation" id="cite-nocedal-wright-2006" href="#ref-nocedal-wright-2006">[15]</a></sup>. 
         Like many students, I tended to relax during the weeks when I was not presenting and prepare intensely when my turn approached.
         We eventually worked through both books from beginning to end. 
       </div>
-
-
       <div class="para">
         Around this time, An approached me about writing another paper on regularized least-squares approximation. 
         The idea traced back to my undergraduate years, when An had sent me a paper by Esser, Lou, and Xin introducing the ℓ<sub>1</sub>−ℓ<sub>2</sub> and ℓ<sub>1</sub>/ℓ<sub>2</sub> regularizers<sup><a class="citation" id="cite-esser-lou-xin-2013" href="#ref-esser-lou-xin-2013">[16]</a></sup>. 
@@ -707,13 +564,11 @@ a:hover {
         It was also around this time that I began to lose interest in research driven primarily by replacing one regularizer with another. 
         Such work often felt more like repetition than genuinely new mathematics.
       </div>
-
       <div class="para">
         After reading a series of papers by Lou and her collaborators on compressed sensing with the ℓ<sub>1</sub>−ℓ<sub>2</sub> model, I decided to study the corresponding ℓ<sub>1</sub>−ℓ<sub>2</sub><sup>2</sup> model. 
         An had no tracked records on compressed sensing at the time, while Yuan's expertise lay primarily in optimization algorithms for solving such models rather than in their reconstruction analysis. 
         As a result, I largely had to find my own way through the project. 
       </div>
-
       <div class="para">
         This was still before the era of generative AI.
         I worked through the mathematical analysis in the ℓ<sub>1</sub>−ℓ<sub>2</sub> compressed sensing paper by Yin, Lou, He, and Xin<sup><a class="citation" id="cite-yin-lou-he-xin-2015" href="#ref-yin-lou-he-xin-2015">[17]</a></sup> line by line, gradually adapting their arguments to the ℓ<sub>1</sub>−ℓ<sub>2</sub><sup>2</sup> setting.
@@ -722,7 +577,6 @@ a:hover {
         Around this time, I also came up with the playful name "springback" for the model, borrowing a term from metal forming. The intuition was that while the ℓ<sub>1</sub> term shrinks both noise and signal, subtracting ℓ<sub>2</sub><sup>2</sup> allows the signal to "spring back" slightly.
         After completing the first draft, I sent it to An and Yuan.
       </div>
-
       <div class="para">
         Both returned the manuscript with comments. Yuan, however, soon identified a flaw in the optimization algorithm. 
         He explained that, for a constrained optimization problem, one could not simply move the constraint into the objective as a penalty term and solve the resulting unconstrained problem. 
@@ -733,8 +587,6 @@ a:hover {
         He later invited me to his office and went through the introduction sentence by sentence, asking what the reader would expect next and how the argument should unfold.
         The manuscript was eventually accepted by <cite>Applied and Computational Harmonic Analysis</cite><sup><a class="citation" id="cite-an-wu-yuan-2022" href="#ref-an-wu-yuan-2022">[18]</a></sup> after one round of revision.
       </div>
-
-
       <div class="para">
         The success of the springback model naturally led me to wonder whether the same idea could be extended from sparse signal recovery to image reconstruction. 
         Around that time, Needell and Ward had established a theoretical framework for total variation image reconstruction<sup><a class="citation" id="cite-needell-ward-2013" href="#ref-needell-ward-2013">[19]</a></sup>, while Lou, Zeng, Osher, and Xin had proposed replacing the ℓ<sub>1</sub>−ℓ<sub>2</sub> functional by an anisotropic–isotropic variant for imaging problems<sup><a class="citation" id="cite-lou-zeng-osher-xin-2015" href="#ref-lou-zeng-osher-xin-2015">[20]</a></sup>. 
@@ -747,7 +599,6 @@ a:hover {
         A similar intuition had already appeared in the work of Möllenhoff, Strekalovskiy, Moeller, and Cremers<sup><a class="citation" id="cite-mollenhoff-strekalovskiy-moeller-cremers-2015" href="#ref-mollenhoff-strekalovskiy-moeller-cremers-2015">[21]</a></sup>, although their study on this model was purely empirical.
         This time, I worked through the theoretical analysis by adapting the arguments of Needell and Ward, while extending my previous MATLAB implementation from one-dimensional signals to two-dimensional images.
       </div>
-
       <div class="para">
         An and I initially wanted to keep the name springback for the new model. 
         Yuan disagreed. 
@@ -760,20 +611,14 @@ a:hover {
         After the paper was accepted by <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-yuan-2023" href="#ref-an-wu-yuan-2023">[23]</a></sup>, he posted the same comment on the published version. 
         I was pleased to see it.
       </div>
-
       
-
-
     <section class="section" id="hyperinterpolation">
-
       <div class="section-number">
         IV
       </div>
-
       <div class="section-title">
         Hyperinterpolation
       </div>
-
       <div class="para">
         My PhD years began amid the social unrest in Hong Kong and were soon followed by the COVID-19 pandemic. 
         For much of that period, I was the only one of Yuan's students who physically remained in Hong Kong. 
@@ -785,77 +630,65 @@ a:hover {
         When overseas visits resumed, Yuan helped arrange for me to spend three weeks with Ding-Xuan Zhou at the University of Sydney in January 2023. 
         During the same trip, An introduced me to Ian Sloan, his PhD co-supervisor, who invited me to his office at UNSW Sydney for a discussion.      
       </div>
-
-
       <div class="para">
         When the pandemic began in 2020, online seminars suddenly became abundant, and people were still highly enthusiastic about them. 
         I attended many myself. The most important for me was Trefethen’s talk, <i>Exactness of quadrature formulas</i>, on December 14, 2020. 
         He argued that algebraic exactness could be misleading: algebra distinguishes between zero and nonzero, whereas numerical integration is an analytical problem concerned with whether an error is sufficiently small.
         I was immediately drawn to this viewpoint, but soon set it aside and returned to compressed sensing and image reconstruction. 
-        When the ideas from the talk appeared in SIAM Review in January 2022, I began to wonder whether algebraic exactness was equally unnecessary for hyperinterpolation, an approximation method built from numerical quadrature. 
+        When the ideas from the talk appeared in <i>SIAM Review</i> in January 2022, I began to wonder whether algebraic exactness was equally unnecessary for hyperinterpolation, an approximation method built from numerical quadrature. 
         I mentioned the idea to An during one of our daily phone calls, and he agreed that it was interesting.
       </div>
-
-
       <div class="image">
-
         <a href="images/trefethentalk.png">
           <img
-            src="media/trefethentalk.png"
+            src="images/trefethentalk.png"
             alt="Online lecture by Lloyd N. Trefethen">
         </a>
-
         <div class="caption">
           An online lecture by Lloyd N. Trefethen that prompted me to question the role
           of algebraic exactness.
         </div>
-
       </div>
-
+      <div class="para">
+        I initially followed Sloan's original formulation of hyperinterpolation, trying to relax the required algebraic exactness from degree <i>2n</i> to degree <i>n + k</i>. 
+        I initially followed Sloan's original formulation of hyperinterpolation<sup><a class="citation" id="cite-sloan-1995" href="#ref-sloan-1995">[24]</a></sup>, trying to relax the required algebraic exactness from degree <i>2n</i> to degree <i>n + k</i>. 
+        However, the analysis repeatedly failed to close at the same point, and An was also unable to suggest a constructive way forward. 
+        I eventually isolated the obstruction as an additional term arising in the estimate of the norm of the relaxed hyperinterpolation operator and discussed it with him. 
+        An observed that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund inequality. 
+        Interestingly, I later noticed that an anonymous referee of our first paper in <i>Inverse Problems</i> had already suggested replacing quadrature exactness by an MZ inequality. 
+        Interestingly, I later noticed that an anonymous referee of our first paper in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov-referee" href="#ref-an-wu-2021-tikhonov">[12]</a></sup> had already suggested replacing quadrature exactness by an MZ inequality. 
+        At the time, however, I did not even know what an MZ inequality was and therefore did not appreciate or even remember the suggestion. 
+        I worked out the argument, which succeeded, and then completed the remaining analysis and numerical experiments. 
+        I wrote the first draft and sent it to An; a few months later, the paper was accepted by <i>BIT Numerical Mathematics</i>.
+        I wrote the first draft and sent it to An; a few months later, the paper was accepted by <cite>BIT Numerical Mathematics</cite><sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[25]</a></sup>.
+      </div>
    
-
     </section>
-
-
     <section class="section" id="pde">
-
       <div class="section-number">
         V
       </div>
-
       <div class="section-title">
         PDEs: Numerics, Analysis, and Control
       </div>
-
-
     </section>
-
-
     <section class="section" id="exactness">
-
       <div class="section-number">
         VI
       </div>
-
       <div class="section-title">
         Beyond Exactness II
       </div>
-
       <div class="para">
         My current work is increasingly organized around a single question: how do weak,
         imperfect, or nonstandard sampling assumptions propagate through numerical
         methods for continuous problems?
       </div>
-
-
     </section>
-
     <section class="references" id="references">
-
       <div class="section-title">
         References
       </div>
-
       <ol>
         <li id="ref-trefethen-bau-1997">
           Lloyd N. Trefethen and David Bau III,
@@ -944,12 +777,17 @@ a:hover {
              aria-label="Back to citation">↩</a>
         </li>
         <li id="ref-an-wu-202<sup>1</sup>-tikhonov">
+        <li id="ref-an-wu-2021-tikhonov">
           Congpei An and Hao-Ning Wu,
           “Tikhonov Regularization for Polynomial Approximation Problems in Gauss Quadrature Points,”
           <cite>Inverse Problems</cite>, 37(1), 015008, 2021.
           <a href="https://doi.org/10.1088/136<sup>1</sup>-6420/abcd44">doi</a>
           <a class="back-reference" href="#cite-an-wu-202<sup>1</sup>-tikhonov"
+          <a href="https://doi.org/10.1088/1361-6420/abcd44">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2021-tikhonov"
              aria-label="Back to citation">↩</a>
+          <a class="back-reference" href="#cite-an-wu-2021-tikhonov-referee"
+             aria-label="Back to second citation">↩</a>
         </li>
         <li id="ref-an-wu-2021-lasso">
           Congpei An and Hao-Ning Wu,
@@ -1039,30 +877,36 @@ a:hover {
           <a class="back-reference" href="#cite-an-wu-yuan-2023"
              aria-label="Back to citation">↩</a>
         </li>
+        <li id="ref-sloan-1995">
+          Ian H. Sloan,
+          “Polynomial Interpolation and Hyperinterpolation Over General Regions,”
+          <cite>Journal of Approximation Theory</cite>, 83(2), 238–254, 1995.
+          <a href="https://doi.org/10.1006/jath.1995.1119">doi</a>
+          <a class="back-reference" href="#cite-sloan-1995"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-2022-quadrature">
+          Congpei An and Hao-Ning Wu,
+          “On the Quadrature Exactness in Hyperinterpolation,”
+          <cite>BIT Numerical Mathematics</cite>, 62(4), 1899–1919, 2022.
+          <a href="https://doi.org/10.1007/s10543-022-00935-x">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2022-quadrature"
+             aria-label="Back to citation">↩</a>
+        </li>
       </ol>
-
     </section>
-
-
     <footer class="footer">
-
       <div>
         © Hao-Ning Wu
       </div>
-
       <div>
         This page is a continuing work in progress.
       </div>
-
       <div class="back-link">
         <a href="/index.html">← Back to the homepage</a>
       </div>
-
     </footer>
-
   </main>
-
 </div>
-
 </body>
 </html>
