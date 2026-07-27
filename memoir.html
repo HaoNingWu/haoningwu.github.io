@@ -880,6 +880,17 @@ a:hover {
         PDEs: Numerics, Analysis, and Control
       </div>
 
+      <div class="para">
+        In November 2021, while Yuan and I were polishing the manuscript of Enhanced TV before submission, Yuan asked me to go to his office and gave me a 160-page paper by Dong Li, “Effective Maximum Principles for Spectral Methods”<sup><a class="citation" id="cite-li-2021-effective" href="#ref-li-2021-effective">[30]</a></sup>. 
+        He asked whether I could understand it. 
+        The paper addressed a fundamental difficulty in numerical simulations of phase-field equations such as the Allen–Cahn equation. 
+        The continuous equation satisfies a maximum principle: if the initial data are bounded by one, then the solution remains within the same bound for all later times. 
+        However, such sharp principles are generally not preserved after numerical discretization, especially for spectral methods, where Fourier truncation introduces oscillations and destroys positivity.
+        Li proposed a different viewpoint. 
+        Instead of requiring the discrete solution to satisfy the maximum principle exactly, he introduced effective maximum principles, allowing a small overshoot that can be uniformly controlled by increasing the spectral resolution. 
+        The analysis was carried out on periodic domains and relied heavily on harmonic analysis of Fourier kernels and spectral projections.
+</div>
+
 
     </section>
 
@@ -1140,6 +1151,14 @@ a:hover {
           <cite>Dolomites Research Notes on Approximation</cite>, 18(1), 135–145, 2025.
           <a href="https://doi.org/10.25430/pupj-DRNA-2025-1-11">doi</a>
           <a class="back-reference" href="#cite-an-ran-wu-2025"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-li-2021-effective">
+          Dong Li,
+          “Effective Maximum Principles for Spectral Methods,”
+          <cite>Annals of Applied Mathematics</cite>, 37(2), 131–290, 2021.
+          <a href="https://doi.org/10.4208/aam.OA-2021-0003">doi</a>
+          <a class="back-reference" href="#cite-li-2021-effective"
              aria-label="Back to citation">↩</a>
         </li>
       </ol>
