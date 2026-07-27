@@ -898,6 +898,16 @@ a:hover {
         Around the same time, while An and I were working on hyperinterpolation with relaxed quadrature exactness, 
         I realized that the same philosophy could also be incorporated into this spherical spectral framework. 
         Instead of relying on exact quadrature, the analysis could be formulated under weaker stability assumptions.
+        Compared with Li's original work, the spherical extension introduced a different source of difficulty. 
+        Li's analysis focused on the effect of spectral truncation, while I wanted to understand what would happen when the spectral coefficients themselves were computed from inexact numerical integration. 
+        The resulting scheme involved an additional layer of discretization error arising from sampling and quadrature.
+        In this sense, the problem was no longer only about preserving an effective maximum principle, but about understanding the interaction between spectral PDE methods and discrete sampling.
+      </div>
+
+      <div class="para">
+        We posted the manuscript, “Breaking Quadrature Exactness: A Spectral Method for the Allen–Cahn Equation on Spheres,” on arXiv in May 2023<sup><a class="citation" id="cite-wu-yuan-2023-breaking" href="#ref-wu-yuan-2023-breaking">[32]</a></sup>. The paper, however, encountered difficulties during the publication process and has not yet appeared in a journal. 
+        Nevertheless, I regarded this work as an important step in connecting my earlier interests in approximation and sampling with spectral methods for PDEs.
+        This work has been included in my PhD thesis, <cite>Restricted Isometry and Information-Based Numerical Analysis</cite><sup><a class="citation" id="cite-wu-2023-thesis" href="#ref-wu-2023-thesis">[33]</a></sup>, as Chapter 5.
       </div>
 
 
@@ -1176,6 +1186,22 @@ a:hover {
           Lecture Notes in Mathematics 2044, Springer, Berlin and Heidelberg, 2012.
           <a href="https://doi.org/10.1007/978-3-642-25983-8">doi</a>
           <a class="back-reference" href="#cite-atkinson-han-2012"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-wu-yuan-2023-breaking">
+          Hao-Ning Wu and Xiaoming Yuan,
+          “Breaking Quadrature Exactness: A Spectral Method for the Allen–Cahn Equation on Spheres,”
+          arXiv preprint arXiv:2305.04820, 2023.
+          <a href="https://doi.org/10.48550/arXiv.2305.04820">arXiv</a>
+          <a class="back-reference" href="#cite-wu-yuan-2023-breaking"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-wu-2023-thesis">
+          Hao-Ning Wu,
+          <cite>Restricted Isometry and Information-Based Numerical Analysis</cite>,
+          Ph.D. thesis, The University of Hong Kong, 2023.
+          <a href="https://hdl.handle.net/10722/330255">thesis</a>
+          <a class="back-reference" href="#cite-wu-2023-thesis"
              aria-label="Back to citation">↩</a>
         </li>
       </ol>
