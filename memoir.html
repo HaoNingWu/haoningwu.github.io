@@ -799,7 +799,7 @@ a:hover {
         The one that proved most important for my later work was Nick Trefethen’s talk, <i>Exactness of quadrature formulas</i>, on December 14, 2020. 
         He argued that algebraic exactness could be misleading: algebra distinguishes between zero and nonzero, whereas numerical integration is an analytical problem concerned with whether an error is sufficiently small.
         I was immediately drawn to this viewpoint, but soon set it aside and returned to compressed sensing and image reconstruction. 
-        When the ideas from the talk appeared in <cite>SIAM Review</cite> in February 2022<sup><a class="citation" id="cite-trefethen-2022-exactness" href="#ref-trefethen-2022-exactness">[29]</a></sup>, I began to wonder whether algebraic exactness was equally unnecessary for hyperinterpolation, an approximation method built from numerical quadrature. 
+        When the ideas from the talk appeared in <cite>SIAM Review</cite> in February 2022<sup><a class="citation" id="cite-trefethen-2022-exactness" href="#ref-trefethen-2022-exactness">[24]</a></sup>, I began to wonder whether algebraic exactness was equally unnecessary for hyperinterpolation, an approximation method built from numerical quadrature. 
         I mentioned the idea to An during one of our daily phone calls, and he agreed that it was interesting.
       </div>
 
@@ -820,14 +820,14 @@ a:hover {
       </div> -->
 
       <div class="para">
-        I initially followed Sloan's original formulation of hyperinterpolation<sup><a class="citation" id="cite-sloan-1995" href="#ref-sloan-1995">[24]</a></sup>, trying to relax the required algebraic exactness from degree <i>2n</i> to degree <i>n + k</i>. 
+        I initially followed Sloan's original formulation of hyperinterpolation<sup><a class="citation" id="cite-sloan-1995" href="#ref-sloan-1995">[25]</a></sup>, trying to relax the required algebraic exactness from degree <i>2n</i> to degree <i>n + k</i>. 
         The analysis repeatedly stalled at an additional term introduced by the inexact quadrature, which neither An nor I initially knew how to control.
         I eventually isolated it as an additional term arising in the estimate of the relaxed hyperinterpolation operator. 
         An suggested that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund (MZ) inequality. 
         The suggestion supplied the missing tool. I then worked out how the inequality entered the operator estimates and developed the rest of the analysis and numerical experiments.
         Only later, when I reread the reports on our first paper in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov-referee" href="#ref-an-wu-2021-tikhonov">[12]</a></sup>, did I notice that an anonymous referee had suggested several years earlier that quadrature exactness might be replaced by an MZ inequality. At the time, I had not understood the significance of the suggestion, and it had not remained in my working memory.
         I quickly prepared the first draft of the new paper, which An later read and returned with brief comments in the margins of printed versions before submission.
-        A few months later, the paper was accepted by <cite>BIT Numerical Mathematics</cite><sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[25]</a></sup>.
+        A few months later, the paper was accepted by <cite>BIT Numerical Mathematics</cite><sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[26]</a></sup>.
         We decided to dedicate the paper to Ian Sloan on the occasion of his 85th birthday. The review process, however, moved more quickly than we had expected, and the paper appeared online nearly a year before the birthday itself.
       </div>
 
@@ -835,16 +835,13 @@ a:hover {
         The argument suggested a broader principle. 
         Once stability was separated from polynomial exactness, there was no longer any compelling reason to retain exactness at all. 
         I therefore reformulated hyperinterpolation under a general MZ condition and showed that its error could be understood through the interaction between polynomial approximation and quadrature inconsistency. 
-        This became a second paper, later published in thein the <cite>Journal of Complexity</cite><sup><a class="citation" id="cite-an-wu-2024-bypassing" href="#ref-an-wu-2024-bypassing">[26]</a></sup>.
-      </div>
-
-      <div class="para">
+        This became a second paper, later published in the <cite>Journal of Complexity</cite><sup><a class="citation" id="cite-an-wu-2024-bypassing" href="#ref-an-wu-2024-bypassing">[27]</a></sup>.
         A related idea arose from a different limitation of the classical method. 
         For singular or highly oscillatory functions, the quadrature required to compute the hyperinterpolation coefficients could be far more demanding than the polynomial approximation itself. 
         I separated the troublesome factor from the smoother part of the integrand and incorporated it directly into the discrete coefficients, in the spirit of product integration. 
         An contacted Víctor Domínguez, who generously shared his codes for highly oscillatory quadrature. 
         Using them as a computational reference, I developed the corresponding hyperinterpolation method and carried out its theoretical and numerical analysis. 
-        The resulting paper appeared in the <cite>Journal of Approximation Theory</cite><sup><a class="citation" id="cite-an-wu-2024-efficient" href="#ref-an-wu-2024-efficient">[27]</a></sup>.
+        The resulting paper appeared in the <cite>Journal of Approximation Theory</cite><sup><a class="citation" id="cite-an-wu-2024-efficient" href="#ref-an-wu-2024-efficient">[28]</a></sup>.
       </div>
 
       <div class="para">
@@ -855,14 +852,14 @@ a:hover {
 
 
       <div class="para">
-        During my PhD studies in Hong Kong, An encouraged several of his own master's students to study other forms of regularized hyperinterpolation, including variants related to our earlier work on Lasso hyperinterpolation. 
+        During my PhD studies in Hong Kong, An also encouraged several of his own master's students to study other forms of regularized hyperinterpolation, including variants related to our earlier work on Lasso hyperinterpolation. 
         One of them was Jiashu Ran, who later began his PhD at the University of Alberta. 
         In September 2025, Stefano De Marchi visited Edmonton and met Ran there. They had extensive discussions. 
         De Marchi subsequently invited Ran to write a survey on hyperinterpolation for <cite>Dolomites Research Notes on Approximation</cite>, of which he was one of the managing editors.
         Ran forwarded the invitation to An and me. 
         I wrote the sections on my joint work with An, while Ran covered the papers they had written together. 
         As was his usual practice in our collaboration, An read successive printed drafts and returned them with comments in the margins.
-        For me, the resulting survey<sup><a class="citation" id="cite-an-ran-wu-2025" href="#ref-an-ran-wu-2025">[28]</a></sup> brought together a body of work that had grown out of many years of discussion and collaboration, 
+        For me, the resulting survey<sup><a class="citation" id="cite-an-ran-wu-2025" href="#ref-an-ran-wu-2025">[29]</a></sup> brought together a body of work that had grown out of many years of discussion and collaboration, 
         but it also marked the near end of my work on hyperinterpolation as a subject in its own right.
     </div>
 
@@ -1097,6 +1094,14 @@ a:hover {
           <a class="back-reference" href="#cite-an-wu-yuan-2023"
              aria-label="Back to citation">↩</a>
         </li>
+        <li id="ref-trefethen-2022-exactness">
+          Lloyd N. Trefethen,
+          “Exactness of Quadrature Formulas,”
+          <cite>SIAM Review</cite>, 64(1), 132–150, 2022.
+          <a href="https://doi.org/10.1137/20M1389522">doi</a>
+          <a class="back-reference" href="#cite-trefethen-2022-exactness"
+             aria-label="Back to citation">↩</a>
+        </li>
         <li id="ref-sloan-1995">
           Ian H. Sloan,
           “Polynomial Interpolation and Hyperinterpolation Over General Regions,”
@@ -1135,14 +1140,6 @@ a:hover {
           <cite>Dolomites Research Notes on Approximation</cite>, 18(1), 135–145, 2025.
           <a href="https://doi.org/10.25430/pupj-DRNA-2025-1-11">doi</a>
           <a class="back-reference" href="#cite-an-ran-wu-2025"
-             aria-label="Back to citation">↩</a>
-        </li>
-        <li id="ref-trefethen-2022-exactness">
-          Lloyd N. Trefethen,
-          “Exactness of Quadrature Formulas,”
-          <cite>SIAM Review</cite>, 64(1), 132–150, 2022.
-          <a href="https://doi.org/10.1137/20M1389522">doi</a>
-          <a class="back-reference" href="#cite-trefethen-2022-exactness"
              aria-label="Back to citation">↩</a>
         </li>
       </ol>
