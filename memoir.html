@@ -881,7 +881,7 @@ a:hover {
       </div>
 
       <div class="para">
-        In November 2021, while Yuan and I were polishing the manuscript of Enhanced TV before submission, Yuan asked me to go to his office and gave me a 160-page paper by Dong Li, “Effective Maximum Principles for Spectral Methods”<sup><a class="citation" id="cite-li-2021-effective" href="#ref-li-2021-effective">[30]</a></sup>. 
+        In November 2021, while Yuan and I were polishing the manuscript of Enhanced TV before submission, Yuan asked me to go to his office and gave me a 160-page paper by Dong Li, entitled “Effective Maximum Principles for Spectral Methods”<sup><a class="citation" id="cite-li-2021-effective" href="#ref-li-2021-effective">[30]</a></sup>. 
         He asked whether I could understand it. 
         The paper addressed a fundamental difficulty in numerical simulations of phase-field equations such as the Allen–Cahn equation. 
         The continuous equation satisfies a maximum principle: if the initial data are bounded by one, then the solution remains within the same bound for all later times. 
@@ -889,7 +889,16 @@ a:hover {
         Li proposed a different viewpoint. 
         Instead of requiring the discrete solution to satisfy the maximum principle exactly, he introduced effective maximum principles, allowing a small overshoot that can be uniformly controlled by increasing the spectral resolution. 
         The analysis was carried out on periodic domains and relied heavily on harmonic analysis of Fourier kernels and spectral projections.
-</div>
+      </div>
+
+      <div class="para">
+        After reading the paper, I realized that many of its ideas were closely related to harmonic analysis on the sphere. By then, I had already studied Atkinson and Han’s <cite>Spherical Harmonics and Approximations on the Unit Sphere: An Introduction</cite><sup><a class="citation" id="cite-atkinson-han-2012" href="#ref-atkinson-han-2012">[31]</a></sup> on my own. 
+        I told Yuan that a similar framework might be developed in the spherical setting. 
+        A few months later, in mid-2022, I prepared a preliminary manuscript extending these ideas from periodic domains to the sphere and discussed it with Yuan. 
+        Around the same time, while An and I were working on hyperinterpolation with relaxed quadrature exactness, 
+        I realized that the same philosophy could also be incorporated into this spherical spectral framework. 
+        Instead of relying on exact quadrature, the analysis could be formulated under weaker stability assumptions.
+      </div>
 
 
     </section>
@@ -1159,6 +1168,14 @@ a:hover {
           <cite>Annals of Applied Mathematics</cite>, 37(2), 131–290, 2021.
           <a href="https://doi.org/10.4208/aam.OA-2021-0003">doi</a>
           <a class="back-reference" href="#cite-li-2021-effective"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-atkinson-han-2012">
+          Kendall Atkinson and Weimin Han,
+          <cite>Spherical Harmonics and Approximations on the Unit Sphere: An Introduction</cite>,
+          Lecture Notes in Mathematics 2044, Springer, Berlin and Heidelberg, 2012.
+          <a href="https://doi.org/10.1007/978-3-642-25983-8">doi</a>
+          <a class="back-reference" href="#cite-atkinson-han-2012"
              aria-label="Back to citation">↩</a>
         </li>
       </ol>
