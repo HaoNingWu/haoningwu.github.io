@@ -679,7 +679,7 @@ a:hover {
         Yuan gave his students considerable freedom in choosing their research directions. 
         By the time I joined him, his senior PhD student Yongcun Song and postdoc fellow Hangrui Yue were already exploring the optimal control of PDEs with him, a direction that Yuan himself had not previously worked on. 
         I met Yuan on my very first day in Hong Kong. 
-        Song suggested that I wait outside the room where they were about to have a discussion, in case I had a chance to meet Yuan beforehand. 
+        Song suggested that I wait outside the room where they were about to have a scheduled discussion, in case I had a chance to meet Yuan beforehand. 
         When Yuan arrived and saw me, he took me to his own office for a brief conversation.
         We talked for about ten minutes. He first asked how I was settling into life in Hong Kong amid the social unrest at the time, and then encouraged me to find a research direction that suited my own interests. 
         What I remember most was his advice that I should not pursue optimization with him, despite it being his established field.        
@@ -709,7 +709,7 @@ a:hover {
 
       <div class="para">
         After reading a series of papers by Lou and her collaborators on compressed sensing with the ℓ<sub>1</sub>−ℓ<sub>2</sub> model, I decided to study the corresponding ℓ<sub>1</sub>−ℓ<sub>2</sub><sup>2</sup> model. 
-        At the time, compressed sensing was not a main focus of An’s published work, while Yuan’s work on such models focused primarily on optimization algorithms rather than reconstruction estimates.
+        An had no tracked records on compressed sensing at the time, while Yuan’s work on such models focused primarily on optimization algorithms rather than reconstruction estimates.
         I therefore began by working through the existing reconstruction analysis on my own.
       </div>
 
@@ -736,7 +736,7 @@ a:hover {
 
       <div class="para">
         The success of the springback model naturally led me to wonder whether the same idea could be extended from sparse signal recovery to image reconstruction. 
-        Around that time, Needell and Ward had established a theoretical framework for total variation image reconstruction<sup><a class="citation" id="cite-needell-ward-2013" href="#ref-needell-ward-2013">[19]</a></sup>, while Lou, Zeng, Osher, and Xin had proposed replacing the ℓ<sub>1</sub>−ℓ<sub>2</sub> functional by an anisotropic–isotropic variant for imaging problems<sup><a class="citation" id="cite-lou-zeng-osher-xin-2015" href="#ref-lou-zeng-osher-xin-2015">[20]</a></sup>. 
+        At the time, Needell and Ward had established a theoretical framework for total variation image reconstruction<sup><a class="citation" id="cite-needell-ward-2013" href="#ref-needell-ward-2013">[19]</a></sup>, while Lou, Zeng, Osher, and Xin had proposed replacing the ℓ<sub>1</sub>−ℓ<sub>2</sub> functional by an anisotropic–isotropic variant for imaging problems<sup><a class="citation" id="cite-lou-zeng-osher-xin-2015" href="#ref-lou-zeng-osher-xin-2015">[20]</a></sup>. 
         These works suggested a natural analogue of the springback model.
         I therefore considered the model obtained by replacing the ℓ<sub>1</sub> term with anisotropic total variation while subtracting the squared isotropic total variation. 
         One motivation came from the existing anisotropic–isotropic model. 
@@ -749,7 +749,7 @@ a:hover {
       </div>
 
       <div class="para">
-        I discussed the emerging model regularly with An as I worked through the analysis and computations. An and I initially wanted to keep the name springback for the new model. 
+        An and I initially wanted to keep the name springback for the new model. 
         Yuan disagreed. 
         He believed that the paper should simply describe what the method did, and suggested the name enhanced total variation (TV). 
         Looking back, he was right. The title made the paper immediately understandable to researchers in inverse problems and image processing, 
@@ -776,23 +776,28 @@ a:hover {
 
       <div class="para">
         My PhD years began amid the social unrest in Hong Kong and were soon followed by the COVID-19 pandemic. 
-        For much of that period, I was the only one of Yuan's students who physically remained in Hong Kong. 
-        Yuan would occasionally ask me to his office for informal discussions. 
+        For much of that period, I was the only one of Yuan's students who remained physically in Hong Kong, and he would occasionally invite me to his office for informal discussions.
         At the same time, An and I spoke by phone almost every day, discussing what I had been reading and whatever new ideas had occurred to me. 
         Many of our later collaborations grew out of these conversations.
         During the pandemic, I also took Philippe G. Ciarlet's online courses on functional analysis and partial differential equations at City University of Hong Kong, which he taught by writing on a small whiteboard with a camera pointed at it.
         His functional analysis course had long been part of the standard training of mathematics PhD students in Hong Kong, and ours was the final cohort before his retirement and return to France. 
-        When overseas visits resumed, Yuan helped arrange for me to spend three weeks with Ding-Xuan Zhou at the University of Sydney in January 2023. 
-        During the same trip, An introduced me to Ian Sloan, his PhD co-supervisor, who invited me to his office at UNSW Sydney for a discussion.      
+        When overseas visits resumed, Yuan helped arrange for me to spend three weeks with Ding-Xuan Zhou at the University of Sydney in January 2023,
+        shortly after Zhou had moved there from City University of Hong Kong to become Head of the School of Mathematics and Statistics.
+        Yuan hoped that the visit might encourage me to extend my work in approximation theory toward deep learning, following a transition that Zhou himself had successfully made. 
+        By then, Zhou had already authored a series of pioneering works on approximation rates for deep neural networks, and we discussed many of these ideas during my stay. 
+        I did not, however, feel sufficiently drawn to the subject to make that transition at the time. 
+        In retrospect, this choice left my research profile narrower than it might otherwise have been and later contributed to some of the difficulties I encountered on the job market.
+        During the same trip, An introduced me to Ian Sloan, his PhD co-supervisor. Sloan invited me to his office at UNSW Sydney for a conversation about my research.      
       </div>
 
 
       <div class="para">
-        When the pandemic began in 2020, online seminars suddenly became abundant, and people were still highly enthusiastic about them. 
-        I attended many myself. The most important for me was Trefethen’s talk, <i>Exactness of quadrature formulas</i>, on December 14, 2020. 
+        When the pandemic began in 2020, online seminars suddenly became abundant, and people were still unusually enthusiastic about them. 
+        I attended many myself. 
+        The one that proved most important for my later work was Nick Trefethen’s talk, <i>Exactness of quadrature formulas</i>, on December 14, 2020. 
         He argued that algebraic exactness could be misleading: algebra distinguishes between zero and nonzero, whereas numerical integration is an analytical problem concerned with whether an error is sufficiently small.
         I was immediately drawn to this viewpoint, but soon set it aside and returned to compressed sensing and image reconstruction. 
-        When the ideas from the talk appeared in SIAM Review in January 2022, I began to wonder whether algebraic exactness was equally unnecessary for hyperinterpolation, an approximation method built from numerical quadrature. 
+        When the ideas from the talk appeared in <cite>SIAM Review</cite> in February 2022<sup><a class="citation" id="cite-trefethen-2022-exactness" href="#ref-trefethen-2022-exactness">[29]</a></sup>, I began to wonder whether algebraic exactness was equally unnecessary for hyperinterpolation, an approximation method built from numerical quadrature. 
         I mentioned the idea to An during one of our daily phone calls, and he agreed that it was interesting.
       </div>
 
@@ -814,59 +819,49 @@ a:hover {
 
       <div class="para">
         I initially followed Sloan's original formulation of hyperinterpolation<sup><a class="citation" id="cite-sloan-1995" href="#ref-sloan-1995">[24]</a></sup>, trying to relax the required algebraic exactness from degree <i>2n</i> to degree <i>n + k</i>. 
-        For some time, the analysis continued to stall at the same obstruction. I eventually isolated it as an additional term arising in the estimate of the relaxed hyperinterpolation operator. 
-        An observed that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund (MZ) inequality. 
-        This proved to be the right idea, and I worked out the argument and developed the remaining analysis and experiments.
+        The analysis repeatedly stalled at an additional term introduced by the inexact quadrature, which neither An nor I initially knew how to control.
+        I eventually isolated it as an additional term arising in the estimate of the relaxed hyperinterpolation operator. 
+        An suggested that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund (MZ) inequality. 
+        The suggestion supplied the missing tool. I then worked out how the inequality entered the operator estimates and developed the rest of the analysis and numerical experiments.
         Only later, when I reread the reports on our first paper in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov-referee" href="#ref-an-wu-2021-tikhonov">[12]</a></sup>, did I notice that an anonymous referee had suggested several years earlier that quadrature exactness might be replaced by an MZ inequality. At the time, I had not understood the significance of the suggestion, and it had not remained in my working memory.
-        After I prepared the first draft, An and I continued refining the manuscript before submitting it. 
+        I quickly prepared the first draft of the new paper, which An later read and returned with brief comments in the margins of printed versions before submission.
         A few months later, the paper was accepted by <cite>BIT Numerical Mathematics</cite><sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[25]</a></sup>.
       </div>
 
       <div class="para">
-  After the first paper, I continued along the same line and tried to remove
-  algebraic exactness altogether. The question was no longer how far the degree
-  of exactness could be reduced, but whether hyperinterpolation could still be
-  understood when the underlying quadrature rule had no prescribed polynomial
-  exactness at all. I found that the MZ inequality still supplied the necessary
-  stability, while the error could be decomposed into the usual polynomial
-  approximation error and an additional term measuring the quadrature defect.
-  I was then able to complete the argument, and the resulting paper was later published in the <cite>Journal of Complexity</cite><sup><a class="citation" id="cite-an-wu-2024-bypassing" href="#ref-an-wu-2024-bypassing">[26]</a></sup>.
-</div>
-
-<div class="para">
-  Around the same time, we considered a different limitation of classical
-  hyperinterpolation. For functions with singularities or rapid oscillations,
-  increasing the polynomial degree alone was often insufficient, because the
-  quadrature used to compute the coefficients could require far more points
-  than the approximation itself seemed to justify. I therefore separated the
-  singular or oscillatory factor from the smoother part of the integrand and
-  incorporated it directly into the discrete coefficients, in the spirit of
-  product integration. An contacted V&iacute;ctor Dom&iacute;nguez, who generously shared his codes for highly oscillatory quadrature. 
-  Building on this input, I adapted the idea to a hyperinterpolation framework, which we then examined theoretically and numerically.
- The paper was then
-  published in the <cite>Journal of Approximation Theory</cite><sup><a class="citation" id="cite-an-wu-2024-efficient" href="#ref-an-wu-2024-efficient">[27]</a></sup>.
-</div>
+        The argument suggested a broader principle. 
+        Once stability was separated from polynomial exactness, there was no longer any compelling reason to retain exactness at all. 
+        I therefore reformulated hyperinterpolation under a general MZ condition and showed that its error could be understood through the interaction between polynomial approximation and quadrature inconsistency. 
+        This became a second paper, later published in thein the <cite>Journal of Complexity</cite><sup><a class="citation" id="cite-an-wu-2024-bypassing" href="#ref-an-wu-2024-bypassing">[26]</a></sup>.
+      </div>
 
       <div class="para">
-  These were natural extensions of the original idea<sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[25]</a></sup>, and I was pleased that
-  the framework continued to work. Yet I no longer felt the same excitement.
-  The central conceptual step had already been taken. 
-</div>
+        A related idea arose from a different limitation of the classical method. 
+        For singular or highly oscillatory functions, the quadrature required to compute the hyperinterpolation coefficients could be far more demanding than the polynomial approximation itself. 
+        I separated the troublesome factor from the smoother part of the integrand and incorporated it directly into the discrete coefficients, in the spirit of product integration. 
+        An contacted Víctor Domínguez, who generously shared his codes for highly oscillatory quadrature. 
+        Using them as a computational reference, I developed the corresponding hyperinterpolation method and carried out its theoretical and numerical analysis. 
+        The resulting paper appeared in the <cite>Journal of Approximation Theory</cite><sup><a class="citation" id="cite-an-wu-2024-efficient" href="#ref-an-wu-2024-efficient">[27]</a></sup>.
+      </div>
+
+      <div class="para">
+        Together, these three papers explored how much of hyperinterpolation survives once classical quadrature exactness is weakened, removed, or replaced by a more problem-adapted discretization. 
+        I was pleased that the original question had led to a broader framework. 
+        Yet by then I no longer felt the same excitement. The central conceptual step had already been taken, and the remaining extensions, although natural, no longer seemed to open a fundamentally new direction.
+      </div>
 
 
       <div class="para">
-  During my PhD studies in Hong Kong, An encouraged several of his master's
-  students to study other forms of regularized hyperinterpolation, including variants related to our earlier work on Lasso hyperinterpolation. One of them was Jiashu Ran, who later
-  began his PhD at the University of Alberta. Years later, in September 2025,
-  Stefano De Marchi visited Edmonton and met Ran there. Since
-  their research interests were closely aligned, they had extensive
-  discussions. De Marchi then invited Ran to write a survey for
-  <cite>Dolomites Research Notes on Approximation</cite><sup><a class="citation" id="cite-an-ran-wu-2025" href="#ref-an-ran-wu-2025">[28]</a></sup>, of which he was one of the managing editors.
-  Ran forwarded the invitation to An and me. I wrote the sections on my joint
-  work with An, while Ran covered the papers they had written together.   An reviewed successive printed drafts and returned them with comments in the
-  margins. For me, the resulting survey brought together a body of work that
-  had grown out of many years of discussion and collaboration, but it also marked the near end of my work on hyperinterpolation as a subject in its own right.
-</div>
+        During my PhD studies in Hong Kong, An encouraged several of his own master's students to study other forms of regularized hyperinterpolation, including variants related to our earlier work on Lasso hyperinterpolation. 
+        One of them was Jiashu Ran, who later began his PhD at the University of Alberta. 
+        In September 2025, Stefano De Marchi visited Edmonton and met Ran there. They had extensive discussions. 
+        De Marchi subsequently invited Ran to write a survey for <cite>Dolomites Research Notes on Approximation</cite>, of which he was one of the managing editors.
+        Ran forwarded the invitation to An and me. 
+        I wrote the sections on my joint work with An, while Ran covered the papers they had written together. 
+        As was his usual practice in our collaboration, An read successive printed drafts and returned them with comments in the margins.
+        For me, the resulting survey<sup><a class="citation" id="cite-an-ran-wu-2025" href="#ref-an-ran-wu-2025">[28]</a></sup> brought together a body of work that had grown out of many years of discussion and collaboration, 
+        but it also marked the near end of my work on hyperinterpolation as a subject in its own right.
+    </div>
 
 
 
@@ -1137,6 +1132,14 @@ a:hover {
           <cite>Dolomites Research Notes on Approximation</cite>, 18(1), 135–145, 2025.
           <a href="https://doi.org/10.25430/pupj-DRNA-2025-1-11">doi</a>
           <a class="back-reference" href="#cite-an-ran-wu-2025"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-trefethen-2022-exactness">
+          Lloyd N. Trefethen,
+          “Exactness of Quadrature Formulas,”
+          <cite>SIAM Review</cite>, 64(1), 132–150, 2022.
+          <a href="https://doi.org/10.1137/20M1389522">doi</a>
+          <a class="back-reference" href="#cite-trefethen-2022-exactness"
              aria-label="Back to citation">↩</a>
         </li>
       </ol>
