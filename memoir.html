@@ -16,7 +16,1445 @@
 :root {
   --background: #f7f4e8;
   --text: #252525;
+  --secondary-text: #6d6a62;<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png">
+<link rel="icon" type="image/jpeg" href="/images/icon.png">
+<link rel="shortcut icon" href="/images/icon.png">
+
+<title>A Mathematical Memoir: Math, People, and Ideas</title>
+
+<style>
+
+:root {
+  --background: #f7f4e8;
+  --text: #252525;
   --secondary-text: #6d6a62;
+  --accent: #287f70;
+  --light-accent: #d8e5df;
+  --rule: #d8d2c2;
+  --quote-background: rgba(255, 255, 255, 0.34);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family:
+    Charter,
+    "Iowan Old Style",
+    "Palatino Linotype",
+    Palatino,
+    Georgia,
+    "Times New Roman",
+    serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 26px 110px;
+}
+
+
+/* Header */
+
+.header {
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.title {
+  color: var(--accent);
+  font-family:
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  color: var(--secondary-text);
+  font-size: 19px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.meta {
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* Introduction */
+
+.introduction {
+  font-size: 18px;
+  margin-bottom: 76px;
+}
+
+.introduction .para:first-child::first-letter {
+  color: var(--accent);
+  float: left;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 0.86;
+  margin: 9px 9px 0 0;
+}
+
+
+/* Contents */
+
+.contents {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin: 64px 0 82px;
+  padding: 28px 0 30px;
+}
+
+.contents-title {
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.contents-item {
+  margin: 8px 0;
+}
+
+.contents-item a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contents-item a:hover {
+  color: var(--accent);
+}
+
+
+/* Citations and references */
+
+.citation {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 0.75em;
+  white-space: nowrap;
+}
+
+.references {
+  border-top: 1px solid var(--rule);
+  margin-top: 86px;
+  padding-top: 36px;
+  scroll-margin-top: 30px;
+}
+
+.references ol {
+  margin: 0;
+  padding-left: 28px;
+}
+
+.references li {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  padding-left: 5px;
+}
+
+.back-reference {
+  margin-left: 4px;
+}
+
+
+/* Sections */
+
+.section {
+  margin-top: 86px;
+  scroll-margin-top: 30px;
+}
+
+.section-number {
+  color: var(--accent);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--text);
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 1.35;
+  margin-bottom: 30px;
+}
+
+.para {
+  margin: 0 0 24px;
+}
+
+.para em {
+  font-style: italic;
+}
+
+.para strong {
+  font-weight: 600;
+}
+
+
+/* Subsections */
+
+.subsection {
+  margin-top: 46px;
+}
+
+.subsection-title {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
+/* Quotes */
+
+.quote {
+  background: var(--quote-background);
+  border-left: 3px solid var(--accent);
+  color: #4d4b45;
+  font-size: 18px;
+  font-style: italic;
+  margin: 38px 0;
+  padding: 18px 24px;
+}
+
+.quote-source {
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  margin-top: 12px;
+}
+
+
+/* Notes */
+
+.note {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  color: #55524b;
+  font-size: 15px;
+  margin: 40px 0;
+  padding: 20px 4px;
+}
+
+.note-label {
+  color: var(--accent);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+
+/* Images */
+
+.image {
+  margin: 44px 0;
+  text-align: center;
+}
+
+.image img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.caption {
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 11px auto 0;
+  max-width: 620px;
+}
+
+
+/* Timeline */
+
+.timeline {
+  border-left: 1px solid var(--rule);
+  margin: 42px 0 48px 8px;
+  padding-left: 26px;
+}
+
+.timeline-item {
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.timeline-item::before {
+  background: var(--background);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  content: "";
+  height: 9px;
+  left: -31px;
+  position: absolute;
+  top: 10px;
+  width: 9px;
+}
+
+.timeline-year {
+  color: var(--accent);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+.timeline-text {
+  font-size: 16px;
+}
+
+
+/* Links */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+
+.footer {
+  border-top: 1px solid var(--rule);
+  color: var(--secondary-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 100px;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.back-link {
+  margin-top: 18px;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .container {
+    padding: 48px 20px 80px;
+  }
+
+  .header {
+    margin-bottom: 56px;
+  }
+
+  .title {
+    font-size: 29px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+  }
+
+  .introduction {
+    font-size: 17px;
+    margin-bottom: 58px;
+  }
+
+  .section {
+    margin-top: 68px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .quote {
+    font-size: 17px;
+    margin: 32px 0;
+    padding: 16px 19px;
+  }
+
+  .contents {
+    margin: 50px 0 64px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+  <main class="container">
+
+    <header class="header">
+
+      <div class="title">
+        An (Ongoing) Mathematical Memoir
+      </div>
+
+      <div class="subtitle">
+        Math, People, and Ideas
+      </div>
+
+      <div class="meta">
+        <a href="/index.html">Hao-Ning Wu</a><br>
+        A continuing record of my mathematical life<br>
+        Last updated: July 2026
+      </div>
+
+    </header>
+
+
+    <section class="introduction">
+
+      <div class="para">
+        I never dreamed of becoming a mathematician. Throughout primary and secondary school, mathematics was simply an ordinary subject for me, and my performance in it was unremarkable. 
+        It was only in the fall of 2016 that I first began to imagine a life in mathematics.
+      </div>
+
+      <div class="para">
+        As the tenth anniversary of that beginning approaches, I decided to begin this continuing account of how I entered mathematical research, 
+        how particular questions found their way into my work, and how conversations, accidents, failures, and unexpected connections gradually shaped it. 
+        Every theorem has a history that usually disappears from the published paper; behind each finished argument lie conversations, unsuccessful attempts, misconceptions, and moments of unexpected clarity. 
+        This memoir, first written in July 2026, records some of those personal histories and will be updated occasionally.
+      </div>
+
+    </section>
+
+
+    <nav class="contents">
+
+      <div class="contents-title">
+        Contents
+      </div>
+
+      <div class="contents-item">
+        <a href="#beginning">I. An Accidental Beginning</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#regularization">II. Regularization</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#spb">III. Springback and Enhanced TV</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#hyperinterpolation">IV. Hyperinterpolation</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#pdes">V. From Spectral Numerics to Harmonic Analysis</a>
+      </div>
+
+      <div class="contents-item">
+        <a href="#usa">VI. United States</a>
+      </div>
+
+
+      <div class="contents-item">
+        <a href="#exactness">VII. Beyond Exactness</a>
+      </div>
+
+
+
+      <div class="contents-item">
+        <a href="#references">References</a>
+      </div>
+
+    </nav>
+
+
+    <section class="section" id="beginning">
+
+      <div class="section-number">
+        I
+      </div>
+
+      <div class="section-title">
+        An Accidental Beginning
+      </div>
+
+      <div class="para">
+        I did not choose Jinan University in 2015 because I had already decided to become a mathematician. 
+        One rather practical attraction was that, as a university historically oriented toward overseas Chinese students,
+        Jinan then did not require freshmen to undergo the compulsory military training that was common across the country. 
+        It was an almost accidental decision. Looking back, however, it was one of the most consequential decisions I have ever made. 
+        It led me to my first research project in approximation theory and, ultimately, to the mathematical questions that have remained with me ever since.
+      </div>
+
+      <div class="para">
+        I first met Congpei An in the fall of 2016.
+        His Numerical Linear Algebra course caught my attention because it used an English-language textbook, 
+        which was unusual among the mathematics courses available to us at the time. Curious, I enrolled.
+        The textbook was Trefethen and Bau's <cite>Numerical Linear Algebra</cite><sup><a class="citation" id="cite-trefethen-bau-1997" href="#ref-trefethen-bau-1997">[1]</a></sup>. 
+        Instead of weekly assignments, we were asked to choose ten chapters of the book and copy them by hand.  
+        An called this the "Kunihiko Kodaira method of learning."
+      </div>
+
+      <div class="para">
+        The following spring of 2017, I took his Numerical Approximation course, based on Powell's <cite>Approximation Theory and Methods</cite><sup><a class="citation" id="cite-powell-1981" href="#ref-powell-1981">[2]</a></sup>. 
+        The homework remained the same.
+        Around the same time, together with two classmates, I planned to apply for the National Undergraduate Innovation and Entrepreneurship Program and asked An to supervise us. 
+        His first question was, “Do you know the Wang–Xiang formula?”
+        We did not.
+        The resulting project, <i>Research on barycentric interpolation: algorithms and applications</i>, was my first encounter with mathematical research.
+      </div>
+
+      <div class="para">
+        That summer, on my own, I copied another book by hand, Trefethen's <cite>Approximation Theory and Approximation Practice</cite><sup><a class="citation" id="cite-trefethen-2013" href="#ref-trefethen-2013">[3]</a></sup>.
+        I would not now recommend copying books as a general method of learning mathematics. 
+        But at that age, with plenty of time and no clear direction, it gave my days a certain structure and gradually drew me deeper into the subject.
+      </div>
+
+
+
+
+
+    </section>
+
+
+    <section class="section" id="regularization">
+
+      <div class="section-number">
+        II
+      </div>
+
+      <div class="section-title">
+        Regularization
+      </div>
+
+      <div class="para">
+        An assigned us three papers to read: 
+        the survey on barycentric interpolation by Berrut and Trefethen<sup><a class="citation" id="cite-berrut-trefethen-2004" href="#ref-berrut-trefethen-2004">[4]</a></sup>, 
+        the paper by Wang and Xiang connecting Legendre barycentric weights with Gauss–Legendre quadrature weights<sup><a class="citation" id="cite-wang-xiang-2012" href="#ref-wang-xiang-2012">[5]</a></sup>,
+        and the paper by Glaser, Liu, and Rokhlin on the fast computation of Gauss–Legendre quadrature nodes and weights<sup><a class="citation" id="cite-glaser-liu-rokhlin-2007" href="#ref-glaser-liu-rokhlin-2007">[6]</a></sup>.
+      </div>
+
+      <div class="para">
+        He then gave us two tasks. One was to reproduce the MATLAB codes of the Glaser–Liu–Rokhlin algorithm. 
+        The other was to explore whether the Wang–Xiang formula could be generalized from Legendre points to more general Jacobi points. 
+        We failed to settle the first task, and a few months later I discovered that the second problem had already been solved by Wang, Huybrechs, and Vandewalle several years earlier<sup><a class="citation" id="cite-wang-huybrechs-vandewalle-2014" href="#ref-wang-huybrechs-vandewalle-2014">[7]</a></sup>.
+      </div>
+
+      <div class="para">
+        By the time the project had passed its midpoint, I felt, as the team leader, obliged to do something for the completion report.
+        I turned to An’s doctoral dissertation<sup><a class="citation" id="cite-an-2011" href="#ref-an-2011">[8]</a></sup>, which was based on two papers he had written with Chen, Sloan, and Womersley. 
+        One concerned the computation of spherical t-designs, whose associated quadrature rules possess polynomial exactness<sup><a class="citation" id="cite-an-chen-sloan-womersley-2010" href="#ref-an-chen-sloan-womersley-2010">[9]</a></sup>; 
+        the other used the resulting point sets for ℓ<sub>2</sub>-regularized discrete least-squares approximation and derived an explicit solution<sup><a class="citation" id="cite-an-chen-sloan-womersley-2012" href="#ref-an-chen-sloan-womersley-2012">[10]</a></sup>. 
+        By then I had also learned about Gauss quadrature and its remarkable degree of exactness. I tried to adapt the same line of thought to polynomial approximation on [−1,1]. 
+        I derived closed-form solutions and error estimates for an ℓ<sub>2</sub>-regularized approximation method and then formulated an ℓ<sub>1</sub>-regularized counterpart. 
+        After obtaining these results, I showed them to An, who encouraged me to develop the ideas into my first research paper.
+      </div>
+
+      <div class="para">      
+        Writing the first paper was difficult. I prepared an initial manuscript and posted it on arXiv in May 2018 so that my undergraduate project could be formally completed. 
+        We did not submit it to a journal until April 2019, when we sent it to the <cite>Journal of Scientific Computing</cite>. 
+        Three months later, after two sharply conflicting reports, the manuscript was rejected. 
+        The <cite>IMA Journal of Numerical Analysis</cite> then desk-rejected it within days because the English was not ready for review, while inviting us to resubmit after the manuscript had been thoroughly rewritten. 
+        It was the summer after my undergraduate graduation, also the ancient era without GPTs. 
+        I spent the next month rewriting the manuscript with Higham's <cite>Handbook of Writing for the Mathematical Sciences</cite><sup><a class="citation" id="cite-higham-1998" href="#ref-higham-1998">[11]</a></sup> almost constantly at my side. 
+        The writing still seems poor to me today, but it was close to the best I could produce at the time. 
+        We submitted the revised version, and this time it was sent out for review.
+        A few months later, another pair of conflicting reports arrived. One referee pointed out that 
+        our analysis of the ℓ<sub>2</sub>-regularized method relied on an incorrect use of the Christoffel–Darboux formula, invalidating the subsequent result, 
+        while the ℓ<sub>1</sub>-regularized part remained intact. The paper was rejected again.
+      </div>
+
+      <div class="para">    
+        After the second rejection, An encouraged me not to abandon the project, and we decided to separate the manuscript into two papers.
+        I rebuilt the ℓ<sub>2</sub>-analysis and refocused the paper on Tikhonov-regularized least-squares approximation, which eventually appeared in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov" href="#ref-an-wu-2021-tikhonov">[12]</a></sup>. 
+        I continued developing the ℓ<sub>1</sub> direction into what we called Lasso hyperinterpolation, extending the ℓ<sub>1</sub>-regularized approximation to general domains.
+        The numerical experiments turned out to be much harder than the theory, and the resulting paper was later published in the <cite>SIAM Journal on Scientific Computing</cite><sup><a class="citation" id="cite-an-wu-2021-lasso" href="#ref-an-wu-2021-lasso">[13]</a></sup>.
+        The mathematics in both papers now seems modest to me, but I still remember my heartbeat when the acceptance email from <cite>Inverse Problems</cite> arrived. 
+        It was December 2020, and I was waiting for my order in a McDonald's on Hill Road in Hong Kong.
+      </div>
+    
+    
+    </section>
+
+
+    
+
+    <section class="section" id="spb">
+
+      <div class="section-number">
+        III
+      </div>
+
+      <div class="section-title">
+        Springback and Enhanced TV
+      </div>
+
+      <div class="para">    
+        Hong Kong had already become my home by then. I had moved there in September 2019 to begin my PhD at the University of Hong Kong under the supervision of Xiaoming Yuan. 
+        I believe An spoke highly of me to Yuan.
+        At the time, as is still the case today, Jinan University was not a typical source of PhD students for the university. 
+        Yuan provided the Faculty of Science with some additional justification in support of my application, and part of my funding came from his research grant. 
+        I did not fully appreciate these details at the time, but looking back, I understand that he took a chance on me at an important stage of my life.
+      </div>
+
+      <div class="para">
+        Yuan gave his students considerable freedom in choosing their research directions. 
+        By the time I joined him, his senior PhD student Yongcun Song and postdoc fellow Hangrui Yue were already exploring the optimal control of PDEs with him, a direction that Yuan himself had not previously worked on. 
+        I met Yuan on my very first day in Hong Kong. 
+        Song suggested that I wait outside the room where they were about to have a scheduled discussion, in case I had a chance to meet Yuan beforehand. 
+        When Yuan arrived and saw me, he took me to his own office for a brief conversation.
+        He first asked how I was settling into life in Hong Kong amid the social unrest at the time, and then encouraged me to find a research direction that suited my own interests. 
+        What I remember most was his advice that I should not pursue optimization with him, despite it being his established field.        
+        He explained that if we published optimization papers together, people might naturally attribute the main credit to him rather than to me, making it harder for me to establish an independent research identity.
+        I did not fully appreciate the significance of this advice at the time, but I have often thought back on it with gratitude in the years since.
+      </div>
+
+      <div class="para">
+        Despite this freedom, he expected all his students to understand the foundations of optimization and the ideas underlying his own work. 
+        Shu Gong, a student who had joined him a year ago, and I alternated every two weeks in presenting chapters from Boyd and Vandenberghe’s <cite>Convex Optimization</cite><sup><a class="citation" id="cite-boyd-vandenberghe-2004" href="#ref-boyd-vandenberghe-2004">[14]</a></sup>, followed by Nocedal and Wright’s <cite>Numerical Optimization</cite><sup><a class="citation" id="cite-nocedal-wright-2006" href="#ref-nocedal-wright-2006">[15]</a></sup>. 
+        Like many students, I tended to relax during the weeks when I was not presenting and prepare intensely when my turn approached.
+        We eventually worked through both books from beginning to end. 
+      </div>
+
+
+      <div class="para">
+        Around this time, An and I returned to the question of regularized least-squares approximation.
+        The idea traced back to my undergraduate years, when An had sent me a paper by Esser, Lou, and Xin introducing the ℓ<sub>1</sub>−ℓ<sub>2</sub> and ℓ<sub>1</sub>/ℓ<sub>2</sub> regularizers<sup><a class="citation" id="cite-esser-lou-xin-2013" href="#ref-esser-lou-xin-2013">[16]</a></sup>. 
+        By then, my first two papers had already shaped the way I approached approximation problems. 
+        I found myself looking for formulations that admitted closed-form solutions rather than iterative algorithms. 
+        Since the ℓ<sub>1</sub>−ℓ<sub>2</sub> regularizer did not naturally lead to such a formulation, I suggested considering ℓ<sub>1</sub>−ℓ<sub>2</sub><sup>2</sup> instead. 
+        An found the idea interesting, and I eventually wrote a manuscript on least-squares approximation based on this regularizer.
+        As the project developed, we invited Yuan to join us.
+        However, I soon realized that the analysis differed little from our earlier work on Lasso hyperinterpolation<sup><a class="citation" id="cite-an-wu-2021-lasso-2" href="#ref-an-wu-2021-lasso">[13]</a></sup>. 
+        I also began to feel that this style of problem no longer held the same attraction for me. I wanted to pursue questions whose novelty did not rest primarily on replacing one regularizer with another.
+      </div>
+
+      <div class="para">
+        After reading a series of papers by Lou and her collaborators on compressed sensing with the ℓ<sub>1</sub>−ℓ<sub>2</sub> model, I decided to study the corresponding ℓ<sub>1</sub>−ℓ<sub>2</sub><sup>2</sup> model. 
+        An had no tracked records on compressed sensing at the time, while Yuan’s work on such models focused primarily on optimization algorithms rather than reconstruction estimates.
+        I therefore began by working through the existing reconstruction analysis on my own.
+      </div>
+
+      <div class="para">
+        I worked through the mathematical analysis in the ℓ<sub>1</sub>−ℓ<sub>2</sub> compressed sensing paper by Yin, Lou, He, and Xin<sup><a class="citation" id="cite-yin-lou-he-xin-2015" href="#ref-yin-lou-he-xin-2015">[17]</a></sup> line by line, gradually adapting their arguments to the ℓ<sub>1</sub>−ℓ<sub>2</sub><sup>2</sup> setting.
+        For the numerical experiments, I downloaded the code accompanying their paper from Lou's webpage and modified every parts involving the ℓ<sub>2</sub> term into its ℓ<sub>2</sub><sup>2</sup> counterpart, learning the implementation largely by trial and error. 
+        The writing remained a struggle as well. Grammarly had become part of my routine by then, and I would go through its suggestions one by one in manual editing mode, trying to understand every correction rather than simply accepting it. 
+        Around this time, I also came up with the playful name "springback" for the model, borrowing a term from metal forming. The intuition was that while the ℓ<sub>1</sub> term shrinks both noise and signal, subtracting ℓ<sub>2</sub><sup>2</sup> allows the signal to "spring back" slightly.
+        Once the first draft was ready, I sent it to An and Yuan for their comments.
+      </div>
+
+      <div class="para">
+        An and Yuan both returned comments on the draft. During the next stage of revision, Yuan identified a flaw in the optimization algorithm. 
+        He explained that, for a constrained optimization problem, one could not simply move the constraint into the objective as a penalty term and solve the resulting unconstrained problem. 
+        The constraint had to be retained, with each iteration projected back onto the feasible set.
+        He also invested considerable effort in improving my writing. 
+        Although Grammarly had greatly reduced my grammatical errors and typos, Yuan pointed out that the logical structure of my exposition still needed work. 
+        We revised the manuscript through many rounds. 
+        He later invited me to his office and went through the introduction sentence by sentence, asking what the reader would expect next and how the argument should unfold.
+        The manuscript was eventually accepted by <cite>Applied and Computational Harmonic Analysis</cite><sup><a class="citation" id="cite-an-wu-yuan-2022" href="#ref-an-wu-yuan-2022">[18]</a></sup> after one round of revision.
+      </div>
+
+
+      <div class="para">
+        The success of the springback model naturally led me to wonder whether the same idea could be extended from sparse signal recovery to image reconstruction. 
+        At the time, Needell and Ward had established a theoretical framework for total variation image reconstruction<sup><a class="citation" id="cite-needell-ward-2013" href="#ref-needell-ward-2013">[19]</a></sup>, while Lou, Zeng, Osher, and Xin had proposed replacing the ℓ<sub>1</sub>−ℓ<sub>2</sub> functional by an anisotropic–isotropic variant for imaging problems<sup><a class="citation" id="cite-lou-zeng-osher-xin-2015" href="#ref-lou-zeng-osher-xin-2015">[20]</a></sup>. 
+        These works suggested a natural analogue of the springback model.
+        I therefore considered the model obtained by replacing the ℓ<sub>1</sub> term with anisotropic total variation while subtracting the squared isotropic total variation. 
+        One motivation came from the existing anisotropic–isotropic model. 
+        Another arose from the Euler–Lagrange equation itself. 
+        Subtracting the squared isotropic total variation introduces a backward diffusion term. 
+        If the observed image is regarded as the result of a diffusion process, such a term could, at least heuristically, counteract part of that diffusion. 
+        A similar intuition had already appeared in the work of Möllenhoff, Strekalovskiy, Moeller, and Cremers<sup><a class="citation" id="cite-mollenhoff-strekalovskiy-moeller-cremers-2015" href="#ref-mollenhoff-strekalovskiy-moeller-cremers-2015">[21]</a></sup>, although their study on this model was purely empirical.
+        This time, I worked through the theoretical analysis by adapting the arguments of Needell and Ward, while extending my previous MATLAB implementation from one-dimensional signals to two-dimensional images.
+        
+      </div>
+
+      <div class="para">
+        An and I initially wanted to keep the name springback for the new model. 
+        Yuan disagreed. 
+        He thought the title should describe what the method did and suggested the name enhanced total variation (TV). 
+        Looking back, he was right. The title made the paper immediately understandable to researchers in inverse problems and imaging, 
+        whereas the metaphor of "springback" would have meant little outside our own circle.
+        Yuan again devoted considerable time to revising the manuscript with me.
+        After the revision, Yuan remarked that he had probably completed the same kind of sentence-by-sentence training in academic writing on me.
+        After I posted the preprint on arXiv, Leonid Rudin, one of the originators of TV regularization<sup><a class="citation" id="cite-rudin-osher-fatemi-1992" href="#ref-rudin-osher-fatemi-1992">[22]</a></sup>, 
+        left a brief comment “Nice work” comment on ResearchGate, which was an unexpected pleasure.
+        The paper was eventually accepted by <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-yuan-2023" href="#ref-an-wu-yuan-2023">[23]</a></sup>.
+      </div>
+
+      
+
+
+    <section class="section" id="hyperinterpolation">
+
+      <div class="section-number">
+        IV
+      </div>
+
+      <div class="section-title">
+        Hyperinterpolation
+      </div>
+
+      <div class="para">
+        My PhD years began amid the social unrest in Hong Kong and were soon followed by the COVID-19 pandemic. 
+        For much of that period, I was the only one of Yuan's students who remained physically in Hong Kong, and he would occasionally invite me to his office for academic discussions in an informal manner.
+        At the same time, An and I spoke by phone almost every day, discussing what I had been reading and whatever new ideas had occurred to me. 
+        Many of our later collaborations grew out of these conversations.
+        During the pandemic, I also took Philippe G. Ciarlet's online courses on functional analysis and partial differential equations at City University of Hong Kong, which he taught by writing on a small whiteboard with a camera pointed at it.
+        His functional analysis course had long been part of the standard training of mathematics PhD students in Hong Kong, and ours was the final cohort before his retirement and return to France. 
+        When overseas visits resumed, Yuan helped arrange for me to spend three weeks with Ding-Xuan Zhou at the University of Sydney in January 2023,
+        shortly after Zhou had moved there from City University of Hong Kong.
+        Yuan hoped that the visit might encourage me to extend my work in approximation theory toward deep learning, following a transition that Zhou himself had successfully made. 
+        By then, Zhou had already authored a series of pioneering works on approximation rates for deep neural networks, and we discussed many of these ideas during my stay. 
+        I did not, however, feel sufficiently drawn to the subject to make that transition at the time. 
+        In retrospect, this choice left my research profile narrower than it might otherwise have been and later contributed to some of the difficulties I encountered on the job market.
+        During the same trip, An introduced me to Ian Sloan, his PhD co-supervisor, by email. Sloan invited me to his office at UNSW Sydney for a conversation about my research.      
+      </div>
+
+
+      <div class="para">
+        When the pandemic began in 2020, online seminars suddenly became abundant, and people were still unusually enthusiastic about them. 
+        I attended many myself. 
+        The one that proved most important for my later work was Nick Trefethen’s talk, <i>Exactness of quadrature formulas</i>, on December 14, 2020. 
+        He argued that algebraic exactness could be misleading: algebra distinguishes between zero and nonzero, whereas numerical integration is an analytical problem concerned with whether an error is sufficiently small.
+        I was immediately drawn to this viewpoint, but soon set it aside and returned to compressed sensing and image reconstruction. 
+        When the ideas from the talk appeared in <cite>SIAM Review</cite> in February 2022<sup><a class="citation" id="cite-trefethen-2022-exactness" href="#ref-trefethen-2022-exactness">[24]</a></sup>, I began to wonder whether algebraic exactness was equally unnecessary for hyperinterpolation, an approximation method built from numerical quadrature. 
+        I mentioned the idea to An during one of our daily phone calls, and he agreed that it was interesting.
+      </div>
+
+<!-- 
+      <div class="image">
+
+        <a href="images/trefethentalk.png">
+          <img
+            src="images/trefethentalk.png"
+            alt="Online lecture by Lloyd N. Trefethen">
+        </a>
+
+        <div class="caption">
+          An online lecture by Lloyd N. Trefethen that prompted me to question the role
+          of algebraic exactness.
+        </div>
+
+      </div> -->
+
+      <div class="para">
+        I initially followed Sloan's original formulation of hyperinterpolation<sup><a class="citation" id="cite-sloan-1995" href="#ref-sloan-1995">[25]</a></sup>, trying to relax the required algebraic exactness from degree <i>2n</i> to degree <i>n + k</i>. 
+        The analysis repeatedly stalled at an additional term introduced by the inexact quadrature, which neither An nor I initially knew how to control.
+        I eventually isolated it as an additional term arising in the estimate of the relaxed hyperinterpolation operator. 
+        An suggested that this extra term might be controlled by a Marcinkiewicz&ndash;Zygmund (MZ) inequality. 
+        The suggestion supplied the missing tool. I then worked out how the inequality entered the operator estimates and developed the rest of the analysis and numerical experiments.
+        Only later, when I reread the reports on our first paper in <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-2021-tikhonov-referee" href="#ref-an-wu-2021-tikhonov">[12]</a></sup>, did I notice that an anonymous referee had suggested several years earlier that quadrature exactness might be replaced by an MZ inequality. At the time, I had not understood the significance of the suggestion, and it had not remained in my working memory.
+        I quickly prepared the first draft of the new paper, which An later read and returned with brief comments in the margins of printed versions before submission.
+        A few months later, the paper was accepted by <cite>BIT Numerical Mathematics</cite><sup><a class="citation" id="cite-an-wu-2022-quadrature" href="#ref-an-wu-2022-quadrature">[26]</a></sup>.
+        We decided to dedicate the paper to Sloan on the occasion of his 85th birthday. The review process, however, moved more quickly than we had expected, and the paper appeared online nearly a year before the birthday itself.
+      </div>
+
+      <div class="para">
+        The argument suggested a broader principle. 
+        Once stability was separated from polynomial exactness, there was no longer any compelling reason to retain exactness at all. 
+        I therefore reformulated hyperinterpolation under a general MZ condition and showed that its error could be understood through the interaction between polynomial approximation and quadrature inconsistency. 
+        This became a second paper, later published in the <cite>Journal of Complexity</cite><sup><a class="citation" id="cite-an-wu-2024-bypassing" href="#ref-an-wu-2024-bypassing">[27]</a></sup>.
+        A related idea arose from a different limitation of the classical method. 
+        For singular or highly oscillatory functions, the quadrature required to compute the hyperinterpolation coefficients could be far more demanding than the polynomial approximation itself. 
+        I separated the troublesome factor from the smoother part of the integrand and incorporated it directly into the discrete coefficients, in the spirit of product integration. 
+        An contacted Víctor Domínguez, who generously shared his codes for highly oscillatory quadrature. 
+        Using them as a computational reference, I developed the corresponding hyperinterpolation method and carried out its theoretical and numerical analysis. 
+        The resulting paper appeared in the <cite>Journal of Approximation Theory</cite><sup><a class="citation" id="cite-an-wu-2024-efficient" href="#ref-an-wu-2024-efficient">[28]</a></sup>.
+      </div>
+
+      <div class="para">
+        Together, these three papers explored how much of hyperinterpolation survives once classical quadrature exactness is weakened, removed, or replaced by a more problem-adapted discretization. 
+        I was pleased that the original question had led to a broader framework. 
+        Yet by then I no longer felt the same excitement. The central conceptual step had already been taken, and the remaining extensions, although natural, no longer seemed to open a fundamentally new direction.
+      </div>
+
+
+      <div class="para">
+        During my PhD studies in Hong Kong, An also encouraged several of his own master's students to study other forms of regularized hyperinterpolation, including variants related to our earlier work on Lasso hyperinterpolation<sup><a class="citation" id="cite-an-wu-2021-lasso" href="#ref-an-wu-2021-lasso">[13]</a></sup>. 
+        One of them was Jiashu Ran, who later began his PhD at the University of Alberta. 
+        In September 2025, Stefano De Marchi visited Edmonton and met Ran there. They had extensive discussions. 
+        De Marchi subsequently invited Ran to write a survey on hyperinterpolation for <cite>Dolomites Research Notes on Approximation</cite>, of which he was one of the managing editors.
+        Ran forwarded the invitation to An and me. 
+        I wrote the sections on my joint work with An, while Ran covered the papers they had written together. 
+        As was his usual practice in our collaboration, An read successive printed drafts and returned them with comments in the margins.
+        For me, the resulting survey<sup><a class="citation" id="cite-an-ran-wu-2025" href="#ref-an-ran-wu-2025">[29]</a></sup> brought together a body of work that had grown out of many years of discussion and collaboration, 
+        but it also marked the near end of my work on hyperinterpolation as a subject in its own right.
+    </div>
+
+
+
+   
+
+    </section>
+
+
+    <section class="section" id="pdes">
+
+      <div class="section-number">
+        V
+      </div>
+
+      <div class="section-title">
+        From Spectral Numerics to Harmonic Analysis
+      </div>
+
+      <div class="para">
+        In November 2021, while Yuan and I were actively polishing the manuscript of enhanced TV before submission, Yuan asked me to go to his office and gave me a 160-page paper by Dong Li, entitled “Effective maximum principles for spectral methods”<sup><a class="citation" id="cite-li-2021-effective" href="#ref-li-2021-effective">[30]</a></sup>. 
+        Yuan and Li had known each other through the Hong Kong mathematical community for many years, and he asked whether I could understand it. 
+        The paper concerned the Allen–Cahn equation and a difficulty created by numerical approximation. 
+        The continuous solution obeys a maximum principle, but spectral discretization can introduce oscillations that push the numerical solution beyond the same bound. 
+        Li’s response was not to demand exact preservation. Instead, he allowed a small overshoot and showed that it could be controlled as the spectral resolution increased. 
+        This replacement of an exact property by a stable, asymptotic one would later become important to me.
+      </div>
+
+      <div class="para">
+        As I read Li’s paper, I began to wonder whether its central idea could be carried from a periodic domain onto the sphere. 
+        By then, I had worked through Atkinson and Han’s <cite>Spherical Harmonics and Approximations on the Unit Sphere: An Introduction</cite><sup><a class="citation" id="cite-atkinson-han-2012" href="#ref-atkinson-han-2012">[31]</a></sup> on my own, and spherical harmonic analysis had become a natural language for me. 
+        I told Yuan that a corresponding framework might be possible.
+        The passage from a periodic domain to the sphere was not merely geometric. 
+        In Li’s setting, the principal difficulty came from spectral truncation. 
+        In mine, even the spectral coefficients had to be recovered from finitely many samples through numerical quadrature. 
+        At the same time, An and I were studying hyperinterpolation without exact quadrature.
+        The two lines of thought began to meet: perhaps an effective maximum principle on the sphere did not require exact integration either, provided that the underlying sampling rule remained sufficiently stable.
+        By mid-2022, I had prepared a preliminary manuscript. 
+        What began as an attempt to transport Li’s argument to the sphere had become a problem about the interaction of three sources of approximation: spectral truncation, discrete sampling, and numerical integration.
+      </div>
+
+      <div class="para">
+        Yuan showed Li an early draft of the manuscript to seek his opinion. We later posted the manuscript on arXiv in May 2023<sup><a class="citation" id="cite-wu-yuan-2023-breaking" href="#ref-wu-yuan-2023-breaking">[32]</a></sup>. 
+        The paper, however, encountered an unusually long publication process and was still awaiting its first round of review. 
+        Nevertheless, I regarded this work as an important step in connecting my earlier interests in approximation and sampling with spectral methods for PDEs. 
+        The work was included as Chapter 5 of my PhD thesis<sup><a class="citation" id="cite-wu-2023-thesis" href="#ref-wu-2023-thesis">[33]</a></sup>.
+        By April 2026, as I was approaching the end of my second postdoctoral appointment, I had accumulated a broader understanding of Marcinkiewicz–Zygmund inequalities and their role in stable discretization. 
+        I began to see that the ideas behind this work extended beyond effective maximum principles and pointed to a more general question on the stability of spectral methods with inexact quadrature rules.
+        This viewpoint led me to write a short paper on MZ discretization of Galerkin schemes. 
+        I quickly developed the manuscript in a few days and sent it to <cite>Applied Mathematics Letters</cite><sup><a class="citation" id="cite-wu-2026-mz-galerkin" href="#ref-wu-2026-mz-galerkin">[34]</a></sup>.
+      </div>
+
+      <div class="para">
+        As I was preparing for my PhD defense tentatively scheduled for June 2023, I began looking for postdoctoral positions in the fall of 2022. 
+        I applied to several opportunities through mathjobs.org and also contacted several European institutions. A professor in Germany invited me to apply for a Humboldt Research Fellowship for Postdocs, and I decided to focus on this opportunity. 
+        I have never been someone who prefers to pursue many possibilities simultaneously; once I commit to a direction, I tend to devote myself fully to it rather than keep many alternatives open.
+        I prepared a proposal on approximation theory for neural networks.
+      </div>
+
+      <div class="para">
+        Before the fellowship result was announced in July 2023, Yuan told me that he had discussed my situation with Li, who joined the University of Hong Kong as a Chair Professor in early 2023. 
+        Li would be willing to offer me a one-year postdoctoral position if the application was unsuccessful.
+        The Humboldt application was ultimately unsuccessful. The feedback acknowledged the strength of my mobility but noted that my background in neural networks was limited. 
+        When Li learned of the outcome, he immediately offered me the postdoctoral position. 
+      </div>
+
+      <div class="para">
+        Before joining Li's group, I had never received systematic training in PDE analysis. 
+        My understanding of PDEs was largely shaped by Ciarlet's functional analysis and PDE courses during the pandemic, 
+        as well as Trefethen's <cite>Spectral Methods in MATLAB</cite><sup><a class="citation" id="cite-trefethen-2000-spectral" href="#ref-trefethen-2000-spectral">[35]</a></sup>, which I had studied independently.
+        Li immediately exposed me to a very different style of analysis. He first asked me to read Smith and Tataru's work on Strichartz estimates for nonlinear wave equations<sup><a class="citation" id="cite-smith-tataru-2005" href="#ref-smith-tataru-2005">[36]</a></sup>. 
+        I was overwhelmed by the technical depth and the style of PDE analysis, which was very different from the approximation theory and computational mathematics that I was familiar with.
+        After several unsuccessful presentations, I decided to look for a more accessible entry point and searched through the references of that paper.
+        I found one of Smith's papers on the construction of parametrices<sup><a class="citation" id="cite-smith-1998-parametrix" href="#ref-smith-1998-parametrix">[37]</a></sup>, and Li agreed that it might be a better starting point. 
+        The paper introduced multiscale directional wave packets arising from a second dyadic decomposition, closely related in spirit to later constructions such as curvelets and shearlets.
+        Li spent a great deal of time asking me to present the construction and its underlying ideas on the blackboard. 
+        Although I was clearly far from having a mature background in PDE analysis, he was remarkably patient. 
+        I could sometimes sense his frustration, but he never expressed it harshly. 
+        I still remember one occasion when Chengbo Wang visited him and he asked me to continue my presentation in front of them. 
+        When I got stuck several times, he sighed and jokingly told Wang that he needed some lamb that evening to recover from the effort.
+      </div>
+
+      <div class="para">
+        No joint paper came out of that year, but the blackboard sessions remained with me. 
+        Several years later, when I began working with wavelets and framelets, the decompositions that had once seemed so foreign returned in a recognizable form. 
+        The multiscale and directional viewpoint that initially appeared through wave packets, second dyadic decompositions, and related constructions allowed me to understand wavelet-type frameworks much more naturally and very quickly. 
+        Looking back, this period of training had a lasting influence on the way I approach harmonic analysis. 
+        It also strengthened my tendency to view mathematical problems through spectral and frequency-domain perspectives.
+      </div>
+
+      <div class="para">
+        Like An and Yuan, Li encouraged me to spend several years in Europe or North America. 
+        I returned to the postdoc market shortly after joining him. 
+        As before, I applied through mathjobs.org and contacted potential mentors whose research interests aligned with mine. 
+        Some conversations led to informal interviews, but the process remained uncertain.
+        An helped me explore a position with a long-time friend of Ian Sloan. 
+        When I mentioned the scholar’s name to Li, he remembered knowing him during his undergraduate years and, although they had not been in close contact for a long time, wrote to him on my behalf. 
+        I was invited to a formal interview.
+        Before that process concluded, however, the University of Georgia offered me a postdoctoral position. 
+        I have always found prolonged uncertainty difficult to tolerate, and I chose the certainty of an existing offer over the possibility of a better but uncertain outcome.
+        Li did not try to persuade me to wait for the other opportunity.
+        He only remarked that, in the American job market, an offer in hand could sometimes be used to ask another institution to match it. I chose the certainty of Georgia.
+      </div>
+
+
+
+    </section>
+
+
+      
+    <section class="section" id="usa">
+
+      <div class="section-number">
+        VI
+      </div>
+
+      <div class="section-title">
+        United States
+      </div>
+
+
+      <div class="para">
+        I landed in Atlanta at the end of July 2024, on my 27th birthday. 
+        I had come to begin a postdoctoral appointment at the University of Georgia with Weiwei Hu, whom I had first met during her visit to HKU in December 2022. 
+        After receiving a grant on fluid mixing the following year, she invited me to apply for a position in her group and eventually offered it to me.
+        Athens was often described to me as a lovely college town; even the visa officer at the U.S. Consulate in Hong Kong had said so. 
+        It was lovely, but its quietness initially felt less like peace than emptiness. 
+        I had arrived from Hong Kong, had no car, and knew almost no one. 
+        Hu was spending the semester in Nuremberg, and the reduced summer bus schedule made even ordinary errands difficult.
+        I took a bus downtown to Target and bought the utensils and necessities with which I was supposed to begin a new life. 
+        Then I took the bus back and carried everything for the final ten-minute walk home. 
+        These small journeys were my first attempts to assemble a life in a new country.
+        During my first week, I cried twice.
+      </div>
+  
+      <div class="para">
+        Hu’s group was small and international. Besides me, it included Daniel Owusu Adu, originally from Ghana, and Alexander Jay Brower, from Miami, Florida. 
+        Hu asked me to study DiPerna and Lions’ work on transport equations and to begin a project on the control of fluid mixing.
+        Mixing posed a numerical difficulty that could be seen almost physically. 
+        A flow stretches and folds a scalar field, producing structures at finer and finer scales. 
+        The field becomes more homogeneous when viewed from a distance, yet increasingly intricate under magnification. 
+        Our goal was to design a control that would reduce a measure of unmixedness to a prescribed fraction of its initial value. 
+        I had previously studied how discrete information represents a continuous object; now I was studying how a continuous flow continually moved that information beyond the scales a computation could resolve.
+      </div>
+      
+      
+      <div class="para">
+        Because Hu was away during my first semester, she asked Ming-Jun Lai to look after me locally. 
+        Lai introduced me to a side of approximation theory quite different from the spectral viewpoint I had developed. 
+        He shared his early spline codes and went through them with me line by line, explaining not only how the programs worked but why the constructions had been designed that way. 
+        He also gave me an unpublished book he had written on computing with splines.
+        During the fall of 2024, I studied bivariate splines with him. 
+        Spectral methods encouraged me to think globally, through frequency decompositions and harmonic representations; splines began from local geometry, meshes, and computational structure. 
+        I had hoped to continue to trivariate and spherical splines, though we never found enough uninterrupted time.
+        Lai’s splines did not convert me. 
+        They did, however, show me more clearly what my own instincts were. 
+        Faced with a new problem, I continued to return to frequency, stability, and spectral structure.
+      </div>
+
+
+      <div class="para">
+        Hu returned to the United States in the spring of 2025. 
+        Shortly afterward, I bought a used 2013 Volkswagen Beetle. 
+        It became both a practical necessity and my companion for exploring Georgia and, eventually, much of the country.
+        I often drove to Duluth, northeast of Atlanta, for Chinese or Korean food and groceries. 
+        The journey was long enough that a meal or a bag of groceries could occupy most of an afternoon. 
+        When Hu traveled through Atlanta airport, I offered to drive her there and back. 
+        On the return journey, she would often take me to hot pot or another restaurant in Duluth and refuse to let me pay. 
+        She said that she never allowed junior researchers without tenure-track positions to pay for meals with her.
+        Much of what she taught me about American academic life came during those drives. 
+        She spoke about interviews, professional etiquette, and unwritten rules that rarely appeared in official advice. 
+        The Beetle had given me mobility; the conversations inside it gave me a map of another kind.
+      </div>
+
+      <div class="para">
+        Academically, 2025 initially felt quiet. I spent two months of the summer at my alma mater, hosted by Yuan, but returned to Georgia with less progress than I had hoped.
+        In October, however, the first project during my second postdoc appointment was finally completed<sup><a class="citation" id="cite-hu-lai-wu-2025-mixing" href="#ref-hu-lai-wu-2025-mixing">[38]</a></sup>.
+        I derived the optimality conditions and carried out the numerical simulations using the spline methods I had learned from Lai, while Hu established that the feasible set was nonempty. 
+        I also contributed numerical experiments to a conference submission with members of Hu’s group<sup><a class="citation" id="cite-hu-adu-wu-brower-2026" href="#ref-hu-adu-wu-brower-2026">[39]</a></sup>.
+      </div>
+
+      <div class="para">
+        In November 2025, uncertainty about Hu’s future funding pushed me onto the academic job market a year earlier than I had planned. 
+        Changes in the immigration climate also made me question whether I wanted to build a permanent academic life in the United States. 
+        I applied for only one university in the United States, and the rest Chinese.
+        Because prolonged uncertainty has always been difficult for me, returning to China gradually became a possibility rather than a retreat.
+        The most difficult part of the search was not filling out applications but asking other people for help. Yuan, Hu, and Lai wrote research letters for me, while Enka Lakuriqi prepared a teaching letter. 
+        Her kindness carried an unexpected historical echo. She once told me that her father, an Albanian, had frequently visited Beijing during the Cold War. 
+        My own job search had briefly connected people, countries, and generations that otherwise seemed to have little reason to meet.
+      </div>
+
+      <div class="para">
+        In the spring of 2026, the only American university to which I had applied invited me for a campus interview. 
+        Although I was not offered the position because the committee eventually continued with another candidate with stronger backgrounds in data science, 
+        the experience gave me my first direct view of the American faculty hiring process. 
+        By the time I left the United States in May 2026, however, I had crossed 37 states by road or rail, often alone.
+        I had arrived in Athens without a car, carrying groceries home from a bus stop. I left two years later after exploring across much of the country. 
+        More importantly, the experience helped me understand my own mathematical identity more clearly. 
+        After encountering different mathematical languages, I realized that my intuition was still most naturally aligned with spectral viewpoints, harmonic analysis, and stable representations of continuous structures. 
+        The experience also strengthened my desire to develop my own research identity as an independent mathematician.       
+        If I were given the choice again, I would still go to Georgia.     
+      </div>
+
+    </section>
+
+
+
+    <section class="section" id="exactness">
+
+      <div class="section-number">
+        VII
+      </div>
+
+      <div class="section-title">
+        Beyond Exactness
+      </div>
+
+      <div class="para">
+        My current work is increasingly organized around a single question: how do weak,
+        imperfect, or nonstandard sampling assumptions propagate through numerical
+        methods for continuous problems?
+      </div>
+
+
+    </section>
+
+    <section class="references" id="references">
+
+      <div class="section-title">
+        References
+      </div>
+
+      <ol>
+        <li id="ref-trefethen-bau-1997">
+          Lloyd N. Trefethen and David Bau III,
+          <cite>Numerical Linear Algebra</cite>,
+          Society for Industrial and Applied Mathematics, Philadelphia, 1997.
+          <a href="https://doi.org/10.1137/1.9780898719574">doi</a>
+          <a class="back-reference" href="#cite-trefethen-bau-1997"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-powell-1981">
+          M. J. D. Powell,
+          <cite>Approximation Theory and Methods</cite>,
+          Cambridge University Press, Cambridge, 1981.
+          <a class="back-reference" href="#cite-powell-1981"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-trefethen-2013">
+          Lloyd N. Trefethen,
+          <cite>Approximation Theory and Approximation Practice</cite>,
+          Society for Industrial and Applied Mathematics, Philadelphia, 2013.
+          <a class="back-reference" href="#cite-trefethen-2013"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-berrut-trefethen-2004">
+          Jean-Paul Berrut and Lloyd N. Trefethen,
+          “Barycentric Lagrange Interpolation,”
+          <cite>SIAM Review</cite>, 46(3), 501–517, 2004.
+          <a href="https://doi.org/10.1137/S0036144502417715">doi</a>
+          <a class="back-reference" href="#cite-berrut-trefethen-2004"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-wang-xiang-2012">
+          Haiyong Wang and Shuhuang Xiang,
+          “On the Convergence Rates of Legendre Approximation,”
+          <cite>Mathematics of Computation</cite>, 81(278), 861–877, 2012.
+          <a href="https://doi.org/10.1090/S0025-5718-201<sup>1</sup>-02549-4">doi</a>
+          <a class="back-reference" href="#cite-wang-xiang-2012"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-glaser-liu-rokhlin-2007">
+          Andreas Glaser, Xiangtao Liu, and Vladimir Rokhlin,
+          “A Fast Algorithm for the Calculation of the Roots of Special Functions,”
+          <cite>SIAM Journal on Scientific Computing</cite>, 29(4), 1420–1438, 2007.
+          <a href="https://doi.org/10.1137/06067016X">doi</a>
+          <a class="back-reference" href="#cite-glaser-liu-rokhlin-2007"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-wang-huybrechs-vandewalle-2014">
+          Haiyong Wang, Daan Huybrechs, and Stefan Vandewalle,
+          “Explicit Barycentric Weights for Polynomial Interpolation in the Roots or Extrema of Classical Orthogonal Polynomials,”
+          <cite>Mathematics of Computation</cite>, 83(290), 2893–2914, 2014.
+          <a href="https://doi.org/10.1090/S0025-5718-2014-0282<sup>1</sup>-4">doi</a>
+          <a class="back-reference" href="#cite-wang-huybrechs-vandewalle-2014"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-2011">
+          Congpei An,
+          <cite>Distribution of Points on the Sphere and Spherical Designs</cite>,
+          Ph.D. thesis, The Hong Kong Polytechnic University, 2011.
+          <a href="https://ira.lib.polyu.edu.hk/handle/10397/83584">thesis</a>
+          <a class="back-reference" href="#cite-an-2011"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-chen-sloan-womersley-2010">
+          Congpei An, Xiaojun Chen, Ian H. Sloan, and Robert S. Womersley,
+          “Well Conditioned Spherical Designs for Integration and Interpolation on the Two-Sphere,”
+          <cite>SIAM Journal on Numerical Analysis</cite>, 48(6), 2135–2157, 2010.
+          <a href="https://doi.org/10.1137/100795140">doi</a>
+          <a class="back-reference" href="#cite-an-chen-sloan-womersley-2010"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-chen-sloan-womersley-2012">
+          Congpei An, Xiaojun Chen, Ian H. Sloan, and Robert S. Womersley,
+          “Regularized Least Squares Approximations on the Sphere Using Spherical Designs,”
+          <cite>SIAM Journal on Numerical Analysis</cite>, 50(3), 1513–1534, 2012.
+          <a href="https://doi.org/10.1137/110838601">doi</a>
+          <a class="back-reference" href="#cite-an-chen-sloan-womersley-2012"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-higham-1998">
+          Nicholas J. Higham,
+          <cite>Handbook of Writing for the Mathematical Sciences</cite>,
+          2nd ed., Society for Industrial and Applied Mathematics, Philadelphia, 1998.
+          <a href="https://doi.org/10.1137/1.9780898719550">doi</a>
+          <a class="back-reference" href="#cite-higham-1998"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-2021-tikhonov">
+          Congpei An and Hao-Ning Wu,
+          “Tikhonov Regularization for Polynomial Approximation Problems in Gauss Quadrature Points,”
+          <cite>Inverse Problems</cite>, 37(1), 015008, 2021.
+          <a href="https://doi.org/10.1088/1361-6420/abcd44">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2021-tikhonov"
+             aria-label="Back to citation">↩</a>
+          <a class="back-reference" href="#cite-an-wu-2021-tikhonov-referee"
+             aria-label="Back to second citation">↩</a>
+        </li>
+        <li id="ref-an-wu-2021-lasso">
+          Congpei An and Hao-Ning Wu,
+          “Lasso Hyperinterpolation Over General Regions,”
+          <cite>SIAM Journal on Scientific Computing</cite>, 43(6), A3967–A3991, 2021.
+          <a href="https://doi.org/10.1137/20M137793X">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2021-lasso"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-boyd-vandenberghe-2004">
+          Stephen Boyd and Lieven Vandenberghe,
+          <cite>Convex Optimization</cite>,
+          Cambridge University Press, Cambridge, 2004.
+          <a href="https://doi.org/10.1017/CBO9780511804441">doi</a>
+          <a class="back-reference" href="#cite-boyd-vandenberghe-2004"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-nocedal-wright-2006">
+          Jorge Nocedal and Stephen J. Wright,
+          <cite>Numerical Optimization</cite>,
+          2nd ed., Springer, New York, 2006.
+          <a href="https://doi.org/10.1007/978-0-387-40065-5">doi</a>
+          <a class="back-reference" href="#cite-nocedal-wright-2006"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-esser-lou-xin-2013">
+          Ernie Esser, Yifei Lou, and Jack Xin,
+          “A Method for Finding Structured Sparse Solutions to Nonnegative Least Squares Problems with Applications,”
+          <cite>SIAM Journal on Imaging Sciences</cite>, 6(4), 2010–2046, 2013.
+          <a href="https://doi.org/10.1137/13090540X">doi</a>
+          <a class="back-reference" href="#cite-esser-lou-xin-2013"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-yin-lou-he-xin-2015">
+          Penghang Yin, Yifei Lou, Qi He, and Jack Xin,
+          “Minimization of ℓ<sub>1-2</sub> for Compressed Sensing,”
+          <cite>SIAM Journal on Scientific Computing</cite>, 37(1), A536–A563, 2015.
+          <a href="https://doi.org/10.1137/140952363">doi</a>
+          <a class="back-reference" href="#cite-yin-lou-he-xin-2015"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-yuan-2022">
+          Congpei An, Hao-Ning Wu, and Xiaoming Yuan,
+          “The Springback Penalty for Robust Signal Recovery,”
+          <cite>Applied and Computational Harmonic Analysis</cite>, 61, 319–346, 2022.
+          <a href="https://doi.org/10.1016/j.acha.2022.07.002">doi</a>
+          <a class="back-reference" href="#cite-an-wu-yuan-2022"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-needell-ward-2013">
+          Deanna Needell and Rachel Ward,
+          “Stable Image Reconstruction Using Total Variation Minimization,”
+          <cite>SIAM Journal on Imaging Sciences</cite>, 6(2), 1035–1058, 2013.
+          <a href="https://doi.org/10.1137/120868281">doi</a>
+          <a class="back-reference" href="#cite-needell-ward-2013"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-lou-zeng-osher-xin-2015">
+          Yifei Lou, Tieyong Zeng, Stanley Osher, and Jack Xin,
+          “A Weighted Difference of Anisotropic and Isotropic Total Variation Model for Image Processing,”
+          <cite>SIAM Journal on Imaging Sciences</cite>, 8(3), 1798–1823, 2015.
+          <a href="https://doi.org/10.1137/14098435X">doi</a>
+          <a class="back-reference" href="#cite-lou-zeng-osher-xin-2015"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-mollenhoff-strekalovskiy-moeller-cremers-2015">
+          Thomas Möllenhoff, Evgeny Strekalovskiy, Michael Moeller, and Daniel Cremers,
+          “The Primal-Dual Hybrid Gradient Method for Semiconvex Splittings,”
+          <cite>SIAM Journal on Imaging Sciences</cite>, 8(2), 827–857, 2015.
+          <a href="https://doi.org/10.1137/140976601">doi</a>
+          <a class="back-reference" href="#cite-mollenhoff-strekalovskiy-moeller-cremers-2015"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-rudin-osher-fatemi-1992">
+          Leonid I. Rudin, Stanley Osher, and Emad Fatemi,
+          “Nonlinear Total Variation Based Noise Removal Algorithms,”
+          <cite>Physica D: Nonlinear Phenomena</cite>, 60(1–4), 259–268, 1992.
+          <a href="https://doi.org/10.1016/0167-2789(92)90242-F">doi</a>
+          <a class="back-reference" href="#cite-rudin-osher-fatemi-1992"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-yuan-2023">
+          Congpei An, Hao-Ning Wu, and Xiaoming Yuan,
+          “Enhanced Total Variation Minimization for Stable Image Reconstruction,”
+          <cite>Inverse Problems</cite>, 39(7), 075005, 2023.
+          <a href="https://doi.org/10.1088/1361-6420/acd4e1">doi</a>
+          <a class="back-reference" href="#cite-an-wu-yuan-2023"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-trefethen-2022-exactness">
+          Lloyd N. Trefethen,
+          “Exactness of Quadrature Formulas,”
+          <cite>SIAM Review</cite>, 64(1), 132–150, 2022.
+          <a href="https://doi.org/10.1137/20M1389522">doi</a>
+          <a class="back-reference" href="#cite-trefethen-2022-exactness"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-sloan-1995">
+          Ian H. Sloan,
+          “Polynomial Interpolation and Hyperinterpolation Over General Regions,”
+          <cite>Journal of Approximation Theory</cite>, 83(2), 238–254, 1995.
+          <a href="https://doi.org/10.1006/jath.1995.1119">doi</a>
+          <a class="back-reference" href="#cite-sloan-1995"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-2022-quadrature">
+          Congpei An and Hao-Ning Wu,
+          “On the Quadrature Exactness in Hyperinterpolation,”
+          <cite>BIT Numerical Mathematics</cite>, 62(4), 1899–1919, 2022.
+          <a href="https://doi.org/10.1007/s10543-022-00935-x">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2022-quadrature"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-2024-bypassing">
+          Congpei An and Hao-Ning Wu,
+          “Bypassing the Quadrature Exactness Assumption of Hyperinterpolation on the Sphere,”
+          <cite>Journal of Complexity</cite>, 80, 101789, 2024.
+          <a href="https://doi.org/10.1016/j.jco.2023.101789">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2024-bypassing"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-wu-2024-efficient">
+          Congpei An and Hao-Ning Wu,
+          “Is Hyperinterpolation Efficient in the Approximation of Singular and Oscillatory Functions?,”
+          <cite>Journal of Approximation Theory</cite>, 299, 106013, 2024.
+          <a href="https://doi.org/10.1016/j.jat.2023.106013">doi</a>
+          <a class="back-reference" href="#cite-an-wu-2024-efficient"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-an-ran-wu-2025">
+          Congpei An, Jiashu Ran, and Hao-Ning Wu,
+          “The Path of Hyperinterpolation: A Survey,”
+          <cite>Dolomites Research Notes on Approximation</cite>, 18(1), 135–145, 2025.
+          <a href="https://doi.org/10.25430/pupj-DRNA-2025-1-11">doi</a>
+          <a class="back-reference" href="#cite-an-ran-wu-2025"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-li-2021-effective">
+          Dong Li,
+          “Effective Maximum Principles for Spectral Methods,”
+          <cite>Annals of Applied Mathematics</cite>, 37(2), 131–290, 2021.
+          <a href="https://doi.org/10.4208/aam.OA-2021-0003">doi</a>
+          <a class="back-reference" href="#cite-li-2021-effective"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-atkinson-han-2012">
+          Kendall Atkinson and Weimin Han,
+          <cite>Spherical Harmonics and Approximations on the Unit Sphere: An Introduction</cite>,
+          Lecture Notes in Mathematics 2044, Springer, Berlin and Heidelberg, 2012.
+          <a href="https://doi.org/10.1007/978-3-642-25983-8">doi</a>
+          <a class="back-reference" href="#cite-atkinson-han-2012"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-wu-yuan-2023-breaking">
+          Hao-Ning Wu and Xiaoming Yuan,
+          “Breaking Quadrature Exactness: A Spectral Method for the Allen–Cahn Equation on Spheres,”
+          arXiv preprint arXiv:2305.04820, 2023.
+          <a href="https://doi.org/10.48550/arXiv.2305.04820">arXiv</a>
+          <a class="back-reference" href="#cite-wu-yuan-2023-breaking"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-wu-2023-thesis">
+          Hao-Ning Wu,
+          <cite>Restricted Isometry and Information-Based Numerical Analysis</cite>,
+          Ph.D. thesis, The University of Hong Kong, 2023.
+          <a href="https://hdl.handle.net/10722/330255">thesis</a>
+          <a class="back-reference" href="#cite-wu-2023-thesis"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-wu-2026-mz-galerkin">
+          Hao-Ning Wu,
+          “Marcinkiewicz–Zygmund Stability of Quadrature-Based Galerkin Schemes,”
+          <cite>Applied Mathematics Letters</cite>, 182, 110033, 2026.
+          <a href="https://doi.org/10.1016/j.aml.2026.110033">doi</a>
+          <a class="back-reference" href="#cite-wu-2026-mz-galerkin"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-trefethen-2000-spectral">
+          Lloyd N. Trefethen,
+          <cite>Spectral Methods in MATLAB</cite>,
+          Software, Environments, and Tools 10, Society for Industrial and Applied Mathematics, Philadelphia, 2000.
+          <a href="https://doi.org/10.1137/1.9780898719598">doi</a>
+          <a class="back-reference" href="#cite-trefethen-2000-spectral"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-smith-tataru-2005">
+          Hart F. Smith and Daniel Tataru,
+          “Sharp Local Well-Posedness Results for the Nonlinear Wave Equation,”
+          <cite>Annals of Mathematics</cite>, 162(1), 291–366, 2005.
+          <a href="https://doi.org/10.4007/annals.2005.162.291">doi</a>
+          <a class="back-reference" href="#cite-smith-tataru-2005"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-smith-1998-parametrix">
+          Hart F. Smith,
+          “A Parametrix Construction for Wave Equations with C<sup>1,1</sup> Coefficients,”
+          <cite>Annales de l'Institut Fourier</cite>, 48(3), 797–835, 1998.
+          <a href="https://doi.org/10.5802/aif.1640">doi</a>
+          <a class="back-reference" href="#cite-smith-1998-parametrix"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-hu-lai-wu-2025-mixing">
+          Weiwei Hu, Ming-Jun Lai, and Hao-Ning Wu,
+          “Cellular Flow Control Design for Mixing Based on the Least Action Principle,”
+          arXiv preprint arXiv:2510.22703, 2025.
+          <a href="https://doi.org/10.48550/arXiv.2510.22703">arXiv</a>
+          <a class="back-reference" href="#cite-hu-lai-wu-2025-mixing"
+             aria-label="Back to citation">↩</a>
+        </li>
+        <li id="ref-hu-adu-wu-brower-2026">
+          Daniel O. Adu, Alexander J. Brower, Weiwei Hu, and Hao-Ning Wu,
+          “Optimal Time Scheduling for a Simple Reparable System,”
+          <cite>Proceedings of the 2026 American Control Conference (ACC)</cite>,
+          New Orleans, Louisiana, USA, 2026.
+          <a href="https://css.paperplaza.net/conferences/conferences/ACC26/program/ACC26_ContentListWeb_2.html">conference</a>
+          <a class="back-reference" href="#cite-hu-adu-wu-brower-2026"
+             aria-label="Back to citation">↩</a>
+        </li>
+      </ol>
+
+    </section>
+
+
+    <footer class="footer">
+
+      <div>
+        © Hao-Ning Wu
+      </div>
+
+      <div>
+        This page is a continuing work in progress.
+      </div>
+
+      <div class="back-link">
+        <a href="/index.html">← Back to the homepage</a>
+      </div>
+
+    </footer>
+
+  </main>
+
+</div> 
+
+</body>
+</html>
+
   --accent: #287f70;
   --light-accent: #d8e5df;
   --rule: #d8d2c2;
