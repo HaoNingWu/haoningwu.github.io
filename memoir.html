@@ -16,26 +16,8 @@
 :root {
   --background: #f7f4e8;
   --text: #252525;
-  --secondary-text: #6d6a62;<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="apple-touch-icon" sizes="180x180" href="/images/icon.png">
-<link rel="icon" type="image/jpeg" href="/images/icon.png">
-<link rel="shortcut icon" href="/images/icon.png">
-
-<title>A Mathematical Memoir: Math, People, and Ideas</title>
-
-<style>
-
-:root {
-  --background: #f7f4e8;
-  --text: #252525;
   --secondary-text: #6d6a62;
-  --accent: #287f70;
+  --accent: #29957f;
   --light-accent: #d8e5df;
   --rule: #d8d2c2;
   --quote-background: rgba(255, 255, 255, 0.34);
@@ -199,10 +181,15 @@ body {
 }
 
 .references li {
+  color: var(--text);
   font-size: 15px;
   line-height: 1.7;
   margin-bottom: 12px;
   padding-left: 5px;
+}
+
+.references li cite {
+  color: var(--text);
 }
 
 .back-reference {
@@ -253,6 +240,10 @@ body {
   font-weight: 600;
 }
 
+cite {
+  color: var(--text);
+}
+
 
 /* Subsections */
 
@@ -261,7 +252,7 @@ body {
 }
 
 .subsection-title {
-  color: var(--text);
+  color: var(--accent);
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
