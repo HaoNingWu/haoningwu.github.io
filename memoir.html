@@ -578,7 +578,7 @@ a:hover {
         I did not choose Jinan University in 2015 because I had already decided to become a mathematician. 
         One rather practical attraction was that, as a university historically oriented toward overseas Chinese students,
         Jinan then did not require freshmen to undergo the compulsory military training that was common across the country. 
-        It was an almost accidental decision. Looking back, however, it was one of the most consequential decisions I have ever made. 
+        It was an almost accidental decision, but one of the most consequential I have ever made.
         It led me to my first research project in approximation theory and, ultimately, to the mathematical questions that have remained with me ever since.
       </div>
 
@@ -702,7 +702,6 @@ a:hover {
         He first asked how I was settling into life in Hong Kong amid the social unrest at the time, and then encouraged me to find a research direction that suited my own interests. 
         What I remember most was his advice that I should not pursue optimization with him, despite it being his established field.        
         He explained that if we published optimization papers together, people might naturally attribute the main credit to him rather than to me, making it harder for me to establish an independent research identity.
-        I did not fully appreciate the significance of this advice at the time, but I have often thought back on it with gratitude in the years since.
       </div>
 
       <div class="para">
@@ -752,29 +751,23 @@ a:hover {
 
 
       <div class="para">
-        The success of the springback model naturally led me to wonder whether the same idea could be extended from sparse signal recovery to image reconstruction. 
         At the time, Needell and Ward had established a theoretical framework for total variation image reconstruction<sup><a class="citation" id="cite-needell-ward-2013" href="#ref-needell-ward-2013">[19]</a></sup>, while Lou, Zeng, Osher, and Xin had proposed replacing the ℓ<sub>1</sub>−ℓ<sub>2</sub> functional by an anisotropic–isotropic variant for imaging problems<sup><a class="citation" id="cite-lou-zeng-osher-xin-2015" href="#ref-lou-zeng-osher-xin-2015">[20]</a></sup>. 
-        These works suggested a natural analogue of the springback model.
-        I therefore considered the model obtained by replacing the ℓ<sub>1</sub> term with anisotropic total variation while subtracting the squared isotropic total variation. 
-        One motivation came from the existing anisotropic–isotropic model. 
-        Another arose from the Euler–Lagrange equation itself. 
-        Subtracting the squared isotropic total variation introduces a backward diffusion term. 
-        If the observed image is regarded as the result of a diffusion process, such a term could, at least heuristically, counteract part of that diffusion. 
+        The springback idea suggested an analogous model for imaging: replacing the ℓ<sub>1</sub> term by anisotropic total variation and subtracting the squared isotropic TV. 
+        The Euler–Lagrange equation also gave the model a suggestive interpretation through a backward-diffusion term.
         A similar intuition had already appeared in the work of Möllenhoff, Strekalovskiy, Moeller, and Cremers<sup><a class="citation" id="cite-mollenhoff-strekalovskiy-moeller-cremers-2015" href="#ref-mollenhoff-strekalovskiy-moeller-cremers-2015">[21]</a></sup>, although their study on this model was purely empirical.
         This time, I worked through the theoretical analysis by adapting the arguments of Needell and Ward, while extending my previous MATLAB implementation from one-dimensional signals to two-dimensional images.
-        
       </div>
 
       <div class="para">
         An and I initially wanted to keep the name springback for the new model. 
         Yuan disagreed. 
         He thought the title should describe what the method did and suggested the name enhanced total variation (TV). 
-        Looking back, he was right. The title made the paper immediately understandable to researchers in inverse problems and imaging, 
+        The new title made the paper immediately legible to researchers in inverse problems and imaging,
         whereas the metaphor of "springback" would have meant little outside our own circle.
         Yuan again devoted considerable time to revising the manuscript with me.
         After the revision, Yuan remarked that he had probably completed the same kind of sentence-by-sentence training in academic writing on me.
-        After I posted the preprint on arXiv, Leonid Rudin, one of the originators of TV regularization<sup><a class="citation" id="cite-rudin-osher-fatemi-1992" href="#ref-rudin-osher-fatemi-1992">[22]</a></sup>, 
-        left a brief comment “Nice work” comment on ResearchGate, which was an unexpected pleasure.
+        After the preprint appeared, Leonid Rudin, one of the originators of TV regularization<sup><a class="citation" id="cite-rudin-osher-fatemi-1992" href="#ref-rudin-osher-fatemi-1992">[22]</a></sup>, 
+        left a brief comment “Nice work” comment on ResearchGate, which I was pleased to see.
         The paper was eventually accepted by <cite>Inverse Problems</cite><sup><a class="citation" id="cite-an-wu-yuan-2023" href="#ref-an-wu-yuan-2023">[23]</a></sup>.
       </div>
 
@@ -900,7 +893,6 @@ a:hover {
         The paper concerned the Allen–Cahn equation and a difficulty created by numerical approximation. 
         The continuous solution obeys a maximum principle, but spectral discretization can introduce oscillations that push the numerical solution beyond the same bound. 
         Li’s response was not to demand exact preservation. Instead, he allowed a small overshoot and showed that it could be controlled as the spectral resolution increased. 
-        This replacement of an exact property by a stable, asymptotic one would later become important to me.
       </div>
 
       <div class="para">
@@ -919,8 +911,7 @@ a:hover {
       <div class="para">
         Yuan showed Li an early draft of the manuscript to seek his opinion. We later posted the manuscript on arXiv in May 2023<sup><a class="citation" id="cite-wu-yuan-2023-breaking" href="#ref-wu-yuan-2023-breaking">[32]</a></sup>. 
         The paper, however, encountered an unusually long publication process and was still awaiting its first round of review. 
-        Nevertheless, I regarded this work as an important step in connecting my earlier interests in approximation and sampling with spectral methods for PDEs. 
-        The work was included as Chapter 5 of my PhD thesis<sup><a class="citation" id="cite-wu-2023-thesis" href="#ref-wu-2023-thesis">[33]</a></sup>.
+        Nevertheless, the work became Chapter 5 of my PhD thesis<sup><a class="citation" id="cite-wu-2023-thesis" href="#ref-wu-2023-thesis">[33]</a></sup>.
       </div>
 
       <div class="para">
@@ -957,8 +948,6 @@ a:hover {
         No joint paper came out of that year, but the blackboard sessions remained with me. 
         Several years later, when I began working with wavelets and framelets, the decompositions that had once seemed so foreign returned in a recognizable form. 
         The multiscale and directional viewpoint that initially appeared through wave packets, second dyadic decompositions, and related constructions allowed me to understand wavelet-type frameworks much more naturally and very quickly. 
-        Looking back, this period of training had a lasting influence on the way I approach harmonic analysis. 
-        It also strengthened my tendency to view mathematical problems through spectral and frequency-domain perspectives.
       </div>
 
       <div class="para">
@@ -972,7 +961,7 @@ a:hover {
         Before that process concluded, however, the University of Georgia offered me a postdoctoral position. 
         I have always found prolonged uncertainty difficult to tolerate, and I chose the certainty of an existing offer over the possibility of a better but uncertain outcome.
         Li did not try to persuade me to wait for the other opportunity.
-        He only remarked that, in the American job market, an offer in hand could sometimes be used to ask another institution to match it. I chose the certainty of Georgia.
+        He only remarked that, in the American job market, an offer in hand could sometimes be used to ask another institution to match it. I chose the certainty.
       </div>
 
 
@@ -1013,7 +1002,6 @@ a:hover {
         A flow stretches and folds a scalar field, producing structures at finer and finer scales. 
         The field becomes more homogeneous when viewed from a distance, yet increasingly intricate under magnification. 
         Our goal was to design a control that would reduce a measure of unmixedness to a prescribed fraction of its initial value. 
-        I had previously studied how discrete information represents a continuous object; now I was studying how a continuous flow continually moved that information beyond the scales a computation could resolve.
       </div>
       
       
@@ -1047,19 +1035,18 @@ a:hover {
 
       <div class="para">
         Academically, 2025 initially felt quiet. I spent two months of the summer at my alma mater, hosted by Yuan, but returned to Georgia with less progress than I had hoped.
-        In October, the first project during my second postdoc appointment was finally completed<sup><a class="citation" id="cite-hu-lai-wu-2025-mixing" href="#ref-hu-lai-wu-2025-mixing">[38]</a></sup>.
-        I derived the optimality conditions and carried out the numerical simulations using the spline methods I had learned from Lai, while Hu established that the feasible set was nonempty. 
+        In October, the first project during my second postdoc was finally completed<sup><a class="citation" id="cite-hu-lai-wu-2025-mixing" href="#ref-hu-lai-wu-2025-mixing">[38]</a></sup>.
+        I derived the optimality conditions and carried out the spline-based simulations; Hu proved that the feasible set was nonempty.        
         I also contributed numerical experiments to a conference submission with members of Hu’s group<sup><a class="citation" id="cite-hu-adu-wu-brower-2026" href="#ref-hu-adu-wu-brower-2026">[39]</a></sup>.
       </div>
 
       <div class="para">
         In November 2025, uncertainty about Hu’s future funding pushed me onto the academic job market a year earlier than I had planned. 
         Changes in the immigration climate also made me question whether I wanted to build a permanent academic life in the United States. 
-        I applied for only one university in the United States, and the rest Chinese.
+        I applied to only one university in the United States; the rest of my applications were in China.
         Because prolonged uncertainty has always been difficult for me, returning to China gradually became a possibility rather than a retreat.
         The most difficult part of the search was not filling out applications but asking other people for help. Yuan, Hu, and Lai wrote research letters for me, while Enka Lakuriqi prepared a teaching letter. 
         Her kindness carried an unexpected historical echo. She once told me that her father, an Albanian, had frequently visited Beijing during the Cold War. 
-        My own job search had briefly connected people, countries, and generations that otherwise seemed to have little reason to meet.
       </div>
 
       <div class="para">
@@ -1067,10 +1054,11 @@ a:hover {
         Although I was not offered the position because the committee eventually continued with another candidate with stronger backgrounds in data science, 
         the experience gave me my first direct view of the American faculty hiring process. 
         By the time I left the United States in May 2026, however, I had crossed 37 states by road or rail, often alone.
-        I had arrived in Athens without a car, carrying groceries home from a bus stop. I left two years later after exploring across much of the country. 
-        More importantly, the experience helped me understand my own mathematical identity more clearly. 
-        After encountering different mathematical languages, I realized that my intuition was still most naturally aligned with spectral viewpoints, harmonic analysis, and stable representations of continuous structures. 
-        The experience also clarified that I hoped to pursue questions independently while remaining connected to a broader mathematical community.        
+
+        I had arrived in Athens without a car, carrying groceries home from a bus stop. 
+        I left two years later after crossing much of the country. 
+        Mathematically, I found myself returning to the same instincts: frequency, stability, and spectral structure. 
+        I also knew more clearly that I wanted to pursue my own questions.  
       </div>
 
     </section>
@@ -1093,7 +1081,7 @@ a:hover {
 
       <div class="para">
         It was a difficult time. For almost nine months, from November 2025 to July 2026, I lived with considerable uncertainty about where I would go next. 
-        I have never been comfortable with uncertainty, and I came to think of this period as a small Odyssey of my life. 
+        I have never been comfortable with uncertainty, and I came to think of those nine months as an Odyssey of my own.
         I attended several interviews, and once even withdrew in the middle of one because I found the process sufficiently unprofessional, despite having no offer in hand.
         The Odyssey ended on my 29th birthday, the very day I received the appointment email from Xiamen University.      
       </div>
@@ -1102,18 +1090,18 @@ a:hover {
         During this period of professional uncertainty, my research also began to branch out in several directions. 
         One result was a paper with An on integral equations, published in <cite>SIAM Journal on Numerical Analysis</cite><sup><a class="citation" id="cite-an-wu-2026-spherical" href="#ref-an-wu-2026-spherical">[40]</a></sup>, 
         the first research article on integral equations for both of us. 
-        An had given Kress's <cite>Linear Integral Equations</cite><sup><a class="citation" id="cite-kress-1999" href="#ref-kress-1999">[41]</a></sup> to me when I was an undergraduate. I later worked through the book on my own when I was in Hong Kong. 
-        I first mentioned the idea of relaxing quadrature exactness in Nyström methods for integral equations to him in 2022, while we were discussing how to relax algebraic exactness in hyperinterpolation.
-        I even worked out some of the derivations by hand and showed them to Sloan in January 2023, together with my work on the Allen–Cahn equation.        
-        However, I did not find time to pursue it until August 2024, my first month in the United States, when I finally worked out the remaining details and completed the manuscript.
-        The paper then went through three rounds of revision, which became another exercise in working through the technical details myself. 
+        The idea had been waiting for several years. An had given me <cite>Linear Integral Equations</cite><sup><a class="citation" id="cite-kress-1999" href="#ref-kress-1999">[41]</a></sup> when I was an undergraduate, and I later worked through the book on my own in Hong Kong. 
+        In 2022, while An and I were discussing relaxed exactness in hyperinterpolation, I suggested asking the same question for Nyström methods. 
+        By January 2023 I had handwritten some of the derivations and shown them to Sloan. Followed by my training with Li, the project then sat untouched until my first month in the United States. 
+        There I finally returned to it, completed the remaining analysis, and wrote the manuscript.
+        The paper then went through three rounds of revision, which became another long exercise in working through technical details.
         At one point I almost gave up on it, but it eventually appeared.
       </div>
 
       <div class="para">
         By April 2026, as I was approaching the end of my second postdoctoral appointment, I had accumulated a broader understanding of Marcinkiewicz–Zygmund inequalities and their role in stable discretization. 
         I began to see that the ideas behind this work extended beyond effective maximum principles and pointed to a more general question on the stability of spectral methods with inexact quadrature rules.
-        This viewpoint led me to write a short paper on MZ discretization of Galerkin schemes. I developed the manuscript in a few days and sent it to <cite>Applied Mathematics Letters</cite><sup><a class="citation" id="cite-wu-2026-mz-galerkin" href="#ref-wu-2026-mz-galerkin">[42]</a></sup>.
+        This viewpoint led me to write a short paper on MZ discretization of Galerkin schemes. I developed the idea into a short manuscript and sent it to <cite>Applied Mathematics Letters</cite><sup><a class="citation" id="cite-wu-2026-mz-galerkin" href="#ref-wu-2026-mz-galerkin">[42]</a></sup>.
       </div>
 
 
