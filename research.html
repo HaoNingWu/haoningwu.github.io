@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research outline of Hao-Ning Wu: sampling, approximation, and computation across global, multiscale, and directional structures.">
+  <title>Research map — Hao-Ning Wu</title>
+
+  <style>
+    :root {
+      --background: #f7f4e8;
+      --surface: rgba(255, 255, 255, 0.34);
+      --surface-strong: rgba(255, 255, 255, 0.58);
+      --text: #252525;
+      --secondary-text: #6d6a62;
+      --accent: #29957f;
+      --accent-dark: #1e7564;
+      --light-accent: #d8e5df;
+      --rule: #d8d2c2;
+      --future: #a06b2d;
+      --future-bg: #f2e6d5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.58;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: var(--accent); }
+
+    .container {
+      width: min(1220px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 72px 0 110px;
+    }
+
+    .section-kicker,
+    .axis-label,
+    .theme-number,
+    .keywords-label,
+    .papers-label {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .matrix-section {
+      padding: 38px 0 72px;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .section-kicker {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      line-height: 1.3;
+    }
+
+    .matrix-intro {
+      max-width: 790px;
+      margin: 0 0 32px;
+      color: var(--secondary-text);
+    }
+
+    .matrix-wrap {
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .research-matrix {
+      width: 100%;
+      min-width: 860px;
+      border-collapse: separate;
+      border-spacing: 8px;
+      table-layout: fixed;
+    }
+
+    .research-matrix th,
+    .research-matrix td {
+      padding: 0;
+      vertical-align: top;
+    }
+
+    .research-matrix thead th {
+      padding: 0 14px 10px;
+      color: var(--accent-dark);
+      font-family: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    .research-matrix thead th:first-child { width: 17%; }
+
+    .research-matrix tbody th {
+      padding: 18px 14px;
+      color: var(--accent-dark);
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.35;
+      text-align: left;
+    }
+
+    .axis-label {
+      display: block;
+      margin-top: 7px;
+      color: var(--secondary-text);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .matrix-card {
+      display: block;
+      min-height: 176px;
+      padding: 20px 20px 18px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: var(--surface);
+      color: var(--text);
+      text-decoration: none;
+      transition: transform 150ms ease, border-color 150ms ease, background 150ms ease;
+    }
+
+    .matrix-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      background: var(--surface-strong);
+      color: var(--text);
+    }
+
+    .matrix-card span {
+      display: block;
+      color: var(--secondary-text);
+      font-size: 15px;
+      line-height: 1.48;
+      text-align: left;
+    }
+
+    .outline-section { padding-top: 80px; }
+
+    .outline-heading {
+      max-width: 800px;
+      margin-bottom: 48px;
+    }
+
+    .theme {
+      display: block;
+      padding: 54px 0 58px;
+      border-top: 1px solid var(--rule);
+      scroll-margin-top: 24px;
+    }
+
+    .theme:first-of-type { border-top-color: var(--accent); }
+
+    .theme-number {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .theme h3 {
+      margin: 0 0 18px;
+      font-size: 27px;
+      font-weight: 500;
+      letter-spacing: -0.25px;
+      line-height: 1.3;
+    }
+
+    .subtheme {
+      margin-top: 28px;
+    }
+
+    .subtheme h4 {
+      margin: 0 0 8px;
+      color: var(--accent-dark);
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    .subtheme p {
+      margin: 0 0 12px;
+      color: var(--secondary-text);
+      font-size: 16px;
+    }
+
+    .theme p { margin: 0 0 20px; }
+
+    .keywords {
+      margin: 22px 0 26px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--accent);
+      background: var(--surface);
+      color: var(--secondary-text);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .keywords-label,
+    .papers-label {
+      color: var(--text);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    .papers-label {
+      display: block;
+      margin-bottom: 11px;
+      color: var(--accent-dark);
+    }
+
+    .papers {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    .papers li {
+      margin: 0 0 2px;
+      padding-left: 4px;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .papers a,
+    .papers a:hover {
+      text-decoration: none;
+    }
+
+    .paper-author {
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .paper-meta {
+      color: var(--secondary-text);
+      font-size: 14px;
+    }
+
+    .paper-note {
+      display: block;
+      margin-top: 0px;
+      color: var(--secondary-text);
+      font-size: 14px;
+      line-height: 1.52;
+    }
+
+    .no-paper {
+      margin: 0;
+      color: var(--secondary-text);
+      font-size: 15px;
+      font-style: italic;
+    }
+
+    .empty-card {
+      min-height: 176px;
+      opacity: 0.58;
+      cursor: default;
+    }
+
+    .empty-card:hover {
+      transform: none;
+      border-color: var(--rule);
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    .footer {
+      margin-top: 42px;
+      padding-top: 34px;
+      border-top: 1px solid var(--rule);
+      color: var(--secondary-text);
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .footer-links { margin-top: 12px; }
+
+    @media (max-width: 760px) {
+      body { font-size: 17px; }
+      .container { width: min(100% - 30px, 1220px); padding-top: 46px; }
+      .theme { padding: 42px 0 46px; }
+      .outline-section { padding-top: 62px; }
+    }
+
+    @media print {
+      body { background: white; }
+      .container { width: 100%; padding: 24px; }
+      .matrix-card, .keywords { background: transparent; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="outline-intro" aria-labelledby="outline-title">
+      <div class="outline-heading">
+        <div class="section-kicker">Research themes</div>
+        <h2 id="outline-title">Research matrix</h2>
+        <p class="matrix-intro">Each occupied cell explains the mathematical question behind that part of the matrix and lists the corresponding references. Empty cells are not expanded below.</p>
+      </div>
+      <div class="matrix-wrap">
+        <table class="research-matrix">
+          <thead>
+            <tr>
+              <th scope="col" aria-label="Research structure"></th>
+              <th scope="col">Sampling</th>
+              <th scope="col">Approximation</th>
+              <th scope="col">Computation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Global / Spectral<span class="axis-label">Whole-space structure</span></th>
+              <td><a class="matrix-card" href="#spectral-sampling"><span>Marcinkiewicz–Zygmund · quadrature · scattered sampling · QMC designs</span></a></td>
+              <td><a class="matrix-card" href="#spectral-approximation"><span>polynomial approximation · hyperinterpolation · spectral multipliers · regularization</span></a></td>
+              <td><a class="matrix-card" href="#spectral-computation"><span>spectral Galerkin · product integration · Nyström · superconvergence</span></a></td>
+            </tr>
+            <tr>
+              <th scope="row">Localized / Multiscale<span class="axis-label">Position and scale</span></th>
+              <td><div class="matrix-card empty-card"></div></td>
+              <td><div class="matrix-card empty-card"></div></td>
+              <td><div class="matrix-card empty-card"></div></td>
+            </tr>
+            <tr>
+              <th scope="row">Directional / Anisotropic<span class="axis-label">Position, scale, direction</span></th>
+              <td><div class="matrix-card empty-card"></div></td>
+              <td><div class="matrix-card empty-card"></div></td>
+              <td><div class="matrix-card empty-card"></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="outline-section" aria-label="Research themes">
+      <article class="theme" id="spectral-sampling">
+        <aside class="theme-aside"><div class="theme-number">(1,1)</div></aside>
+        <div>
+          <h3>Global / Spectral × Sampling</h3>
+          <p>Sampling theory asks when a finite set of nodes and positive weights captures a continuous spectral space without losing stability. Its central language links node geometry, discrete norm equivalence, quadrature, and discrepancy.</p>
+          <div class="keywords"><span class="keywords-label">Keywords</span> · Chebyshev–Lobatto points · perturbation stability · scattered data · Marcinkiewicz–Zygmund inequalities · quadrature exactness · positive-weight quadrature · Sobolev discrepancy · QMC designs</div>
+          <div class="subtheme">
+            <h4>Point sets and scattered sampling</h4>
+            <p>Node perturbations and scattered configurations expose the geometric conditions behind stable discrete norms.</p>
+            <span class="papers-label">References</span>
+            <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu</span>, <a href="https://arxiv.org/abs/2606.23409">“When do perturbed Chebyshev–Lobatto points remain Chebyshev?”</a> <span class="paper-meta">Preprint, arXiv:2606.23409 (2026).</span><span class="paper-note">Gives a deterministic stability threshold for the Lebesgue constant under angular perturbations of Chebyshev–Lobatto nodes.</span></li>
+              <li><span class="paper-author">H.-N. Wu</span>, <a href="https://arxiv.org/abs/2411.16584">“Marcinkiewicz–Zygmund inequalities for scattered data on polygons.”</a> <span class="paper-meta">Preprint, arXiv:2411.16584 (2024).</span><span class="paper-note">Constructs quadrature rules for scattered points on polygons and studies the resulting MZ inequalities.</span></li>
+            </ol>
+          </div>
+          <div class="subtheme">
+            <h4>Quadrature and discrepancy</h4>
+            <p>Exactness, positive weights, and discrepancy quantify how sampling rules transfer continuous information to computation.</p>
+            <span class="papers-label">References</span>
+            <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu</span>, <a href="https://arxiv.org/abs/2605.17739">“Hyperinterpolation beyond exact cubature: a spectral multiplier approach.”</a> <span class="paper-meta">Preprint, arXiv:2605.17739 (2026).</span><span class="paper-note">Uses Sobolev discrepancy to analyze discrete spectral multipliers without exact cubature or an MZ assumption.</span></li>
+              <li><span class="paper-author">C. An and H.-N. Wu</span>, <a href="https://doi.org/10.1137/24M1688370">“Spherical configurations and quadrature methods for integral equations of the second kind.”</a> <span class="paper-meta">SIAM Journal on Numerical Analysis 64 (2026), 148–169.</span><span class="paper-note">Here the emphasis is on spherical configurations, positive weights, and MZ-controlled quadrature as a stable sampling mechanism; its direct integral-equation role appears in (1,3).</span></li>
+              <li><span class="paper-author">C. An and H.-N. Wu</span>, <a href="https://doi.org/10.1016/j.jco.2023.101789">“Bypassing the quadrature exactness assumption of hyperinterpolation on the sphere.”</a> <span class="paper-meta">Journal of Complexity 80 (2024), 101789.</span><span class="paper-note">Replaces exactness by an MZ property, allowing positive-weight rules on broader families of spherical point sets.</span></li>
+              <li><span class="paper-author">C. An and H.-N. Wu</span>, <a href="https://arxiv.org/abs/2202.13691">“On the quadrature exactness in hyperinterpolation.”</a> <span class="paper-meta">BIT Numerical Mathematics 62 (2022), 1899–1919.</span><span class="paper-note">Quantifies what happens when the usual degree-2n exactness requirement is reduced.</span></li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <article class="theme" id="spectral-approximation">
+        <aside class="theme-aside"><div class="theme-number">(1,2)</div></aside>
+        <div>
+          <h3>Global / Spectral × Approximation</h3>
+          <p>Approximation theory studies how finite-dimensional models inherit the structure of the target and the data. In discrete settings, regularization and target singularities determine whether a nominally accurate scheme is also stable and efficient.</p>
+          <div class="keywords"><span class="keywords-label">Keywords</span> · polynomial approximation · hyperinterpolation · Tikhonov regularization · soft thresholding · Lasso hyperinterpolation · singular functions · oscillatory functions · quadrature-based approximation</div>
+          <div class="subtheme">
+            <h4>Hyperinterpolation and its extensions</h4>
+            <p>Hyperinterpolation and its extensions combine discrete polynomial approximation with regularization, thresholding, and adaptations to singular or oscillatory targets.</p>
+            <span class="papers-label">References</span>
+            <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu</span>, <a href="https://arxiv.org/abs/2605.17739">“Hyperinterpolation beyond exact cubature: a spectral multiplier approach.”</a> <span class="paper-meta">Preprint, arXiv:2605.17739 (2026).</span><span class="paper-note">Here the emphasis is the spectral multiplier as an approximation operator; its sampling and discrepancy role appears in (1,1).</span></li>
+              <li><span class="paper-author">C. An, J. Ran, and H.-N. Wu</span>, <a href="https://arxiv.org/abs/2510.04904">“The path of hyperinterpolation: a survey.”</a> <span class="paper-meta">Dolomites Research Notes on Approximation 18.1 (2025), 135–145.</span><span class="paper-note">Organizes the classical theory, relaxed exactness results, variants, and applications into one overview.</span></li>
+              <li><span class="paper-author">C. An and H.-N. Wu</span>, <a href="https://doi.org/10.1016/j.jat.2023.106013">“Is hyperinterpolation efficient in the approximation of singular and oscillatory functions?”</a> <span class="paper-meta">Journal of Approximation Theory 299 (2024), 106013.</span><span class="paper-note">Shows why ordinary hyperinterpolation can be inefficient for singular or oscillatory targets and analyzes an efficient modification.</span></li>
+              <li><span class="paper-author">C. An and H.-N. Wu</span>, <a href="https://doi.org/10.1137/20M137793X">“Lasso hyperinterpolation over general regions.”</a> <span class="paper-meta">SIAM Journal on Scientific Computing 43 (2021), A3967–A3991.</span><span class="paper-note">Applies soft thresholding to discrete polynomial coefficients to improve approximation in noisy-data regimes.</span></li>
+              <li><span class="paper-author">C. An and H.-N. Wu</span>, <a href="https://arxiv.org/abs/2008.00899">“Tikhonov regularization for polynomial approximation problems in Gauss quadrature points.”</a> <span class="paper-meta">Inverse Problems 37 (2021), 015008.</span><span class="paper-note">Introduces Tikhonov regularization into polynomial least squares and derives explicit formulas at Gauss points.</span></li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <article class="theme" id="spectral-computation">
+        <aside class="theme-aside"><div class="theme-number">(1,3)</div></aside>
+        <div>
+          <h3>Global / Spectral × Computation</h3>
+          <p>Numerical computation turns continuous equations into finite algebraic problems while preserving the geometry and stability of the underlying function space. The key questions differ between time-dependent PDEs and the discretization of integral operators.</p>
+          <div class="keywords"><span class="keywords-label">Keywords</span> · spectral methods · Allen–Cahn equation · weakly singular kernels · product integration · integral equations of the second kind · Galerkin discretization · MZ stability</div>
+          <div class="subtheme">
+            <h4>Direct discretization of operators</h4>
+            <p>Differential and integral operators can be approximated directly by finite-dimensional spectral representations and quadrature formulas.</p>
+            <span class="papers-label">References</span>
+            <ol class="papers">
+              <li><span class="paper-author">C. An and H.-N. Wu</span>, <a href="https://doi.org/10.1137/24M1688370">“Spherical configurations and quadrature methods for integral equations of the second kind.”</a> <span class="paper-meta">SIAM Journal on Numerical Analysis 64 (2026), 148–169.</span><span class="paper-note">Combines MZ-based hyperinterpolation with product integration for weakly singular second-kind integral equations on the sphere.</span></li>
+              <li><span class="paper-author">H.-N. Wu and X. Yuan</span>, <a href="https://arxiv.org/abs/2305.04820">“Breaking quadrature exactness: a spectral method for the Allen–Cahn equation on spheres.”</a> <span class="paper-meta">Preprint, arXiv:2305.04820.</span><span class="paper-note">Uses an MZ-type relation in place of exact quadrature to analyze a spherical spectral method for Allen–Cahn evolution.</span></li>
+            </ol>
+          </div>
+          <div class="subtheme">
+            <h4>Galerkin methods</h4>
+            <p>Projection-based methods approximate an equation through finite-dimensional trial and test spaces rather than by directly discretizing the underlying operator.</p>
+            <span class="papers-label">References</span>
+            <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu</span>, <a href="https://doi.org/10.1016/j.aml.2026.110033">“Marcinkiewicz–Zygmund stability of quadrature-based Galerkin schemes.”</a> <span class="paper-meta">Applied Mathematics Letters 182 (2026), 110033.</span><span class="paper-note">Identifies MZ stability as a direct criterion for the discrete inner product and the resulting Galerkin scheme.</span></li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <footer class="footer">
+      <div class="footer-links"><a href="https://scholar.google.com/citations?hl=en&amp;user=U8b4fmQAAAAJ">Google Scholar</a> · <a href="https://haoningwu.github.io/">Back to the homepage</a></div>
+    </footer>
+  </main>
+</body>
+</html>
