@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -344,15 +345,15 @@
           <tbody>
             <tr>
               <th scope="row">Global / Spectral<span class="axis-label">Global modes</span></th>
-              <td><a class="matrix-card" href="#spectral-sampling"><span>Marcinkiewicz–Zygmund · quadrature · scattered sampling · spherical <it>t</it>-designs · QMC designs · discrepancy</span></a></td>
+              <td><a class="matrix-card" href="#spectral-sampling"><span>Marcinkiewicz–Zygmund · quadrature · spherical <it>t</it>-designs · QMC designs · scattered sampling · perturbed sampling</span></a></td>
               <td><a class="matrix-card" href="#spectral-approximation"><span>polynomials · hyperinterpolation · spectral multipliers · regularization</span></a></td>
               <td><a class="matrix-card" href="#spectral-computation"><span>spectral Galerkin · product integration · Nyström · superconvergence</span></a></td>
             </tr>
             <tr>
               <th scope="row">Localized / Multiscale<span class="axis-label">Position and scale</span></th>
-              <td><div class="matrix-card empty-card"></div></td>
-              <td><div class="matrix-card empty-card"></div></td>
-              <td><div class="matrix-card empty-card"></div></td>
+              <td><a class="matrix-card" href="#nested-sampling"><span>nested sampling · dyadic refinement</span></a></td>
+              <td><a class="matrix-card" href="#framelet-approximation"><span>wavelets · framelets · (nearly) tight frames</span></a></td>
+              <td><a class="matrix-card" href="#filter-bank-computation"><span>filter banks · fast framelet transforms </span></a></td>
             </tr>
             <tr>
               <th scope="row">Directional / Anisotropic<span class="axis-label">Position, scale, direction</span></th>
@@ -373,7 +374,7 @@
           <p>Sampling theory asks when a finite set of points and positive weights captures a continuous spectral space without losing stability. Its central language links sampling geometry, discrete norm equivalence, quadrature, and discrepancy.</p>
           <div class="keywords"><span class="keywords-label">Keywords</span> · Chebyshev–Lobatto points · point perturbations · scattered sampling · Marcinkiewicz–Zygmund inequalities · quadrature exactness · positive-weight quadrature · spherical t-designs · Sobolev discrepancy · QMC designs</div>
           <div class="subtheme">
-            <h4>Point sets and scattered sampling</h4>
+            <h4>Perturbed and scattered sampling</h4>
             <p>Point perturbations and scattered configurations expose the geometric conditions behind stable discrete norms.</p>
             <span class="papers-label">References</span>
             <ol class="papers">
@@ -427,6 +428,7 @@
             <p>Differential and integral operators can be approximated directly by finite-dimensional spectral representations and quadrature formulas.</p>
             <span class="papers-label">References</span>
             <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu</span>, <a href="https://arxiv.org/abs/2608.20098">“Superconvergence and aliasing saturation in Sloan iteration for spherical integral equations.”</a> <span class="paper-meta">Preprint, arXiv:2608.20098 (2026).</span><span class="paper-note">Here the direct-discretization focus is the product-integration Nyström route: quadrature creates a tail–aliasing decomposition and a sharp recovery–saturation threshold for spherical integral equations.</span></li>
               <li><span class="paper-author">C. An and H.-N. Wu</span>, <a href="https://doi.org/10.1137/24M1688370">“Spherical configurations and quadrature methods for integral equations of the second kind.”</a> <span class="paper-meta">SIAM Journal on Numerical Analysis 64 (2026), 148–169.</span><span class="paper-note">Combines MZ-based hyperinterpolation with product integration for weakly singular second-kind integral equations on the sphere.</span></li>
               <li><span class="paper-author">H.-N. Wu and X. Yuan</span>, <a href="https://arxiv.org/abs/2305.04820">“Breaking quadrature exactness: a spectral method for the Allen–Cahn equation on spheres.”</a> <span class="paper-meta">Preprint, arXiv:2305.04820.</span><span class="paper-note">Uses an MZ-type relation in place of exact quadrature to analyze a spherical spectral method for Allen–Cahn evolution.</span></li>
             </ol>
@@ -436,7 +438,59 @@
             <p>Projection-based methods approximate an equation through finite-dimensional trial and test spaces rather than by directly discretizing the underlying operator.</p>
             <span class="papers-label">References</span>
             <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu</span>, <a href="https://arxiv.org/abs/2608.20098">“Superconvergence and aliasing saturation in Sloan iteration for spherical integral equations.”</a> <span class="paper-meta">Preprint, arXiv:2608.20098 (2026).</span><span class="paper-note">Here the Galerkin focus is the discrete projection method: Sloan iteration, quadrature aliasing, and the extension from exactness to MZ-stable Gram-corrected least squares.</span></li>
               <li><span class="paper-author">H.-N. Wu</span>, <a href="https://doi.org/10.1016/j.aml.2026.110033">“Marcinkiewicz–Zygmund stability of quadrature-based Galerkin schemes.”</a> <span class="paper-meta">Applied Mathematics Letters 182 (2026), 110033.</span><span class="paper-note">Identifies MZ stability as a direct criterion for the discrete inner product and the resulting Galerkin scheme.</span></li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <article class="theme" id="nested-sampling">
+        <aside class="theme-aside"><div class="theme-number">(2,1)</div></aside>
+        <div>
+          <h3>Localized / Multiscale × Sampling</h3>
+          <p>Nested sampling links progressively refined point sets to a hierarchy of spectral spaces. The central issue is to preserve quantitative sampling control while the data become denser and more local.</p>
+          <div class="keywords"><span class="keywords-label">Keywords</span> · nested point sets · MZ measures · dyadic refinement · local partition weights</div>
+          <div class="subtheme">
+            <h4>Nested sampling</h4>
+            <p>Refinement is organized through deterministic quasi-uniform nodes and level-dependent MZ inequalities.</p>
+            <span class="papers-label">References</span>
+            <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu and X. Zhuang</span>, <a href="https://arxiv.org/abs/2608.20058">“Nearly tight framelet systems from nested Marcinkiewicz–Zygmund measures on compact Riemannian manifolds.”</a> <span class="paper-meta">Preprint, arXiv:2608.20058 (2026).</span><span class="paper-note">Develops dyadically nested quasi-uniform point sets and local partition weights, with MZ tolerances that are controlled across refinement levels.</span></li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <article class="theme" id="framelet-approximation">
+        <aside class="theme-aside"><div class="theme-number">(2,2)</div></aside>
+        <div>
+          <h3>Localized / Multiscale × Approximation</h3>
+          <p>Wavelets and framelets provide localized multiscale approximations whose coefficients separate position, scale, and frequency content. On manifolds, near-tightness measures how faithfully the discrete system preserves the continuous energy structure.</p>
+          <div class="keywords"><span class="keywords-label">Keywords</span> · wavelets · framelets · near-tight bounds · multiscale decomposition</div>
+          <div class="subtheme">
+            <h4>Framelets</h4>
+            <p>Nested MZ measures transfer sampling accuracy into controlled deviations from tight frame bounds.</p>
+            <span class="papers-label">References</span>
+            <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu and X. Zhuang</span>, <a href="https://arxiv.org/abs/2608.20058">“Nearly tight framelet systems from nested Marcinkiewicz–Zygmund measures on compact Riemannian manifolds.”</a> <span class="paper-meta">Preprint, arXiv:2608.20058 (2026).</span><span class="paper-note">Transfers the nested MZ tolerance to near-tight framelet bounds, multiscale decompositions, and controlled reconstruction.</span></li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <article class="theme" id="filter-bank-computation">
+        <aside class="theme-aside"><div class="theme-number">(2,3)</div></aside>
+        <div>
+          <h3>Localized / Multiscale × Computation</h3>
+          <p>Fast filter-bank transforms turn multiscale analysis into a practical computational pipeline. Their design must coordinate analysis, synthesis, reconstruction, and the conditioning inherited from the underlying sampling measures.</p>
+          <div class="keywords"><span class="keywords-label">Keywords</span> · filter banks · fast transforms · analysis and synthesis · reconstruction</div>
+          <div class="subtheme">
+            <h4>Fast filter-bank transforms</h4>
+            <p>Fully discrete filter banks implement the multiscale system through structured analysis and synthesis operators.</p>
+            <span class="papers-label">References</span>
+            <ol class="papers">
+              <li><span class="paper-author">H.-N. Wu and X. Zhuang</span>, <a href="https://arxiv.org/abs/2608.20058">“Nearly tight framelet systems from nested Marcinkiewicz–Zygmund measures on compact Riemannian manifolds.”</a> <span class="paper-meta">Preprint, arXiv:2608.20058 (2026).</span><span class="paper-note">Develops fully discrete filter-bank analysis and synthesis, one-pass and canonical reconstruction, and fast transforms whose conditioning is controlled by the MZ tolerance.</span></li>
             </ol>
           </div>
         </div>
